@@ -11,6 +11,8 @@
       "article_pattern": "/xjfgw/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "force_keep_industry": true,
       "note": "产业发展栏目（专题栏目，内容天然产业相关）"
     },
@@ -23,6 +25,8 @@
       "article_pattern": "/xjfgw/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "force_keep_industry": true,
       "note": "能源信息栏目"
     },
@@ -35,6 +39,8 @@
       "article_pattern": "/gxt/gxdt/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "工信动态栏目"
     },
     {
@@ -46,6 +52,8 @@
       "article_pattern": "/gxt/tzgg/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "通知公告栏目（专精特新、产能、政策）"
     },
     {
@@ -57,6 +65,8 @@
       "article_pattern": "/xjswt/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "商务动态栏目（招商引资/外经贸）"
     },
     {
@@ -68,6 +78,8 @@
       "article_pattern": "/gzw/jjyxqk/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "force_keep_industry": true,
       "note": "经济运行情况栏目"
     },
@@ -80,6 +92,8 @@
       "article_pattern": "/xjnynct/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "农业农村动态栏目"
     },
     {
@@ -91,6 +105,8 @@
       "article_pattern": "/jjjskfq/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "wulumuqi",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "要闻栏目（国家级经开区，产业园区/厂房/招商）"
     },
     {
@@ -102,6 +118,8 @@
       "article_pattern": "/xjylz/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "yili",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "force_keep_industry": true,
       "note": "重大项目建设栏目（纯产业专题：工业项目/产业链对接/开复工）"
     },
@@ -114,6 +132,8 @@
       "article_pattern": "/ktdsz/kfq/\\d+/[a-f0-9]+\\.shtml",
       "region": "yili",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "园区要闻栏目（国家级经开区，石化/棉花/招商）"
     },
     {
@@ -125,6 +145,8 @@
       "article_pattern": "/xjylz/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "yili",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "政务动态栏目（综合，含时政需过滤）"
     },
     {
@@ -136,6 +158,8 @@
       "article_pattern": "/ksdqxzgs/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "kashen",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "政务动态栏目（南疆，综合需过滤）"
     },
     {
@@ -147,6 +171,8 @@
       "article_pattern": "/xjbz/jrbz/\\d+/[a-f0-9]+\\.shtml",
       "region": "bayin",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "政务动态/今日巴州栏目（南疆，综合需过滤）"
     },
     {
@@ -158,6 +184,8 @@
       "article_pattern": "/tlfs/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "tulufan",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "政务动态栏目（综合需过滤）"
     },
     {
@@ -169,6 +197,8 @@
       "article_pattern": "/content_\\d+",
       "region": "wulumuqi",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "高新要闻栏目（国家级高新区，产业园区/招商/项目，含时政需过滤）"
     },
     {
@@ -180,6 +210,8 @@
       "article_pattern": "/enterprise_detail/\\d+\\.html",
       "region": "changji",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "force_keep_industry": true,
       "note": "企业动态（输变电/新能源/新材料龙头，新疆本土最大制造企业）"
     },
@@ -192,6 +224,8 @@
       "article_pattern": "/dynamic/announcement-",
       "region": "wulumuqi",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "force_keep_industry": true,
       "note": "公示公告（招投标/成交/询比采购/澄清，矿业领域）"
     },
@@ -204,6 +238,8 @@
       "article_pattern": "Typ\\.aspx.*nid=",
       "region": "wulumuqi",
       "enabled": true,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "公司要闻（煤炭/煤化工/LNG/能源物流，首页聚合最新要闻，标题列表页有截断）"
     },
     {
@@ -215,6 +251,8 @@
       "article_pattern": "/kjt/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": false,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "科技热点栏目（列表页动态加载，暂禁用）"
     },
     {
@@ -226,7 +264,37 @@
       "article_pattern": "/xjepd/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
       "enabled": false,
+      "fetch_detail": true,
+      "max_detail": 40,
       "note": "建设项目环评审批栏目（列表页动态加载，暂禁用）"
+    },
+    {
+      "name": "克孜勒苏柯尔克孜自治州-经济数据",
+      "url": "https://www.xjkz.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.xjkz.gov.cn/xjkz/c101980/xxgk_gksx_gb.shtml",
+      "article_pattern": "/xjkz/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "kezhou",
+      "enabled": true,
+      "force_keep_industry": true,
+      "fetch_detail": true,
+      "max_detail": 40,
+      "note": "月度经济要情栏目（南疆，经济统计公报，内容天然产业相关）"
+    },
+    {
+      "name": "和田地区行政公署-营商环境",
+      "url": "https://www.xjht.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.xjht.gov.cn/xjht/c128314/zfxxgk_list.shtml",
+      "article_pattern": "/xjht/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "hetian",
+      "enabled": true,
+      "force_keep_industry": true,
+      "fetch_detail": true,
+      "max_detail": 40,
+      "note": "优化营商环境栏目（南疆，政策类，更新频率较低）"
     }
   ]
 }

@@ -238,26 +238,54 @@ def _is_generic_article_link(href: str, pattern: str | None) -> bool:
     return False
 
 
-def _extract_date_from_node(a_tag) -> Optional[str]:
-    """从链接节点及其相邻节点提取日期字符串。"""
-    # 1. 链接自身的 title 属性
-    title_attr = a_tag.get("title", "")
-    m = re.search(r"(\d{4}-\d{1,2}-\d{1,2})", title_attr)
-    if m:
-        return m.group(1)
+def _normalize_date(s: str) -> str:
+    """把 2026-1-8 规范化为 2026-01-08。"""
+    m = re.match(r"(20\d{2})-(\d{1,2})-(\d{1,2})", s)
+    if not m:
+        return s
+    return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
 
-    # 2. 父节点或相邻兄弟节点中的日期
-    # 常见结构：<li><a>标题</a><span>2026-10-16</span></li>
+
+def _extract_date_from_node(a_tag) -> Optional[str]:
+    """从链接节点及其相邻节点提取日期字符串。
+
+    只从「非标题文本」中提取，并要求是完整日期格式。标题里常出现
+    「2026年1-8月经济要情」这类期间描述，若从标题取日期会得到错误
+    的发布时间（如把 1-8 月当成 1 月 8 日）。
+    """
+    # 1. 链接自身 title 属性中的完整日期
+    title_attr = a_tag.get("title") or ""
+    m = re.search(r"(20\d{2}-\d{1,2}-\d{1,2})", title_attr)
+    if m:
+        return _normalize_date(m.group(1))
+
+    # 2. 父节点或相邻兄弟节点中的日期（排除链接自身文本）
     parent = a_tag.parent
     for _ in range(3):  # 向上最多查 3 层
         if parent is None:
             break
-        text = parent.get_text(" ", strip=True)
-        m = re.search(r"(\d{4}[-/年]\d{1,2}[-/月]\d{1,2})", text)
+        text = _text_excluding_a(parent, a_tag)
+        m = re.search(r"(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?", text)
         if m:
-            # 规范化
-            d = m.group(1).replace("年", "-").replace("月", "-").replace("日", "").replace("/", "-")
-            return d
+            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+            if 1 <= mo <= 12 and 1 <= d <= 31:
+                return f"{y}-{mo:02d}-{d:02d}"
         parent = parent.parent
 
     return None
+
+
+def _text_excluding_a(node, a_tag) -> str:
+    """收集节点内的文本，但排除目标 <a> 标签内的文字。"""
+    parts = []
+    for s in node.find_all(string=True):
+        parent = s.parent
+        if parent is None:
+            continue
+        # 跳过位于该链接内部的文本
+        if parent is a_tag or a_tag in parent.parents:
+            continue
+        t = str(s).strip()
+        if t:
+            parts.append(t)
+    return " ".join(parts)

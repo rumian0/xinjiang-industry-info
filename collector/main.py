@@ -79,13 +79,19 @@ def _fetch_detail(url: str) -> dict | None:
         return None
 
 
-def collect_from_source(source: dict) -> list[dict]:
+def collect_from_source(
+    source: dict, existing_urls: frozenset[str] = frozenset()
+) -> list[dict]:
     """从单个信息源采集，返回标准化后的文章列表。
 
     支持三种采集方式（按优先级）：
     1. rss：标准 RSS/Atom 源
     2. list：政务 CMS 栏目列表页（list.shtml）
-    3. homepage：网页首页兜底（通用链接提取）
+    3. generic：企业官网等通用列表页
+    4. homepage：网页首页兜底（通用链接提取）
+
+    existing_urls 为已收录文章的 URL 集合。已收录的条目不再抓详情页，
+    既节省请求，也避免重复覆盖已有数据。
     """
     name = source["name"]
     base_url = source["url"]
@@ -145,12 +151,24 @@ def collect_from_source(source: dict) -> list[dict]:
     articles = []
     # 若信息源本身是产业专题栏目，则不过滤（force_keep_industry）
     force_keep = source.get("force_keep_industry", False)
-    # 是否抓取详情页补全标题和摘要（列表页标题可能被截断）
+    # 是否抓取详情页补全摘要（列表页只有标题和日期，摘要需进详情页）
     fetch_detail = source.get("fetch_detail", False)
+    # 单源单次最多抓取详情页的条数，防止请求量失控
+    max_detail = int(source.get("max_detail", 40))
+    detail_done = 0
+
     for item in raw_items:
-        # 可选：抓详情页补全标题/摘要/时间
-        if fetch_detail and item.get("link"):
-            detail = _fetch_detail(item["link"])
+        # 详情页：仅补齐未收录文章，已收录的不重复抓取
+        link = item.get("link") or ""
+        need_detail = (
+            fetch_detail
+            and link
+            and link not in existing_urls
+            and detail_done < max_detail
+        )
+        if need_detail:
+            detail_done += 1
+            detail = _fetch_detail(link)
             if detail:
                 if detail.get("title"):
                     item["title"] = detail["title"]
@@ -182,6 +200,51 @@ def collect_from_source(source: dict) -> list[dict]:
     return articles
 
 
+def _needs_summary(art: dict) -> bool:
+    """判断该条是否需要（重新）抓取摘要。
+
+    包括两种情况：摘要为空；摘要是早期版本抓到的「标题+元信息」噪声。
+    """
+    s = (art.get("summary") or "").strip()
+    if not s:
+        return True
+    head = s[:100]
+    # 早期解析器会把元信息当摘要
+    if any(k in head for k in ("浏览次数", "浏览量", "【字体", "大 中 小", "文章来源", "打印本文")):
+        return True
+    # 摘要开头重复标题
+    title = (art.get("title") or "").strip()
+    if title and s[:25] == title[:25]:
+        return True
+    return False
+
+
+def backfill_summaries(articles: list[dict], limit: int = 60) -> int:
+    """为摘要缺失或被噪声污染的已收录文章重新抓取摘要。
+
+    历史数据是在未开启详情抓取时采集的，摘要为空；早期解析器还会把
+    「标题+元信息」当摘要。每次运行限量处理一部分，多轮即可补齐，
+    避免单次任务耗时过长。返回本次成功回填的条数。
+    """
+    todo = [
+        a for a in articles
+        if _needs_summary(a) and a.get("source_url")
+    ]
+    if not todo:
+        return 0
+
+    updated = 0
+    for art in todo[:limit]:
+        detail = _fetch_detail(art["source_url"])
+        summary = (detail or {}).get("summary")
+        if summary:
+            art["summary"] = summary
+            art["summary_source"] = "truncated"
+            updated += 1
+    print(f"[回填] 待补摘要 {len(todo)} 条，本次处理 {min(limit, len(todo))} 条，成功 {updated} 条")
+    return updated
+
+
 def main() -> int:
     """主流程，返回退出码（0 成功）。"""
     print(f"[采集] 开始，时间：{datetime.now(timezone.utc).astimezone().isoformat()}")
@@ -193,6 +256,10 @@ def main() -> int:
 
     existing = load_existing()
     print(f"[采集] 已有文章数量：{len(existing)}")
+    # 已收录 URL，用于跳过重复的详情页请求
+    existing_urls = frozenset(
+        a["source_url"] for a in existing if a.get("source_url")
+    )
 
     new_articles = []
     success_count = 0
@@ -201,7 +268,7 @@ def main() -> int:
     for src in sources:
         print(f"[采集] 处理信息源：{src['name']} ({src['url']})")
         try:
-            collected = collect_from_source(src)
+            collected = collect_from_source(src, existing_urls)
             if collected:
                 success_count += 1
                 new_articles.extend(collected)
@@ -233,8 +300,11 @@ def main() -> int:
 
     print(f"[结果] 新增 {added} 条，重复跳过 {skipped_dup} 条，有效总数 {len(valid)} 条")
 
-    # 仅在有变化时写回
-    if added > 0 or invalid:
+    # 回填历史数据缺失的摘要
+    backfilled = backfill_summaries(valid)
+
+    # 仅在数据有变化时写回
+    if added > 0 or invalid or backfilled > 0:
         save_articles(valid)
         print(f"[写入] 已更新 {ARTICLES_FILE}")
     else:
