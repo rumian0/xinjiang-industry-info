@@ -1,22 +1,108 @@
 {
-  "_comment": "信息来源配置。type 对应 source_types.json 中的 code。",
-  "_note": "仅收录可公开访问、符合 robots.txt 的官方或正规来源。",
+  "_comment": "信息来源配置。",
+  "_note": "method 取值：rss(标准RSS源) / list(政务CMS栏目列表页) / homepage(首页兜底)。article_pattern 为文章详情链接的正则匹配（可选，用于过滤列表页噪音）。type 对应 source_types.json 的 code。",
   "sources": [
     {
-      "name": "新疆维吾尔自治区人民政府",
-      "url": "https://www.xinjiang.gov.cn",
+      "name": "新疆维吾尔自治区发展和改革委员会",
+      "url": "https://xjdrc.xinjiang.gov.cn/",
       "type": "government",
-      "rss": null,
+      "method": "list",
+      "list_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108388/common_list.shtml",
+      "article_pattern": "/xjfgw/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
-      "enabled": true
+      "enabled": true,
+      "force_keep_industry": true,
+      "note": "产业发展栏目（专题栏目，内容天然产业相关）"
     },
     {
-      "name": "新疆维吾尔自治区发展和改革委员会",
-      "url": "https://fgw.xinjiang.gov.cn",
+      "name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "url": "https://xjdrc.xinjiang.gov.cn/",
       "type": "government",
-      "rss": null,
+      "method": "list",
+      "list_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/common_list.shtml",
+      "article_pattern": "/xjfgw/c\\d+/\\d+/[a-f0-9]+\\.shtml",
       "region": "quanjang",
-      "enabled": true
+      "enabled": true,
+      "force_keep_industry": true,
+      "note": "能源信息栏目"
+    },
+    {
+      "name": "新疆维吾尔自治区工业和信息化厅",
+      "url": "https://gxt.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://gxt.xinjiang.gov.cn/gxt/gxdt/list.shtml",
+      "article_pattern": "/gxt/gxdt/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": true,
+      "note": "工信动态栏目"
+    },
+    {
+      "name": "新疆维吾尔自治区工业和信息化厅-通知公告",
+      "url": "https://gxt.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://gxt.xinjiang.gov.cn/gxt/tzgg/list.shtml",
+      "article_pattern": "/gxt/tzgg/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": true,
+      "note": "通知公告栏目（专精特新、产能、政策）"
+    },
+    {
+      "name": "新疆维吾尔自治区商务厅",
+      "url": "https://swt.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://swt.xinjiang.gov.cn/xjswt/c114329/list.shtml",
+      "article_pattern": "/xjswt/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": true,
+      "note": "商务动态栏目（招商引资/外经贸）"
+    },
+    {
+      "name": "新疆维吾尔自治区国有资产监督管理委员会",
+      "url": "https://gzw.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://gzw.xinjiang.gov.cn/gzw/jjyxqk/list_tj.shtml",
+      "article_pattern": "/gzw/jjyxqk/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": true,
+      "force_keep_industry": true,
+      "note": "经济运行情况栏目"
+    },
+    {
+      "name": "新疆维吾尔自治区农业农村厅",
+      "url": "https://nynct.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/list.shtml",
+      "article_pattern": "/xjnynct/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": true,
+      "note": "农业农村动态栏目"
+    },
+    {
+      "name": "新疆维吾尔自治区科学技术厅",
+      "url": "https://kjt.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://kjt.xinjiang.gov.cn/kjt/c100262/common_list.shtml",
+      "article_pattern": "/kjt/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": false,
+      "note": "科技热点栏目（列表页动态加载，暂禁用）"
+    },
+    {
+      "name": "新疆维吾尔自治区生态环境厅",
+      "url": "https://sthjt.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://sthjt.xinjiang.gov.cn/xjepd/c115758/common_list_notime.shtml",
+      "article_pattern": "/xjepd/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "quanjang",
+      "enabled": false,
+      "note": "建设项目环评审批栏目（列表页动态加载，暂禁用）"
     }
   ]
 }

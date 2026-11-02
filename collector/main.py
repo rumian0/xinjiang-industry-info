@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 # 确保可独立运行（相对导入）
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from fetcher import fetch_rss, fetch_url  # noqa: E402
+from fetcher import fetch_rss, fetch_url, fetch_list_page  # noqa: E402
 from parser import parse_html, resolve_url  # noqa: E402
 from normalize import normalize_article  # noqa: E402
 from classifier import (  # noqa: E402
@@ -60,29 +60,42 @@ def save_articles(articles: list[dict]) -> None:
 
 
 def collect_from_source(source: dict) -> list[dict]:
-    """从单个信息源采集，返回标准化后的文章列表。"""
+    """从单个信息源采集，返回标准化后的文章列表。
+
+    支持三种采集方式（按优先级）：
+    1. rss：标准 RSS/Atom 源
+    2. list：政务 CMS 栏目列表页（list.shtml）
+    3. homepage：网页首页兜底（通用链接提取）
+    """
     name = source["name"]
     base_url = source["url"]
     source_type = source["type"]
-    rss = source.get("rss")
+    method = source.get("method", "list")
 
     raw_items = []
 
-    # RSS 优先
-    if rss:
-        entries = fetch_rss(rss)
-        for e in entries:
-            raw_items.append(
-                {
-                    "title": e.get("title", ""),
-                    "link": e.get("link", ""),
-                    "summary": e.get("summary", ""),
-                    "published_at": e.get("published"),
-                }
-            )
+    if method == "rss":
+        rss = source.get("rss")
+        if rss:
+            entries = fetch_rss(rss)
+            for e in entries:
+                raw_items.append(
+                    {
+                        "title": e.get("title", ""),
+                        "link": e.get("link", ""),
+                        "summary": e.get("summary", ""),
+                        "published_at": e.get("published"),
+                    }
+                )
+        if not raw_items:
+            # RSS 失败则退回列表页解析
+            raw_items = fetch_list_page(base_url, source.get("article_pattern"))
 
-    # 若 RSS 无结果，尝试网页抓取（此处仅演示首页标题列表提取，具体站点的列表解析需按站点定制）
-    if not raw_items:
+    elif method == "list":
+        list_url = source.get("list_url") or base_url
+        raw_items = fetch_list_page(list_url, source.get("article_pattern"))
+
+    else:  # homepage 兜底
         html = fetch_url(base_url)
         if html:
             from bs4 import BeautifulSoup
@@ -99,17 +112,19 @@ def collect_from_source(source: dict) -> list[dict]:
                             "published_at": None,
                         }
                     )
-            # 限制数量，避免首页导航链接噪音
             raw_items = raw_items[:50]
 
     # 标准化 + 分类
     articles = []
+    # 若信息源本身是产业专题栏目，则不过滤（force_keep_industry）
+    force_keep = source.get("force_keep_industry", False)
     for item in raw_items:
         art = normalize_article(item, name, source_type)
         # 分类
         full_text = f"{art['title']} {art['summary']}"
         # 仅保留与产业相关的内容（过滤时政新闻、领导人活动等）
-        if not is_industry_related(full_text):
+        # 但产业专题栏目（如发改委"产业发展"）可强制保留
+        if not force_keep and not is_industry_related(full_text):
             continue
         art["industry_tags"] = classify_industry(full_text)
         region_code = guess_region_from_text(full_text)

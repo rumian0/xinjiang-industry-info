@@ -6,11 +6,14 @@
 
 from __future__ import annotations
 
+import re
 import time
 from typing import Any, Optional
+from urllib.parse import urljoin
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 
 # 合理的 User-Agent，标识采集用途
 USER_AGENT = (
@@ -99,3 +102,88 @@ def _host_of(url: str) -> str:
     from urllib.parse import urlparse
 
     return urlparse(url).netloc
+
+
+def fetch_list_page(list_url: str, article_url_pattern: str | None = None) -> list[dict[str, Any]]:
+    """解析栏目列表页，提取文章条目（标题、链接、日期）。
+
+    适用于「大汉版通」等政务 CMS 的 list.shtml 列表页结构：
+    - 文章链接通常形如 /前缀/c栏目ID/年月/哈希.shtml
+    - 标题在 <a> 内，日期可能在相邻节点或 title 中
+
+    返回条目列表，每项含 title / link / published（原始日期字符串或 None）。
+    """
+    html = fetch_url(list_url)
+    if not html:
+        return []
+
+    soup = BeautifulSoup(html, "lxml")
+    entries = []
+    seen_links = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        title = a.get_text(" ", strip=True)
+        if not title or len(title) < 6:
+            continue
+
+        # 判断是否为文章详情链接
+        if not _is_article_link(href, article_url_pattern):
+            continue
+
+        full_link = urljoin(list_url, href)
+        if full_link in seen_links:
+            continue
+        seen_links.add(full_link)
+
+        # 尝试从标题或相邻节点提取日期
+        published = _extract_date_from_node(a)
+
+        entries.append(
+            {
+                "title": title,
+                "link": full_link,
+                "summary": "",
+                "published_at": published,
+            }
+        )
+
+    return entries
+
+
+def _is_article_link(href: str, pattern: str | None) -> bool:
+    """判断链接是否为文章详情页链接。"""
+    if pattern:
+        return bool(re.search(pattern, href))
+    # 默认规则：.shtml / .html 结尾且路径较深（含栏目目录）
+    if not (href.endswith(".shtml") or href.endswith(".html")):
+        return False
+    # 排除列表页、首页、RSS 页
+    if any(k in href for k in ("list", "index", "rss", "common_list")):
+        return False
+    return True
+
+
+def _extract_date_from_node(a_tag) -> Optional[str]:
+    """从链接节点及其相邻节点提取日期字符串。"""
+    # 1. 链接自身的 title 属性
+    title_attr = a_tag.get("title", "")
+    m = re.search(r"(\d{4}-\d{1,2}-\d{1,2})", title_attr)
+    if m:
+        return m.group(1)
+
+    # 2. 父节点或相邻兄弟节点中的日期
+    # 常见结构：<li><a>标题</a><span>2026-10-16</span></li>
+    parent = a_tag.parent
+    for _ in range(3):  # 向上最多查 3 层
+        if parent is None:
+            break
+        text = parent.get_text(" ", strip=True)
+        m = re.search(r"(\d{4}[-/年]\d{1,2}[-/月]\d{1,2})", text)
+        if m:
+            # 规范化
+            d = m.group(1).replace("年", "-").replace("月", "-").replace("日", "").replace("/", "-")
+            return d
+        parent = parent.parent
+
+    return None
