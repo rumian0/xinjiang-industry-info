@@ -94,6 +94,62 @@
       "note": "要闻栏目（国家级经开区，产业园区/厂房/招商）"
     },
     {
+      "name": "伊犁哈萨克自治州-重大项目建设",
+      "url": "https://www.xjyl.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.xjyl.gov.cn/xjylz/c112851/zdlyxxgk_list.shtml",
+      "article_pattern": "/xjylz/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "yili",
+      "enabled": true,
+      "force_keep_industry": true,
+      "note": "重大项目建设栏目（纯产业专题：工业项目/产业链对接/开复工）"
+    },
+    {
+      "name": "伊犁哈萨克自治州-政务动态",
+      "url": "https://www.xjyl.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.xjyl.gov.cn/xjylz/c112425/common_list.shtml",
+      "article_pattern": "/xjylz/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "yili",
+      "enabled": true,
+      "note": "政务动态栏目（综合，含时政需过滤）"
+    },
+    {
+      "name": "喀什地区行政公署",
+      "url": "https://www.kashi.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.kashi.gov.cn/ksdqxzgs/c106681/zwdt.shtml",
+      "article_pattern": "/ksdqxzgs/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "kashen",
+      "enabled": true,
+      "note": "政务动态栏目（南疆，综合需过滤）"
+    },
+    {
+      "name": "巴音郭楞蒙古自治州人民政府",
+      "url": "https://www.xjbz.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.xjbz.gov.cn/xjbz/zwdt/zwdt.shtml",
+      "article_pattern": "/xjbz/jrbz/\\d+/[a-f0-9]+\\.shtml",
+      "region": "bayin",
+      "enabled": true,
+      "note": "政务动态/今日巴州栏目（南疆，综合需过滤）"
+    },
+    {
+      "name": "吐鲁番市人民政府",
+      "url": "https://www.tlf.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "https://www.tlf.gov.cn/tlfs/c106212/zwdt.shtml",
+      "article_pattern": "/tlfs/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "tulufan",
+      "enabled": true,
+      "note": "政务动态栏目（综合需过滤）"
+    },
+    {
       "name": "乌鲁木齐高新技术产业开发区（新市区）",
       "url": "http://www.uhdz.gov.cn/",
       "type": "government",
