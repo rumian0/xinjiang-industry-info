@@ -1,167 +1,359 @@
 ---
 // 全疆页面：新疆产业信息总入口
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ArticleCard from '../components/ArticleCard.astro';
-import FilterBar from '../components/FilterBar.astro';
+import ArticleExplorer from '../components/ArticleExplorer.astro';
 import {
-  loadArticles,
-  sourceTypes,
+  allArticles,
+  generatedAtLabel,
+  sourceNameCount,
   industryTags,
-  regionsConfig,
+  industryCounts,
+  groupCounts,
 } from '../lib/data';
 
-const articles = loadArticles();
-const latest = articles.slice(0, 6);
-const allRegions = regionsConfig;
+const base = import.meta.env.BASE_URL;
+const total = allArticles.length;
+
+const entries = [
+  { key: 'quanjang', name: '全疆', desc: '新疆产业信息总入口', href: base, count: total },
+  {
+    key: 'nanjiang',
+    name: '南疆',
+    desc: '南疆各地州产业信息',
+    href: `${base}nanjiang/`,
+    count: groupCounts.nanjiang ?? 0,
+  },
+  {
+    key: 'beijiang',
+    name: '北疆',
+    desc: '北疆各地州产业信息',
+    href: `${base}beijiang/`,
+    count: groupCounts.beijiang ?? 0,
+  },
+];
 ---
 
-<BaseLayout title="新疆产业信息聚合" activeRegion="quanjang">
+<BaseLayout title="新疆产业信息聚合 · 全域产业资讯门户" activeRegion="quanjang">
   <div class="container">
+    <!-- 首屏 -->
     <section class="hero">
-      <h1>新疆产业信息聚合</h1>
+      <p class="hero-eyebrow">XINJIANG INDUSTRY INTELLIGENCE</p>
+      <h1 class="hero-title">新疆产业信息聚合</h1>
       <p class="hero-desc">
-        聚合新疆全域产业相关的公开信息，涵盖政策、园区、企业投资、能源矿产、交通物流与农业特色产业。
+        聚合新疆全域产业相关的公开信息，覆盖政策发布、园区动态、企业投资、能源矿产、交通物流与农业特色产业，按地区与产业主题归类。
       </p>
 
-      <div class="region-entries">
-        <a class="entry entry-main" href={import.meta.env.BASE_URL}>
-          <span class="entry-name">全疆</span>
-          <span class="entry-desc">新疆产业信息总入口</span>
-        </a>
-        <a class="entry" href={`${import.meta.env.BASE_URL}nanjiang/`}>
-          <span class="entry-name">南疆</span>
-          <span class="entry-desc">南疆范围内产业信息</span>
-        </a>
-        <a class="entry" href={`${import.meta.env.BASE_URL}beijiang/`}>
-          <span class="entry-name">北疆</span>
-          <span class="entry-desc">北疆范围内产业信息</span>
-        </a>
-      </div>
+      <dl class="hero-stats">
+        <div class="stat">
+          <dt class="stat-label">收录信息</dt>
+          <dd class="stat-value">{total}<span class="stat-unit">条</span></dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-label">信息来源</dt>
+          <dd class="stat-value">{sourceNameCount}<span class="stat-unit">个</span></dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-label">覆盖地区</dt>
+          <dd class="stat-value">{groupCounts.nanjiang + groupCounts.beijiang > 0 ? '南疆 · 北疆' : '全疆'}</dd>
+        </div>
+        <div class="stat stat-wide">
+          <dt class="stat-label">数据更新</dt>
+          <dd class="stat-value stat-value-sm">{generatedAtLabel || '更新时间未知'}</dd>
+        </div>
+      </dl>
     </section>
 
-    <section class="source-types">
-      <h2 class="section-title">按信息来源类型浏览</h2>
-      <div class="source-grid">
-        {sourceTypes.map((s) => (
-          <a class="source-item" href={`${import.meta.env.BASE_URL}#source-${s.code}`}>
-            {s.name}
+    <!-- 地区入口 -->
+    <section class="region-entries" aria-label="按地区浏览">
+      {
+        entries.map((e) => (
+          <a href={e.href} class:list={['entry', { 'entry-main': e.key === 'quanjang' }]}>
+            <span class="entry-top">
+              <span class="entry-name">{e.name}</span>
+              <span class="entry-count">{e.count}</span>
+            </span>
+            <span class="entry-desc">{e.desc}</span>
+            <span class="entry-arrow" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </span>
           </a>
-        ))}
+        ))
+      }
+    </section>
+
+    <!-- 产业主题入口 -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">按产业主题浏览</h2>
+        <span class="section-hint">点击主题可直接筛选相关信息</span>
+      </div>
+
+      <div class="topic-grid">
+        {
+          industryTags.map((t) => (
+            <a class="topic" href={`${base}?industry=${t.code}#browse`}>
+              <span class="topic-name">{t.name}</span>
+              <span class="topic-count">{industryCounts[t.code] ?? 0} 条</span>
+            </a>
+          ))
+        }
       </div>
     </section>
 
-    <section class="latest">
-      <h2 class="section-title">最新产业信息</h2>
-      {latest.length > 0 ? (
-        <div class="article-list">
-          {latest.map((a) => <ArticleCard article={a} />)}
-        </div>
-      ) : (
-        <div class="empty">
-          <p>暂无采集数据。待采集程序运行后，此处将展示最新产业信息。</p>
-        </div>
-      )}
-    </section>
+    <!-- 信息检索 -->
+    <section class="section" id="browse">
+      <div class="section-head">
+        <h2 class="section-title">产业信息</h2>
+        <span class="section-hint">已按发布时间排序，支持关键词搜索与多维筛选</span>
+      </div>
 
-    <section class="filters">
-      <h2 class="section-title">筛选与检索</h2>
-      <FilterBar
-        articles={articles}
-        regionGroup="quanjang"
-        sourceTypes={sourceTypes}
-        industryTags={industryTags}
-        regions={allRegions}
-      />
+      <ArticleExplorer articles={allArticles} regionGroup="quanjang" pageSize={12} />
     </section>
   </div>
 </BaseLayout>
 
 <style>
+  /* --- 首屏 --- */
   .hero {
-    padding: 40px 0 8px;
+    padding: 52px 0 8px;
   }
-  .hero h1 {
-    font-size: 30px;
-    margin: 0 0 12px;
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: var(--c-accent);
+    margin-bottom: 14px;
+  }
+  .hero-title {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    color: var(--c-text);
   }
   .hero-desc {
+    max-width: 660px;
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.8;
     color: var(--c-text-secondary);
-    max-width: 640px;
-    margin: 0 0 20px;
   }
+
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 30px 0 0;
+    padding: 18px 0;
+    border-top: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+  }
+  .stat {
+    padding: 0 32px;
+    border-right: 1px solid var(--c-border);
+  }
+  .stat:first-child {
+    padding-left: 0;
+  }
+  .stat:last-child {
+    border-right: 0;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--c-text-muted);
+    margin-bottom: 4px;
+  }
+  .stat-value {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 680;
+    letter-spacing: -0.02em;
+    color: var(--c-text);
+    line-height: 1.2;
+  }
+  .stat-value-sm {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 5px;
+    color: var(--c-text-secondary);
+  }
+  .stat-unit {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    margin-left: 3px;
+  }
+
+  /* --- 地区入口 --- */
   .region-entries {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    margin-bottom: 32px;
+    margin-top: 32px;
   }
   .entry {
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    gap: 6px;
+    padding: 18px 20px;
     border: 1px solid var(--c-border);
-    border-radius: var(--radius);
-    text-decoration: none;
+    border-radius: var(--radius-lg);
+    background: var(--c-surface);
     color: var(--c-text);
-    background: var(--c-bg);
-    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+    transition: border-color 0.15s ease, background 0.15s ease;
   }
   .entry:hover {
-    border-color: var(--c-primary);
-    box-shadow: var(--shadow-md);
+    border-color: var(--c-primary-line);
+    background: var(--c-surface-hover);
     text-decoration: none;
+    color: var(--c-text);
   }
   .entry-main {
-    background: var(--c-primary-soft);
-    border-color: var(--c-primary);
+    background: var(--c-primary-solid);
+    border-color: var(--c-primary-solid);
+    color: #fff;
+  }
+  .entry-main:hover {
+    background: var(--c-primary-solid-hover);
+    border-color: var(--c-primary-solid-hover);
+    color: #fff;
+  }
+  .entry-top {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
   }
   .entry-name {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 650;
+  }
+  .entry-count {
+    font-size: 12.5px;
+    color: inherit;
+    opacity: 0.6;
   }
   .entry-desc {
+    font-size: 12.5px;
+    color: var(--c-text-muted);
+  }
+  .entry-main .entry-desc {
+    color: rgba(255, 255, 255, 0.72);
+  }
+  .entry-arrow {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .entry:hover .entry-arrow {
+    opacity: 0.8;
+    transform: none;
+  }
+
+  .section-more {
     font-size: 13px;
     color: var(--c-text-muted);
   }
-  .section-title {
-    font-size: 20px;
-    margin: 28px 0 14px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--c-primary);
-    display: inline-block;
-  }
-  .source-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .source-item {
-    padding: 8px 16px;
-    border: 1px solid var(--c-border);
-    border-radius: 999px;
-    font-size: 14px;
-    color: var(--c-text-secondary);
-    text-decoration: none;
-  }
-  .source-item:hover {
-    border-color: var(--c-primary);
+  .section-more:hover {
     color: var(--c-primary);
     text-decoration: none;
   }
-  .article-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+
+  /* --- 产业主题 --- */
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
   }
-  .empty {
-    text-align: center;
-    padding: 32px 0;
+  .topic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px 16px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    color: var(--c-text);
+    font-size: 14px;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+  }
+  .topic:hover {
+    border-color: var(--c-accent);
+    background: var(--c-accent-soft);
+    color: var(--c-accent);
+    text-decoration: none;
+  }
+  .topic-name {
+    font-weight: 550;
+  }
+  .topic-count {
+    font-size: 12px;
     color: var(--c-text-muted);
+    flex: none;
+  }
+  .topic:hover .topic-count {
+    color: var(--c-accent);
   }
 
-  @media (max-width: 640px) {
+  /* --- 响应式 --- */
+  @media (max-width: 900px) {
+    .topic-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 720px) {
+    .hero {
+      padding: 34px 0 4px;
+    }
+    .hero-title {
+      font-size: 27px;
+    }
+    .hero-desc {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .hero-stats {
+      margin-top: 22px;
+      padding: 14px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px 0;
+    }
+    .stat {
+      padding: 0 16px;
+    }
+    .stat:nth-child(odd) {
+      padding-left: 0;
+    }
+    .stat:nth-child(2) {
+      border-right: 0;
+    }
+    .stat-value {
+      font-size: 20px;
+    }
+    .stat-value-sm {
+      font-size: 14px;
+    }
     .region-entries {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+      margin-top: 22px;
+    }
+    .entry {
+      padding: 14px 16px;
+    }
+    .topic-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .topic {
+      padding: 12px 14px;
     }
   }
 </style>

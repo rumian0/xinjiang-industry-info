@@ -33,16 +33,64 @@ xinjiang-industry-info/
 │   ├── articles.json    # 正式数据（采集结果）
 │   └── test-articles.json # 测试数据（明确标记，不混入正式数据）
 ├── website/             # Astro 网站项目
+│   └── src/
+│       ├── pages/
+│       │   ├── index.astro        # 全疆
+│       │   ├── nanjiang.astro     # 南疆
+│       │   ├── beijiang.astro     # 北疆
+│       │   └── article/[id].astro # 信息详情页（按 id 静态生成）
+│       ├── components/
+│       │   ├── RegionPage.astro   # 南疆/北疆共用页面组件
+│       │   ├── ArticleExplorer.astro # 搜索 + 筛选 + 排序 + 分页
+│       │   └── ArticleCard.astro  # 信息卡片
+│       ├── layouts/BaseLayout.astro # 导航、页脚、主题切换
+│       ├── lib/data.ts            # 数据加载、排序、索引、统计
+│       └── styles/global.css      # 设计系统（明暗双主题）
 └── requirements.txt     # Python 依赖
 ```
 
-## 三个页面
+## 页面与功能
 
-- **全疆**（`/`）：新疆产业信息总入口
+### 页面
+
+- **全疆**（`/`）：产业信息总入口，含统计概览、地区入口、产业主题入口与全量信息检索
 - **南疆**（`/nanjiang/`）：南疆范围内产业信息
 - **北疆**（`/beijiang/`）：北疆范围内产业信息
+- **详情页**（`/article/{id}/`）：单条信息详情，构建期静态生成
 
-南疆、北疆页面复用统一的 `RegionPage` 组件，仅通过 `regionGroup` 参数区分。
+南疆、北疆页面复用统一的 `RegionPage` 组件，仅通过 `regionGroup` 参数区分，视觉与交互完全一致。
+
+### 检索与筛选
+
+信息列表支持以下能力，全部为纯前端实现，无后端依赖：
+
+| 能力 | 说明 |
+| --- | --- |
+| 关键词搜索 | 匹配标题、摘要、来源名称、地区名称，中文可用 |
+| 地区筛选 | 选项根据当前页面实际有数据的地区动态生成 |
+| 来源筛选 | 按 `config/source_types.json` 的六大来源类型 |
+| 产业筛选 | 按 `config/categories.json` 的六大产业主题 |
+| 时间筛选 | 全部 / 最近 24 小时 / 7 天 / 30 天 |
+| 排序 | 最新发布（默认）/ 最新采集 |
+| 重置 | 一键清空全部筛选条件 |
+| 分页 | 首批 20 条（首页 12 条），「加载更多」按批追加 |
+| 链接直达 | 支持 `?industry=energy`、`?source=government`、`?region=yili`、`?time=7`、`?q=喀什` 参数 |
+
+### 实现要点
+
+- **首屏服务端渲染**：首批卡片在构建期生成，无需等待 JS 即可看到内容，同时利于 SEO。
+- **交互脚本外置**：数据通过 `<script type="application/json">` 注入，交互脚本为普通 `<script>`，由 Vite 正常编译。
+  - 历史 bug 记录：旧版使用 `define:vars`，Astro 会转为 `is:inline` 并跳过 TypeScript 编译，导致 `querySelector<T>()`、`as HTMLElement` 等类型语法直接输出到浏览器，脚本抛错后完全不执行，列表恒为空（表现为「共 0 条信息」）。现已彻底避免。
+- **零前端框架**：未引入 React/Vue 等运行时，构建产物 JS 约 6KB。
+- **明暗双主题**：跟随系统偏好，支持手动切换并记忆；暗色主题重新定义背景、文字、边界层次，而非简单反色。
+- **时区安全**：数据更新时间按固定 UTC+8 格式化，不受构建机器时区影响（GitHub Actions 运行在 UTC）。
+
+### 数据处理约定
+
+- `published_at` 为**原文发布时间**，缺失时显示「时间待确认」，绝不以采集时间冒充。
+- 时间筛选仅作用于有发布时间的条目，并在结果栏提示被排除的数量。
+- 摘要字段为空时不渲染空壳，详情页明确提示「未获取到摘要」并引导阅读原文。
+- 地区归属完全由 `config/regions.json` 驱动，无法确定的保持「待确认」。
 
 ## 地区划分说明
 

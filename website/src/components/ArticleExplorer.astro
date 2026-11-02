@@ -1,0 +1,908 @@
+---
+// 信息浏览器：搜索 + 时间 / 地区 / 来源 / 产业筛选 + 排序 + 分页
+//
+// 关键实现说明（修复历史 bug）：
+// 旧版使用 `<script define:vars={...}>`，Astro 会将其转为 is:inline 并跳过 TypeScript
+// 编译，导致 `querySelector<T>()`、`as HTMLElement`、`(a: any)` 等类型语法被原样输出到
+// 浏览器，脚本抛语法错误后完全不执行，列表永远是空的（表现为「共 0 条信息」）。
+//
+// 现方案：
+// 1. 数据以 `<script type="application/json">` 注入，不参与 JS 编译；
+// 2. 交互脚本为普通 `<script>`，交由 Vite 正常编译（TypeScript 可用）；
+// 3. 首批卡片在构建期服务端渲染，首屏无需等待 JS。
+import ArticleCard from './ArticleCard.astro';
+import type { Article } from '../types';
+import {
+  sourceTypes,
+  industryTags,
+  regionsConfig,
+  sourceTypeMap,
+  industryTagMap,
+  regionMap,
+  regionGroupMap,
+} from '../lib/data';
+
+interface Props {
+  /** 该页面范围内的全部信息（已按发布时间排序） */
+  articles: Article[];
+  regionGroup: 'quanjang' | 'nanjiang' | 'beijiang';
+  /** 单批渲染条数 */
+  pageSize?: number;
+}
+
+const { articles, regionGroup, pageSize = 20 } = Astro.props;
+
+// 只列出该范围内实际有数据的筛选项，避免出现点了没结果的空选项
+const presentRegions = new Set(
+  articles.map((a) => a.region).filter((r): r is string => Boolean(r)),
+);
+const regionOptions = regionsConfig
+  .filter((r) => presentRegions.has(r.code))
+  .map((r) => ({ code: r.code, name: r.name }));
+
+const presentSources = sourceTypes.filter((s) =>
+  articles.some((a) => a.source_type === s.code),
+);
+const presentIndustries = industryTags.filter((t) =>
+  articles.some((a) => a.industry_tags.includes(t.code)),
+);
+
+// 客户端只需要精简字段，减小注入体积
+const payload = {
+  articles: articles.map((a) => ({
+    id: a.id,
+    title: a.title,
+    summary: a.summary || '',
+    source_type: a.source_type,
+    source_name: a.source_name,
+    source_url: a.source_url,
+    published_at: a.published_at,
+    collected_at: a.collected_at,
+    region: a.region,
+    industry_tags: a.industry_tags,
+    is_test: Boolean(a.is_test),
+  })),
+  maps: {
+    source: sourceTypeMap,
+    industry: industryTagMap,
+    region: regionMap,
+    group: regionGroupMap,
+  },
+  pageSize,
+  base: import.meta.env.BASE_URL,
+};
+
+// 转义 `<`，防止数据中出现 </script> 截断脚本块
+const payloadJson = JSON.stringify(payload).replace(/</g, '\\u003c');
+
+// 首屏服务端渲染首批
+const initial = articles.slice(0, pageSize);
+const showRegionFilter = regionOptions.length > 1;
+const showSourceFilter = presentSources.length > 1;
+const showIndustryFilter = presentIndustries.length > 1;
+---
+
+<section class="explorer" data-explorer data-group={regionGroup}>
+  <div class="explorer-toolbar">
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="9" cy="9" r="6" />
+        <path d="m13.5 13.5 3 3" />
+      </svg>
+      <input
+        type="search"
+        data-search
+        placeholder="搜索标题、摘要、来源…"
+        aria-label="搜索信息"
+        autocomplete="off"
+      />
+      <button type="button" class="search-clear" data-search-clear hidden aria-label="清除搜索">
+        <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 4l8 8M12 4l-8 8" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="toolbar-right">
+      <div class="sort-wrap">
+        <label class="visually-hidden" for="sort-select">排序方式</label>
+        <select id="sort-select" data-sort>
+          <option value="published">最新发布</option>
+          <option value="collected">最新采集</option>
+        </select>
+        <svg class="sort-arrow" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m3 4.5 3 3 3-3" />
+        </svg>
+      </div>
+
+      <button
+        type="button"
+        class="filter-toggle"
+        data-filter-toggle
+        aria-expanded="false"
+        aria-controls="explorer-side"
+      >
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+          <path d="M2 4h12M4.5 8h7M6.5 12h3" />
+        </svg>
+        筛选
+        <span class="filter-badge" data-filter-badge hidden>0</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="explorer-body">
+    <aside class="explorer-side" id="explorer-side" data-side>
+      <div class="side-inner">
+        <div class="side-block">
+          <div class="side-title">发布时间</div>
+          <div class="side-opts" data-group="time" role="group" aria-label="发布时间筛选">
+            <button type="button" class="opt active" data-value="all">全部时间</button>
+            <button type="button" class="opt" data-value="1">最近 24 小时</button>
+            <button type="button" class="opt" data-value="7">最近 7 天</button>
+            <button type="button" class="opt" data-value="30">最近 30 天</button>
+          </div>
+        </div>
+
+        {
+          showRegionFilter && (
+            <div class="side-block">
+              <div class="side-title">地区</div>
+              <div class="side-opts" data-group="region" role="group" aria-label="地区筛选">
+                <button type="button" class="opt active" data-value="">全部地区</button>
+                {regionOptions.map((r) => (
+                  <button type="button" class="opt" data-value={r.code}>{r.name}</button>
+                ))}
+              </div>
+            </div>
+          )
+        }
+
+        {
+          showSourceFilter && (
+            <div class="side-block">
+              <div class="side-title">信息来源</div>
+              <div class="side-opts" data-group="source" role="group" aria-label="来源筛选">
+                <button type="button" class="opt active" data-value="">全部来源</button>
+                {presentSources.map((s) => (
+                  <button type="button" class="opt" data-value={s.code}>{s.name}</button>
+                ))}
+              </div>
+            </div>
+          )
+        }
+
+        {
+          showIndustryFilter && (
+            <div class="side-block">
+              <div class="side-title">产业主题</div>
+              <div class="side-opts" data-group="industry" role="group" aria-label="产业主题筛选">
+                <button type="button" class="opt active" data-value="">全部主题</button>
+                {presentIndustries.map((t) => (
+                  <button type="button" class="opt" data-value={t.code}>{t.name}</button>
+                ))}
+              </div>
+            </div>
+          )
+        }
+
+        <button type="button" class="reset-btn" data-reset>清空全部筛选</button>
+      </div>
+    </aside>
+
+    <div class="explorer-main">
+      <div class="explorer-bar">
+        <span class="result-count" data-count>共 {articles.length} 条信息</span>
+        <span class="result-note" data-note></span>
+      </div>
+
+      <div class="explorer-list" data-list>
+        {initial.map((a) => <ArticleCard article={a} />)}
+      </div>
+
+      <div class="empty" data-empty hidden>
+        <strong>没有符合条件的信息</strong>
+        <p>试试放宽筛选条件，或清空全部筛选重新浏览。</p>
+        <button type="button" class="reset-inline" data-reset-inline>清空全部筛选</button>
+      </div>
+
+      <div class="explorer-more">
+        <button type="button" class="more-btn" data-more hidden>加载更多</button>
+        <span class="more-info" data-more-info></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="explorer-data" is:inline set:html={payloadJson}></script>
+
+<script>
+  interface Item {
+    id: string;
+    title: string;
+    summary: string;
+    source_type: string;
+    source_name: string;
+    source_url: string;
+    published_at: string | null;
+    collected_at: string;
+    region: string | null;
+    industry_tags: string[];
+    is_test: boolean;
+  }
+
+  interface Payload {
+    articles: Item[];
+    maps: {
+      source: Record<string, string>;
+      industry: Record<string, string>;
+      region: Record<string, string>;
+      group: Record<string, string>;
+    };
+    pageSize: number;
+    base: string;
+  }
+
+  const root = document.querySelector<HTMLElement>('[data-explorer]');
+  const dataEl = document.getElementById('explorer-data');
+
+  if (root && dataEl?.textContent) {
+    const DATA: Payload = JSON.parse(dataEl.textContent);
+    const { maps, pageSize, base } = DATA;
+
+    const listEl = root.querySelector<HTMLElement>('[data-list]');
+    const emptyEl = root.querySelector<HTMLElement>('[data-empty]');
+    const countEl = root.querySelector<HTMLElement>('[data-count]');
+    const noteEl = root.querySelector<HTMLElement>('[data-note]');
+    const moreBtn = root.querySelector<HTMLButtonElement>('[data-more]');
+    const moreInfo = root.querySelector<HTMLElement>('[data-more-info]');
+    const searchEl = root.querySelector<HTMLInputElement>('[data-search]');
+    const searchClear = root.querySelector<HTMLElement>('[data-search-clear]');
+    const sortEl = root.querySelector<HTMLSelectElement>('[data-sort]');
+    const sideEl = root.querySelector<HTMLElement>('[data-side]');
+    const filterToggle = root.querySelector<HTMLButtonElement>('[data-filter-toggle]');
+    const filterBadge = root.querySelector<HTMLElement>('[data-filter-badge]');
+    const resetInline = root.querySelector<HTMLElement>('[data-reset-inline]');
+
+    const state = {
+      region: '',
+      source: '',
+      industry: '',
+      time: 'all',
+      sort: 'published',
+      q: '',
+    };
+
+    let matched: Item[] = [];
+    let shown = 0;
+
+    /* ---------- 工具 ---------- */
+
+    const esc = (s: string): string =>
+      s.replace(/[&<>"']/g, (c) =>
+        c === '&' ? '&amp;' : c === '<' ? '&lt;' : c === '>' ? '&gt;' : c === '"' ? '&quot;' : '&#39;',
+      );
+
+    const dateTs = (iso: string | null): number | null => {
+      if (!iso) return null;
+      const t = Date.parse(iso);
+      return Number.isNaN(t) ? null : t;
+    };
+
+    const fmtDate = (iso: string | null): string => {
+      if (!iso) return '时间待确认';
+      if (/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso;
+      const t = dateTs(iso);
+      return t === null ? '时间待确认' : new Date(t).toISOString().slice(0, 10);
+    };
+
+    const fold = (s: string): string => s.toLowerCase();
+
+    const haystack = (a: Item): string =>
+      fold(`${a.title} ${a.summary} ${a.source_name} ${maps.region[a.region ?? ''] ?? ''}`);
+
+    /* ---------- 卡片模板（与服务端 ArticleCard 结构一致） ---------- */
+
+    const originIcon =
+      '<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 2H2v8h8V7.5"/><path d="M7 2h3v3M10 2 5.5 6.5"/></svg>';
+
+    function cardHtml(a: Item): string {
+      const tags = a.industry_tags
+        .slice(0, 3)
+        .map((t) => `<li class="chip">${esc(maps.industry[t] ?? t)}</li>`);
+      const rest = a.industry_tags.length - 3;
+      if (rest > 0) tags.push(`<li class="chip chip-more">+${rest}</li>`);
+
+      const summary = (a.summary || '').trim();
+      const regionLabel = a.region ? (maps.region[a.region] ?? a.region) : '全区性';
+      const testTag = a.is_test ? '<span class="tag tag-warn">测试数据</span>' : '';
+
+      return (
+        '<article class="article-card">' +
+        '<div class="ac-head">' +
+        `<span class="tag tag-source">${esc(maps.source[a.source_type] ?? a.source_type)}</span>` +
+        `<span class="tag">${esc(regionLabel)}</span>` +
+        testTag +
+        '</div>' +
+        `<h3 class="ac-title"><a href="${base}article/${esc(a.id)}/">${esc(a.title)}</a></h3>` +
+        (summary ? `<p class="ac-summary">${esc(summary)}</p>` : '') +
+        (tags.length ? `<ul class="ac-tags">${tags.join('')}</ul>` : '') +
+        '<div class="ac-foot">' +
+        '<div class="ac-meta">' +
+        `<span class="ac-source">${esc(a.source_name)}</span>` +
+        '<span class="meta-dot" aria-hidden="true"></span>' +
+        `<time${a.published_at ? ` datetime="${esc(a.published_at)}"` : ''}>${esc(fmtDate(a.published_at))}</time>` +
+        '</div>' +
+        `<a class="ac-origin" href="${esc(a.source_url)}" target="_blank" rel="noopener noreferrer">原文${originIcon}</a>` +
+        '</div>' +
+        '</article>'
+      );
+    }
+
+    /* ---------- 筛选与排序 ---------- */
+
+    function compute(): Item[] {
+      const q = fold(state.q.trim());
+      const now = Date.now();
+      let out = DATA.articles;
+
+      if (state.region) out = out.filter((a) => a.region === state.region);
+      if (state.source) out = out.filter((a) => a.source_type === state.source);
+      if (state.industry) out = out.filter((a) => a.industry_tags.includes(state.industry));
+      if (q) out = out.filter((a) => haystack(a).includes(q));
+
+      if (state.time !== 'all') {
+        const days = Number(state.time);
+        const cutoff = now - days * 86400000;
+        // 无发布时间的条目不参与时间筛选（不拿采集时间冒充发布时间）
+        out = out.filter((a) => {
+          const t = dateTs(a.published_at);
+          return t !== null && t >= cutoff;
+        });
+      }
+
+      const sorted = [...out];
+      if (state.sort === 'collected') {
+        sorted.sort((a, b) => (dateTs(b.collected_at) ?? 0) - (dateTs(a.collected_at) ?? 0));
+      } else {
+        sorted.sort((a, b) => {
+          const ta = dateTs(a.published_at);
+          const tb = dateTs(b.published_at);
+          if (ta === null && tb === null) {
+            return (dateTs(b.collected_at) ?? 0) - (dateTs(a.collected_at) ?? 0);
+          }
+          if (ta === null) return 1;
+          if (tb === null) return -1;
+          if (tb !== ta) return tb - ta;
+          return (dateTs(b.collected_at) ?? 0) - (dateTs(a.collected_at) ?? 0);
+        });
+      }
+      return sorted;
+    }
+
+    /* ---------- 渲染 ---------- */
+
+    function updateCounters() {
+      if (countEl) countEl.textContent = `共 ${matched.length} 条信息`;
+
+      if (noteEl) {
+        if (state.time !== 'all') {
+          const skipped = DATA.articles.filter(
+            (a) => a.published_at === null && (!state.region || a.region === state.region),
+          ).length;
+          noteEl.textContent = skipped > 0 ? `${skipped} 条无发布时间的信息未纳入时间筛选` : '';
+        } else {
+          noteEl.textContent = '';
+        }
+      }
+
+      if (moreInfo) {
+        moreInfo.textContent =
+          matched.length > 0 ? `已显示 ${Math.min(shown, matched.length)} / ${matched.length} 条` : '';
+      }
+
+      if (moreBtn) moreBtn.hidden = shown >= matched.length;
+    }
+
+    function paint(reset: boolean) {
+      if (!listEl || !emptyEl) return;
+
+      if (reset) {
+        matched = compute();
+        shown = 0;
+        listEl.innerHTML = '';
+      }
+
+      const next = matched.slice(shown, shown + pageSize);
+      shown += next.length;
+
+      if (next.length > 0) {
+        listEl.insertAdjacentHTML('beforeend', next.map(cardHtml).join(''));
+      }
+
+      emptyEl.hidden = matched.length > 0;
+      updateCounters();
+    }
+
+    function resetFilters() {
+      state.region = '';
+      state.source = '';
+      state.industry = '';
+      state.time = 'all';
+      state.sort = 'published';
+      state.q = '';
+      if (searchEl) searchEl.value = '';
+      if (sortEl) sortEl.value = 'published';
+      if (searchClear) searchClear.hidden = true;
+
+      root?.querySelectorAll<HTMLElement>('[data-group]').forEach((group) => {
+        group.querySelectorAll<HTMLElement>('.opt').forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.value === '' || btn.dataset.value === 'all');
+          btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
+        });
+      });
+
+      syncBadge();
+      paint(true);
+    }
+
+    function syncBadge() {
+      const n =
+        (state.region ? 1 : 0) +
+        (state.source ? 1 : 0) +
+        (state.industry ? 1 : 0) +
+        (state.time !== 'all' ? 1 : 0);
+      if (filterBadge) {
+        filterBadge.textContent = String(n);
+        filterBadge.hidden = n === 0;
+      }
+    }
+
+    /* ---------- 事件绑定 ---------- */
+
+    root.querySelectorAll<HTMLElement>('[data-group]').forEach((group) => {
+      const key = group.dataset.group as 'time' | 'region' | 'source' | 'industry' | undefined;
+      if (!key) return;
+
+      group.querySelectorAll<HTMLElement>('.opt').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          group.querySelectorAll<HTMLElement>('.opt').forEach((b) => {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-pressed', 'true');
+
+          const raw = btn.dataset.value ?? '';
+          if (key === 'time') state.time = raw || 'all';
+          else state[key] = raw;
+
+          syncBadge();
+          paint(true);
+        });
+      });
+    });
+
+    let debounce: number | undefined;
+    searchEl?.addEventListener('input', () => {
+      const value = searchEl.value;
+      if (searchClear) searchClear.hidden = value.length === 0;
+      window.clearTimeout(debounce);
+      debounce = window.setTimeout(() => {
+        state.q = value;
+        paint(true);
+      }, 180);
+    });
+
+    searchClear?.addEventListener('click', () => {
+      if (!searchEl) return;
+      searchEl.value = '';
+      state.q = '';
+      if (searchClear) searchClear.hidden = true;
+      paint(true);
+      searchEl.focus();
+    });
+
+    sortEl?.addEventListener('change', () => {
+      state.sort = sortEl.value === 'collected' ? 'collected' : 'published';
+      paint(true);
+    });
+
+    filterToggle?.addEventListener('click', () => {
+      const open = sideEl?.classList.toggle('is-open') ?? false;
+      filterToggle.setAttribute('aria-expanded', String(open));
+    });
+
+    root.querySelectorAll<HTMLElement>('[data-reset], [data-reset-inline]').forEach((btn) => {
+      btn.addEventListener('click', resetFilters);
+    });
+
+    moreBtn?.addEventListener('click', () => paint(false));
+
+    /* ---------- 初始化 ---------- */
+
+    /** 激活某一组中指定值的按钮 */
+    function activate(groupKey: string, value: string): boolean {
+      const group = root?.querySelector<HTMLElement>(`[data-group="${groupKey}"]`);
+      if (!group) return false;
+      const buttons = Array.from(group.querySelectorAll<HTMLElement>('.opt'));
+      const target = buttons.find((b) => b.dataset.value === value);
+      if (!target) return false;
+      buttons.forEach((b) => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      target.classList.add('active');
+      target.setAttribute('aria-pressed', 'true');
+      return true;
+    }
+
+    /** 从 URL 查询参数恢复筛选（站内跳转与分享链接可用） */
+    function restoreFromUrl(): boolean {
+      let changed = false;
+      const p = new URLSearchParams(window.location.search);
+
+      const ind = p.get('industry');
+      if (ind && DATA.articles.some((a) => a.industry_tags.includes(ind)) && activate('industry', ind)) {
+        state.industry = ind;
+        changed = true;
+      }
+      const src = p.get('source');
+      if (src && DATA.articles.some((a) => a.source_type === src) && activate('source', src)) {
+        state.source = src;
+        changed = true;
+      }
+      const reg = p.get('region');
+      if (reg && DATA.articles.some((a) => a.region === reg) && activate('region', reg)) {
+        state.region = reg;
+        changed = true;
+      }
+      const time = p.get('time');
+      if (time && ['1', '7', '30'].includes(time) && activate('time', time)) {
+        state.time = time;
+        changed = true;
+      }
+      const q = p.get('q');
+      if (q) {
+        state.q = q;
+        if (searchEl) {
+          searchEl.value = q;
+          if (searchClear) searchClear.hidden = false;
+        }
+        changed = true;
+      }
+      return changed;
+    }
+
+    // 服务端已渲染首批，先同步初始状态
+    matched = DATA.articles;
+    shown = Math.min(pageSize, DATA.articles.length);
+    root.querySelectorAll<HTMLElement>('[data-group] .opt.active').forEach((b) =>
+      b.setAttribute('aria-pressed', 'true'),
+    );
+
+    if (restoreFromUrl()) {
+      syncBadge();
+      paint(true);
+    } else {
+      updateCounters();
+      syncBadge();
+    }
+
+    // 桌面端筛选栏常显，移动端默认收起
+    if (sideEl && window.matchMedia('(min-width: 861px)').matches) {
+      sideEl.classList.add('is-open');
+    }
+  }
+</script>
+
+<style>
+  .explorer {
+    margin-top: 8px;
+  }
+
+  /* --- 工具栏 --- */
+  .explorer-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+  .search-icon {
+    position: absolute;
+    left: 13px;
+    color: var(--c-text-muted);
+    pointer-events: none;
+  }
+  .search-box input {
+    width: 100%;
+    height: 42px;
+    padding: 0 40px 0 38px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    color: var(--c-text);
+    font-size: 14px;
+    transition: border-color 0.14s ease, box-shadow 0.14s ease;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .search-box input::placeholder {
+    color: var(--c-text-muted);
+  }
+  .search-box input:focus {
+    outline: none;
+    border-color: var(--c-primary);
+    box-shadow: 0 0 0 3px var(--c-primary-soft);
+  }
+  .search-box input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  .search-clear {
+    position: absolute;
+    right: 8px;
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--c-bg-sunken);
+    color: var(--c-text-muted);
+  }
+  .search-clear:hover {
+    color: var(--c-text);
+  }
+
+  .toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: none;
+  }
+
+  .sort-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .sort-wrap select {
+    height: 42px;
+    padding: 0 30px 0 13px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+    font-size: 13.5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .sort-wrap select:focus {
+    outline: none;
+    border-color: var(--c-primary);
+  }
+  .sort-arrow {
+    position: absolute;
+    right: 11px;
+    color: var(--c-text-muted);
+    pointer-events: none;
+  }
+
+  .filter-toggle {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    height: 42px;
+    padding: 0 14px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+    font-size: 13.5px;
+  }
+  .filter-badge {
+    display: inline-grid;
+    place-items: center;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 999px;
+    background: var(--c-accent-solid);
+    color: #fff;
+    font-size: 10.5px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  /* --- 主体两栏 --- */
+  .explorer-body {
+    display: grid;
+    grid-template-columns: 218px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+  }
+
+  /* --- 侧栏筛选 --- */
+  .explorer-side {
+    position: sticky;
+    top: calc(var(--header-h) + 18px);
+  }
+  .side-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .side-title {
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: 0.04em;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+  }
+  .side-opts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .opt {
+    padding: 5px 10px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-sm);
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+    font-size: 12.5px;
+    line-height: 1.5;
+    transition: color 0.13s ease, border-color 0.13s ease, background 0.13s ease;
+  }
+  .opt:hover {
+    border-color: var(--c-border-strong);
+    color: var(--c-text);
+  }
+  .opt.active {
+    background: var(--c-primary-solid);
+    border-color: var(--c-primary-solid);
+    color: #fff;
+  }
+
+  .reset-btn {
+    align-self: flex-start;
+    padding: 6px 0;
+    border: 0;
+    background: none;
+    color: var(--c-text-muted);
+    font-size: 12.5px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--c-border-strong);
+  }
+  .reset-btn:hover {
+    color: var(--c-danger);
+  }
+
+  /* --- 结果区 --- */
+  .explorer-main {
+    min-width: 0;
+  }
+  .explorer-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .result-count {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--c-text-secondary);
+  }
+  .result-note {
+    font-size: 12px;
+    color: var(--c-text-muted);
+    text-align: right;
+  }
+
+  .explorer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .explorer-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 26px 0 4px;
+  }
+  .more-btn {
+    padding: 10px 28px;
+    border: 1px solid var(--c-border-strong);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+    font-size: 13.5px;
+    font-weight: 550;
+    transition: color 0.14s ease, border-color 0.14s ease, background 0.14s ease;
+  }
+  .more-btn:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+    background: var(--c-primary-soft);
+  }
+  .more-info {
+    font-size: 12px;
+    color: var(--c-text-muted);
+  }
+
+  .reset-inline {
+    margin-top: 14px;
+    padding: 7px 18px;
+    border: 1px solid var(--c-border-strong);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+    font-size: 13px;
+  }
+  .reset-inline:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+  }
+
+  /* --- 移动端：侧栏变抽屉 --- */
+  @media (max-width: 860px) {
+    .explorer-toolbar {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .search-box {
+      flex: 1 1 100%;
+    }
+    .toolbar-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .filter-toggle {
+      display: inline-flex;
+      margin-left: auto;
+    }
+    .explorer-body {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+    .explorer-side {
+      position: static;
+      display: none;
+      padding: 16px;
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius-lg);
+      background: var(--c-bg-soft);
+    }
+    .explorer-side.is-open {
+      display: block;
+    }
+    .side-inner {
+      gap: 18px;
+    }
+    .explorer-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .result-note {
+      text-align: left;
+    }
+  }
+</style>

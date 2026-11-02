@@ -1,0 +1,364 @@
+---
+// 信息详情页：构建期按文章 id 静态生成
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import {
+  allArticles,
+  sourceTypeName,
+  regionName,
+  industryTagName,
+  regionGroupName,
+  formatPublished,
+  formatBeijingTime,
+  generatedAtLabel,
+} from '../../lib/data';
+import type { Article } from '../../types';
+
+export async function getStaticPaths() {
+  return allArticles.map((article) => ({
+    params: { id: article.id },
+    props: { article },
+  }));
+}
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const groupHref =
+  article.region_group === 'nanjiang'
+    ? `${base}nanjiang/`
+    : article.region_group === 'beijiang'
+      ? `${base}beijiang/`
+      : base;
+
+const summary = (article.summary || '').trim();
+const published = formatPublished(article.published_at);
+const collectedLabel = formatBeijingTime(article.collected_at);
+
+// 原文域名，用于展示来源站点（URL 异常时不渲染，避免构建中断）
+let originHost = '';
+try {
+  originHost = new URL(article.source_url).hostname;
+} catch {
+  originHost = '';
+}
+
+// 同分组相关阅读（排除当前文章，取最新 3 条）
+const related = allArticles
+  .filter((a) => a.id !== article.id && a.region_group === article.region_group)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title={`${article.title} - 新疆产业信息聚合`}
+  description={summary || `${article.source_name} 发布的产业相关信息`}
+  activeRegion="article"
+>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href={base}>全疆</a>
+      <span class="crumb-sep" aria-hidden="true">/</span>
+      {
+        article.region_group !== 'quanjang' && (
+          <>
+            <a href={groupHref}>{regionGroupName(article.region_group)}</a>
+            <span class="crumb-sep" aria-hidden="true">/</span>
+          </>
+        )
+      }
+      <span class="crumb-current">正文</span>
+    </nav>
+
+    <article class="detail">
+      <header class="detail-head">
+        <div class="detail-tags">
+          <span class="tag tag-source">{sourceTypeName(article.source_type)}</span>
+          <span class="tag">{regionName(article.region)}</span>
+          {article.is_test && <span class="tag tag-warn">测试数据</span>}
+        </div>
+
+        <h1 class="detail-title">{article.title}</h1>
+
+        <div class="detail-meta">
+          <span class="meta-item">
+            <span class="meta-label">来源</span>
+            <span class="meta-value">{article.source_name}</span>
+          </span>
+          <span class="meta-item">
+            <span class="meta-label">发布时间</span>
+            <time class="meta-value" datetime={article.published_at ?? undefined}>{published}</time>
+          </span>
+          <span class="meta-item">
+            <span class="meta-label">地区</span>
+            <span class="meta-value">{regionName(article.region)}</span>
+          </span>
+        </div>
+      </header>
+
+      {
+        article.industry_tags.length > 0 && (
+          <ul class="detail-chip-row">
+            {article.industry_tags.map((t) => (
+              <li class="chip">{industryTagName(t)}</li>
+            ))}
+          </ul>
+        )
+      }
+
+      <section class="detail-body">
+        <h2 class="body-title">内容摘要</h2>
+        {summary ? (
+          <p class="detail-summary">{summary}</p>
+        ) : (
+          <div class="summary-missing">
+            <p>该信息在采集时未获取到摘要内容。</p>
+            <p class="summary-missing-hint">
+              本站仅聚合标题与来源信息，完整内容请前往原文页面阅读。
+            </p>
+          </div>
+        )}
+      </section>
+
+      <div class="detail-actions">
+        <a class="origin-btn" href={article.source_url} target="_blank" rel="noopener noreferrer">
+          阅读原文
+          <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 3H3v8h8V9" />
+            <path d="M8.5 3H12v3.5M12 3 6.5 8.5" />
+          </svg>
+        </a>
+        <span class="origin-host">{originHost}</span>
+      </div>
+
+      <footer class="detail-foot">
+        {collectedLabel && <span>收录时间 {collectedLabel}</span>}
+        {generatedAtLabel && <span>数据更新 {generatedAtLabel}</span>}
+      </footer>
+    </article>
+
+    {
+      related.length > 0 && (
+        <section class="section related">
+          <div class="section-head">
+            <h2 class="section-title">相关阅读</h2>
+            <a class="section-more" href={groupHref}>
+              查看{regionGroupName(article.region_group)}全部
+            </a>
+          </div>
+          <div class="related-list">
+            {related.map((a) => (
+              <ArticleCard article={a} variant="compact" />
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 22px 0 0;
+    font-size: 12.5px;
+    color: var(--c-text-muted);
+  }
+  .breadcrumb a {
+    color: var(--c-text-muted);
+  }
+  .breadcrumb a:hover {
+    color: var(--c-primary);
+    text-decoration: none;
+  }
+  .crumb-sep {
+    opacity: 0.5;
+  }
+  .crumb-current {
+    color: var(--c-text-secondary);
+  }
+
+  .detail {
+    max-width: 780px;
+    margin: 0 auto;
+    padding-top: 26px;
+  }
+
+  .detail-head {
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .detail-title {
+    font-size: 27px;
+    font-weight: 680;
+    line-height: 1.4;
+    letter-spacing: -0.015em;
+    color: var(--c-text);
+  }
+  .detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 26px;
+    margin-top: 18px;
+    font-size: 13px;
+  }
+  .meta-item {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+  }
+  .meta-label {
+    color: var(--c-text-muted);
+  }
+  .meta-value {
+    color: var(--c-text-secondary);
+    font-weight: 550;
+  }
+
+  .detail-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .detail-body {
+    margin-top: 30px;
+  }
+  .body-title {
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--c-text-muted);
+    margin-bottom: 12px;
+  }
+  .detail-summary {
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: var(--c-text-secondary);
+    padding: 18px 20px;
+    background: var(--c-bg-soft);
+    border-left: 2px solid var(--c-accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  .summary-missing {
+    padding: 20px;
+    border: 1px dashed var(--c-border-strong);
+    border-radius: var(--radius);
+    background: var(--c-bg-soft);
+    font-size: 14px;
+    color: var(--c-text-secondary);
+  }
+  .summary-missing-hint {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--c-text-muted);
+  }
+
+  .detail-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+  .origin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 11px 22px;
+    background: var(--c-primary-solid);
+    color: #fff;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.15s ease;
+  }
+  .origin-btn:hover {
+    background: var(--c-primary-solid-hover);
+    color: #fff;
+    text-decoration: none;
+  }
+  .origin-host {
+    font-size: 12.5px;
+    color: var(--c-text-muted);
+    font-family: var(--font-mono);
+  }
+
+  .detail-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid var(--c-border);
+    font-size: 12px;
+    color: var(--c-text-muted);
+  }
+
+  .related {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-more {
+    font-size: 13px;
+    color: var(--c-text-muted);
+  }
+  .section-more:hover {
+    color: var(--c-primary);
+    text-decoration: none;
+  }
+  .related-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media (max-width: 720px) {
+    .breadcrumb {
+      padding-top: 16px;
+    }
+    .detail {
+      padding-top: 18px;
+    }
+    .detail-title {
+      font-size: 21px;
+      line-height: 1.45;
+    }
+    .detail-meta {
+      gap: 6px 18px;
+      margin-top: 14px;
+      font-size: 12.5px;
+    }
+    .detail-summary {
+      font-size: 15px;
+      padding: 15px 16px;
+    }
+    .origin-btn {
+      width: 100%;
+      justify-content: center;
+    }
+    .origin-host {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>

@@ -1,53 +1,239 @@
 ---
-// 可复用的地区信息页面组件
-// 南疆 / 北疆页面复用本组件，仅通过 regionGroup 区分。
+// 可复用的地区信息页面：南疆 / 北疆共用，仅通过 regionGroup 区分
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ArticleCard from './ArticleCard.astro';
-import FilterBar from './FilterBar.astro';
-import { loadArticles, regionGroupName, sourceTypes, industryTags, regionsConfig } from '../lib/data';
-import type { Article } from '../types';
+import ArticleExplorer from './ArticleExplorer.astro';
+import {
+  articlesByGroup,
+  regionGroupName,
+  regionsConfig,
+  generatedAtLabel,
+} from '../lib/data';
 
 interface Props {
   regionGroup: 'nanjiang' | 'beijiang';
 }
 
 const { regionGroup } = Astro.props;
-const allArticles = loadArticles();
-const groupName = regionGroupName(regionGroup);
 
-// 该分组的文章
-const groupArticles = allArticles.filter((a) => a.region_group === regionGroup);
-// 该分组的地区列表
+// 地区划分完全由 config/regions.json 的 group 字段驱动，组件内不硬编码任何地区归属
+const groupArticles = articlesByGroup(regionGroup);
+const groupName = regionGroupName(regionGroup);
+const count = groupArticles.length;
+
 const groupRegions = regionsConfig.filter((r) => r.group === regionGroup);
+const activeRegions = groupRegions.filter((r) =>
+  groupArticles.some((a) => a.region === r.code),
+).length;
+const sourceCount = new Set(groupArticles.map((a) => a.source_name)).size;
+
+// 收录量偏少时给出说明，避免用户误以为页面故障
+const sparse = count < 10;
+
+const description =
+  regionGroup === 'nanjiang'
+    ? '聚合新疆南部各地州的产业政策、园区建设、企业投资、能源矿产与交通物流信息。'
+    : '聚合新疆北部各地州的产业政策、园区建设、企业投资、能源矿产与农业特色产业信息。';
 ---
 
-<BaseLayout title={`${groupName}产业信息 - 新疆产业信息聚合`} activeRegion={regionGroup}>
+<BaseLayout
+  title={`${groupName}产业信息 - 新疆产业信息聚合`}
+  description={description}
+  activeRegion={regionGroup}
+>
   <div class="container">
     <section class="page-hero">
-      <h1>{groupName}产业信息</h1>
-      <p class="page-desc">聚合{groupName}范围内产业相关的公开信息，可查看来源类型、地区与产业主题。</p>
+      <p class="hero-eyebrow">REGION · {groupName}</p>
+      <h1 class="page-title">{groupName}产业信息</h1>
+      <p class="page-desc">{description}</p>
+
+      <dl class="page-stats">
+        <div class="stat">
+          <dt>收录信息</dt>
+          <dd>{count}<span>条</span></dd>
+        </div>
+        <div class="stat">
+          <dt>覆盖地区</dt>
+          <dd>{activeRegions}<span>/{groupRegions.length}</span></dd>
+        </div>
+        <div class="stat">
+          <dt>信息来源</dt>
+          <dd>{sourceCount}<span>个</span></dd>
+        </div>
+        {generatedAtLabel && (
+          <div class="stat stat-wide">
+            <dt>数据更新</dt>
+            <dd class="stat-sm">{generatedAtLabel}</dd>
+          </div>
+        )}
+      </dl>
     </section>
 
-    <FilterBar
-      articles={groupArticles}
-      regionGroup={regionGroup}
-      sourceTypes={sourceTypes}
-      industryTags={industryTags}
-      regions={groupRegions}
-    />
+    {
+      sparse && (
+        <div class="notice">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <circle cx="10" cy="10" r="7.5" />
+            <path d="M10 6.2v4.6M10 13.4v.4" />
+          </svg>
+          <div>
+            <strong>{groupName}当前收录较少</strong>
+            <p>
+              已收录 {count} 条信息，来自 {sourceCount} 个来源。本站对该区域的采集源覆盖仍在完善中，信息量会随每日自动采集逐步增加；自治区层面的全区性政策请前往
+              <a href={import.meta.env.BASE_URL}>全疆页面</a>查看。
+            </p>
+          </div>
+        </div>
+      )
+    }
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">{groupName}信息列表</h2>
+        <span class="section-hint">已按发布时间排序，支持搜索与筛选</span>
+      </div>
+
+      <ArticleExplorer articles={groupArticles} regionGroup={regionGroup} pageSize={20} />
+    </section>
   </div>
 </BaseLayout>
 
 <style>
   .page-hero {
-    padding: 28px 0 8px;
+    padding: 44px 0 0;
   }
-  .page-hero h1 {
-    font-size: 26px;
-    margin: 0 0 8px;
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: var(--c-accent);
+    margin-bottom: 12px;
+  }
+  .page-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.022em;
+    line-height: 1.25;
   }
   .page-desc {
+    max-width: 640px;
+    margin-top: 12px;
+    font-size: 14.5px;
+    line-height: 1.75;
     color: var(--c-text-secondary);
+  }
+
+  .page-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 26px 0 0;
+    padding: 16px 0;
+    border-top: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+  }
+  .stat {
+    padding: 0 30px;
+    border-right: 1px solid var(--c-border);
+  }
+  .stat:first-child {
+    padding-left: 0;
+  }
+  .stat:last-child {
+    border-right: 0;
+  }
+  .stat dt {
+    font-size: 12px;
+    color: var(--c-text-muted);
+    margin-bottom: 4px;
+  }
+  .stat dd {
     margin: 0;
+    font-size: 22px;
+    font-weight: 680;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: var(--c-text);
+  }
+  .stat dd span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    margin-left: 3px;
+  }
+  .stat-sm {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    padding-top: 4px;
+    color: var(--c-text-secondary) !important;
+  }
+
+  .notice {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 15px 18px;
+    border: 1px solid var(--c-primary-line);
+    border-radius: var(--radius-lg);
+    background: var(--c-primary-soft);
+    color: var(--c-text-secondary);
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+  .notice svg {
+    flex: none;
+    margin-top: 2px;
+    color: var(--c-primary);
+  }
+  .notice strong {
+    display: block;
+    color: var(--c-text);
+    font-size: 13.5px;
+    margin-bottom: 3px;
+  }
+  .notice p {
+    margin: 0;
+  }
+  .notice a {
+    color: var(--c-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  @media (max-width: 720px) {
+    .page-hero {
+      padding-top: 30px;
+    }
+    .page-title {
+      font-size: 24px;
+    }
+    .page-desc {
+      font-size: 13.5px;
+      margin-top: 9px;
+    }
+    .page-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 0;
+      margin-top: 20px;
+      padding: 13px 0;
+    }
+    .stat {
+      padding: 0 14px;
+    }
+    .stat:nth-child(odd) {
+      padding-left: 0;
+    }
+    .stat:nth-child(2) {
+      border-right: 0;
+    }
+    .stat dd {
+      font-size: 19px;
+    }
+    .stat-sm {
+      font-size: 13px !important;
+    }
+    .notice {
+      padding: 13px 14px;
+      font-size: 13px;
+    }
   }
 </style>
