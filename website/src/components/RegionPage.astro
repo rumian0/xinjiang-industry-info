@@ -1,0 +1,53 @@
+---
+// 可复用的地区信息页面组件
+// 南疆 / 北疆页面复用本组件，仅通过 regionGroup 区分。
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from './ArticleCard.astro';
+import FilterBar from './FilterBar.astro';
+import { loadArticles, regionGroupName, sourceTypes, industryTags, regionsConfig } from '../lib/data';
+import type { Article } from '../types';
+
+interface Props {
+  regionGroup: 'nanjiang' | 'beijiang';
+}
+
+const { regionGroup } = Astro.props;
+const allArticles = loadArticles();
+const groupName = regionGroupName(regionGroup);
+
+// 该分组的文章
+const groupArticles = allArticles.filter((a) => a.region_group === regionGroup);
+// 该分组的地区列表
+const groupRegions = regionsConfig.filter((r) => r.group === regionGroup);
+---
+
+<BaseLayout title={`${groupName}产业信息 - 新疆产业信息聚合`} activeRegion={regionGroup}>
+  <div class="container">
+    <section class="page-hero">
+      <h1>{groupName}产业信息</h1>
+      <p class="page-desc">聚合{groupName}范围内产业相关的公开信息，可查看来源类型、地区与产业主题。</p>
+    </section>
+
+    <FilterBar
+      articles={groupArticles}
+      regionGroup={regionGroup}
+      sourceTypes={sourceTypes}
+      industryTags={industryTags}
+      regions={groupRegions}
+    />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: 28px 0 8px;
+  }
+  .page-hero h1 {
+    font-size: 26px;
+    margin: 0 0 8px;
+  }
+  .page-desc {
+    color: var(--c-text-secondary);
+    margin: 0;
+  }
+</style>

@@ -1,0 +1,145 @@
+---
+// 全局布局：顶部导航 + 内容 + 页脚
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  activeRegion?: string;
+}
+
+const { title, description = '新疆产业信息聚合网站', activeRegion = '' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href={import.meta.env.BASE_URL} class="brand">
+          <span class="brand-name">新疆产业信息聚合</span>
+          <span class="brand-sub">Xinjiang Industry Info</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a
+            href={import.meta.env.BASE_URL}
+            class:list={['nav-link', { active: activeRegion === 'quanjang' }]}
+          >全疆</a>
+          <a
+            href={`${import.meta.env.BASE_URL}nanjiang/`}
+            class:list={['nav-link', { active: activeRegion === 'nanjiang' }]}
+          >南疆</a>
+          <a
+            href={`${import.meta.env.BASE_URL}beijiang/`}
+            class:list={['nav-link', { active: activeRegion === 'beijiang' }]}
+          >北疆</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>新疆产业信息聚合网站 · 信息来自公开来源，仅供参考</p>
+        <p class="footer-meta">
+          数据由自动采集程序生成，采集时间与来源详见各条信息。
+        </p>
+      </div>
+    </footer>
+
+    <style>
+      .site-header {
+        background: var(--c-bg);
+        border-bottom: 1px solid var(--c-border);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        gap: 16px;
+      }
+      .brand {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        text-decoration: none;
+        color: var(--c-text);
+      }
+      .brand-name {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .brand-sub {
+        font-size: 11px;
+        color: var(--c-text-muted);
+      }
+      .nav {
+        display: flex;
+        gap: 4px;
+      }
+      .nav-link {
+        padding: 6px 14px;
+        border-radius: var(--radius-sm);
+        color: var(--c-text-secondary);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .nav-link:hover {
+        background: var(--c-bg-soft);
+        text-decoration: none;
+      }
+      .nav-link.active {
+        color: var(--c-primary);
+        background: var(--c-primary-soft);
+        font-weight: 600;
+      }
+
+      .site-footer {
+        margin-top: 48px;
+        padding: 24px 0;
+        border-top: 1px solid var(--c-border);
+        background: var(--c-bg-soft);
+        color: var(--c-text-muted);
+        font-size: 13px;
+      }
+      .site-footer p {
+        margin: 4px 0;
+      }
+      .footer-meta {
+        font-size: 12px;
+      }
+
+      @media (max-width: 640px) {
+        .header-inner {
+          height: auto;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 12px 20px;
+          gap: 8px;
+        }
+        .nav {
+          width: 100%;
+        }
+        .nav-link {
+          flex: 1;
+          text-align: center;
+        }
+      }
+    </style>
+  </body>
+</html>

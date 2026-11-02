@@ -1,0 +1,126 @@
+---
+// 统一信息卡片组件
+import type { Article } from '../types';
+import { sourceTypeName, regionName, industryTagName, regionGroupName } from '../lib/data';
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+
+const dateStr = (iso: string | null) => {
+  if (!iso) return '时间待确认';
+  // 显示为 YYYY-MM-DD
+  return iso.slice(0, 10);
+};
+
+const summaryLabel = article.summary_source === 'truncated' ? '摘要（原文片段）' : '摘要';
+---
+
+<article class="card">
+  <div class="card-head">
+    <span class="tag tag-source">{sourceTypeName(article.source_type)}</span>
+    <span class="tag tag-region">{regionGroupName(article.region_group)}</span>
+    {article.is_test && <span class="tag tag-test">测试数据</span>}
+  </div>
+
+  <h3 class="card-title">
+    <a href={article.source_url} target="_blank" rel="noopener noreferrer">{article.title}</a>
+  </h3>
+
+  <p class="card-summary">
+    <span class="summary-label">{summaryLabel}：</span>{article.summary || '（暂无摘要）'}
+  </p>
+
+  <div class="card-tags">
+    {article.industry_tags.map((t) => (
+      <span class="chip">{industryTagName(t)}</span>
+    ))}
+  </div>
+
+  <div class="card-meta">
+    <span>来源：{article.source_name}</span>
+    <span>地区：{regionName(article.region)}</span>
+    <span>发布时间：{dateStr(article.published_at)}</span>
+  </div>
+</article>
+
+<style>
+  .card {
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    background: var(--c-bg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.15s ease;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-md);
+  }
+  .card-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--c-tag-bg);
+    color: var(--c-tag-text);
+  }
+  .tag-source {
+    background: var(--c-primary-soft);
+    color: var(--c-primary);
+  }
+  .tag-test {
+    background: #fef2f2;
+    color: var(--c-accent);
+  }
+  .card-title {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .card-title a {
+    color: var(--c-text);
+  }
+  .card-title a:hover {
+    color: var(--c-primary);
+    text-decoration: none;
+  }
+  .card-summary {
+    margin: 0 0 12px;
+    color: var(--c-text-secondary);
+    font-size: 14px;
+  }
+  .summary-label {
+    color: var(--c-text-muted);
+    font-size: 12px;
+  }
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .chip {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--c-tag-bg);
+    color: var(--c-tag-text);
+  }
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    font-size: 12px;
+    color: var(--c-text-muted);
+    border-top: 1px solid var(--c-border);
+    padding-top: 10px;
+  }
+</style>

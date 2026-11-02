@@ -1,0 +1,263 @@
+---
+// 筛选栏组件：搜索 + 地区 + 来源类型 + 产业主题筛选
+// 通过内联脚本在前端完成筛选，数据由 define:vars 注入。
+import type { Article, SourceTypeCode } from '../types';
+
+interface SourceTypeItem { code: SourceTypeCode; name: string; order: number; }
+interface IndustryTagItem { code: string; name: string; }
+interface RegionItem { code: string; name: string; group: string; level: string; }
+
+interface Props {
+  articles: Article[];
+  regionGroup: string;
+  sourceTypes: SourceTypeItem[];
+  industryTags: IndustryTagItem[];
+  regions: RegionItem[];
+}
+
+const { articles, regionGroup, sourceTypes, industryTags, regions } = Astro.props;
+
+const sourceTypeNames = Object.fromEntries(sourceTypes.map((s) => [s.code, s.name]));
+const industryTagNames = Object.fromEntries(industryTags.map((t) => [t.code, t.name]));
+const regionNames = Object.fromEntries(regions.map((r) => [r.code, r.name]));
+const groupNames: Record<string, string> = {
+  nanjiang: '南疆',
+  beijiang: '北疆',
+  quanjang: '全疆',
+  pending: '待确认',
+};
+---
+
+<div class="filter-panel">
+  <div class="filter-row">
+    <input
+      type="search"
+      class="search-input"
+      placeholder="搜索标题、摘要、来源…"
+      data-search
+      aria-label="搜索"
+    />
+  </div>
+
+  <div class="filter-row">
+    <label class="filter-label">地区</label>
+    <div class="filter-options" data-filter="region">
+      <button type="button" class="opt active" data-value="">全部</button>
+      {regions.map((r) => (
+        <button type="button" class="opt" data-value={r.code}>{r.name}</button>
+      ))}
+    </div>
+  </div>
+
+  <div class="filter-row">
+    <label class="filter-label">来源类型</label>
+    <div class="filter-options" data-filter="source_type">
+      <button type="button" class="opt active" data-value="">全部</button>
+      {sourceTypes.map((s) => (
+        <button type="button" class="opt" data-value={s.code}>{s.name}</button>
+      ))}
+    </div>
+  </div>
+
+  <div class="filter-row">
+    <label class="filter-label">产业主题</label>
+    <div class="filter-options" data-filter="industry">
+      <button type="button" class="opt active" data-value="">全部</button>
+      {industryTags.map((t) => (
+        <button type="button" class="opt" data-value={t.code}>{t.name}</button>
+      ))}
+    </div>
+  </div>
+
+  <div class="result-bar">
+    <span data-count>共 0 条信息</span>
+  </div>
+</div>
+
+<div class="article-list" data-list></div>
+<div class="empty-state" data-empty hidden>
+  <p>暂无符合条件的信息。</p>
+</div>
+
+<script define:vars={{ articles, sourceTypeNames, industryTagNames, regionNames, groupNames }}>
+  const panel = document.querySelector<HTMLElement>('.filter-panel');
+  const searchInput = panel?.querySelector<HTMLInputElement>('[data-search]');
+  const list = document.querySelector<HTMLElement>('[data-list]');
+  const empty = document.querySelector<HTMLElement>('[data-empty]');
+  const countEl = document.querySelector<HTMLElement>('[data-count]');
+
+  const state: Record<string, string> = {
+    region: '',
+    source_type: '',
+    industry: '',
+    search: '',
+  };
+
+  function escapeHtml(s: string): string {
+    return s.replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]!));
+  }
+
+  function render() {
+    if (!list || !countEl || !empty) return;
+    const q = state.search.trim().toLowerCase();
+    const filtered = articles.filter((a: any) => {
+      if (state.region && a.region !== state.region) return false;
+      if (state.source_type && a.source_type !== state.source_type) return false;
+      if (state.industry && !a.industry_tags.includes(state.industry)) return false;
+      if (q) {
+        const hay = `${a.title} ${a.summary} ${a.source_name}`.toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+
+    countEl.textContent = `共 ${filtered.length} 条信息`;
+
+    if (filtered.length === 0) {
+      list.innerHTML = '';
+      empty.hidden = false;
+      return;
+    }
+    empty.hidden = true;
+
+    list.innerHTML = filtered.map((a: any) => {
+      const tags = (a.industry_tags || [])
+        .map((t: string) => `<span class="chip">${escapeHtml(industryTagNames[t] ?? t)}</span>`)
+        .join('');
+      const dateStr = a.published_at ? a.published_at.slice(0, 10) : '时间待确认';
+      const summaryLabel = a.summary_source === 'truncated' ? '摘要（原文片段）' : '摘要';
+      const testTag = a.is_test ? '<span class="tag tag-test">测试数据</span>' : '';
+      return `
+        <article class="card">
+          <div class="card-head">
+            <span class="tag tag-source">${escapeHtml(sourceTypeNames[a.source_type] ?? a.source_type)}</span>
+            <span class="tag tag-region">${escapeHtml(groupNames[a.region_group] ?? a.region_group)}</span>
+            ${testTag}
+          </div>
+          <h3 class="card-title"><a href="${escapeHtml(a.source_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.title)}</a></h3>
+          <p class="card-summary"><span class="summary-label">${summaryLabel}：</span>${escapeHtml(a.summary || '（暂无摘要）')}</p>
+          <div class="card-tags">${tags}</div>
+          <div class="card-meta">
+            <span>来源：${escapeHtml(a.source_name)}</span>
+            <span>地区：${escapeHtml(regionNames[a.region] ?? '待确认')}</span>
+            <span>发布时间：${dateStr}</span>
+          </div>
+        </article>
+      `;
+    }).join('');
+  }
+
+  panel?.querySelectorAll('[data-filter]').forEach((group) => {
+    group.querySelectorAll('.opt').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        group.querySelectorAll('.opt').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const key = (group as HTMLElement).dataset.filter!;
+        state[key] = (btn as HTMLElement).dataset.value || '';
+        render();
+      });
+    });
+  });
+
+  searchInput?.addEventListener('input', (e) => {
+    state.search = (e.target as HTMLInputElement).value;
+    render();
+  });
+
+  render();
+</script>
+
+<style>
+  .filter-panel {
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    background: var(--c-bg-soft);
+    margin: 16px 0 20px;
+  }
+  .filter-row {
+    margin-bottom: 12px;
+  }
+  .filter-label {
+    display: block;
+    font-size: 13px;
+    color: var(--c-text-secondary);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    background: var(--c-bg);
+    color: var(--c-text);
+  }
+  .search-input:focus {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 0;
+  }
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .opt {
+    font-size: 13px;
+    padding: 5px 12px;
+    border: 1px solid var(--c-border);
+    border-radius: 999px;
+    background: var(--c-bg);
+    color: var(--c-text-secondary);
+    cursor: pointer;
+  }
+  .opt:hover {
+    border-color: var(--c-primary);
+    color: var(--c-primary);
+  }
+  .opt.active {
+    background: var(--c-primary);
+    border-color: var(--c-primary);
+    color: #fff;
+  }
+  .result-bar {
+    font-size: 13px;
+    color: var(--c-text-muted);
+    margin-top: 8px;
+  }
+
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--c-text-muted);
+  }
+
+  .card {
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    background: var(--c-bg);
+    box-shadow: var(--shadow-sm);
+  }
+  .card-head { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 4px; background: var(--c-tag-bg); color: var(--c-tag-text); }
+  .tag-source { background: var(--c-primary-soft); color: var(--c-primary); }
+  .tag-test { background: #fef2f2; color: var(--c-accent); }
+  .card-title { margin: 0 0 8px; font-size: 16px; font-weight: 600; line-height: 1.4; }
+  .card-title a { color: var(--c-text); }
+  .card-title a:hover { color: var(--c-primary); text-decoration: none; }
+  .card-summary { margin: 0 0 12px; color: var(--c-text-secondary); font-size: 14px; }
+  .summary-label { color: var(--c-text-muted); font-size: 12px; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .chip { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--c-tag-bg); color: var(--c-tag-text); }
+  .card-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; color: var(--c-text-muted); border-top: 1px solid var(--c-border); padding-top: 10px; }
+</style>

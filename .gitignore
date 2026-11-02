@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.astro/
+npm-debug.log*
+
+# 数据（保留测试数据，忽略临时文件）
+*.tmp
+data/raw/
+
+# 环境变量与密钥
+.env
+.env.*
+
+# 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,11 @@
+{
+  "_comment": "信息来源类型分类（一级分类）。每条信息必须关联一个主要来源类型。",
+  "source_types": [
+    { "code": "government", "name": "政府及官方机构", "order": 1 },
+    { "code": "media", "name": "新闻媒体", "order": 2 },
+    { "code": "enterprise", "name": "企业及集团官网", "order": 3 },
+    { "code": "association", "name": "行业协会及专业平台", "order": 4 },
+    { "code": "investment", "name": "招商及项目平台", "order": 5 },
+    { "code": "other", "name": "其他专业信息来源", "order": 6 }
+  ]
+}

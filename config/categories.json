@@ -1,0 +1,11 @@
+{
+  "_comment": "产业主题分类（可配置，方便未来增删）。允许一条信息关联多个产业主题。",
+  "industry_tags": [
+    { "code": "development_zone", "name": "经济开发区与产业园区" },
+    { "code": "enterprise", "name": "企业与公司" },
+    { "code": "mineral", "name": "矿产与自然资源" },
+    { "code": "energy", "name": "能源与新能源" },
+    { "code": "transport_logistics", "name": "交通物流与对外贸易" },
+    { "code": "agriculture", "name": "农业与特色产业" }
+  ]
+}

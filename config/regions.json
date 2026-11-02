@@ -1,0 +1,38 @@
+{
+  "_comment": "新疆地区配置。南疆/北疆划分采用业务口径，可能与行政口径存在差异，可在此修改。",
+  "_note": "region_group 取值：quanjang(全疆) / nanjiang(南疆) / beijiang(北疆) / pending(待确认)。不确定归属时务必使用 pending，不要猜测。",
+  "groups": {
+    "quanjang": { "code": "quanjang", "name": "全疆", "order": 1 },
+    "nanjiang": { "code": "nanjiang", "name": "南疆", "order": 2 },
+    "beijiang": { "code": "beijiang", "name": "北疆", "order": 3 },
+    "pending": { "code": "pending", "name": "待确认", "order": 99 }
+  },
+  "regions": [
+    { "code": "wulumuqi", "name": "乌鲁木齐市", "group": "beijiang", "level": "地级市" },
+    { "code": "kelamayi", "name": "克拉玛依市", "group": "beijiang", "level": "地级市" },
+    { "code": "shihezi", "name": "石河子市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "tulufan", "name": "吐鲁番市", "group": "beijiang", "level": "地级市" },
+    { "code": "hami", "name": "哈密市", "group": "beijiang", "level": "地级市" },
+    { "code": "changji", "name": "昌吉回族自治州", "group": "beijiang", "level": "自治州" },
+    { "code": "yili", "name": "伊犁哈萨克自治州", "group": "beijiang", "level": "自治州" },
+    { "code": "tacheng", "name": "塔城地区", "group": "beijiang", "level": "地区" },
+    { "code": "aletai", "name": "阿勒泰地区", "group": "beijiang", "level": "地区" },
+    { "code": "bozhou", "name": "博尔塔拉蒙古自治州", "group": "beijiang", "level": "自治州" },
+    { "code": "kelamayi_shuanghe", "name": "双河市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "akoutai", "name": "阿克苏地区", "group": "nanjiang", "level": "地区" },
+    { "code": "kashen", "name": "喀什地区", "group": "nanjiang", "level": "地区" },
+    { "code": "hetian", "name": "和田地区", "group": "nanjiang", "level": "地区" },
+    { "code": "bayin", "name": "巴音郭楞蒙古自治州", "group": "nanjiang", "level": "自治州" },
+    { "code": "kezhou", "name": "克孜勒苏柯尔克孜自治州", "group": "nanjiang", "level": "自治州" },
+    { "code": "alashankou", "name": "阿拉山口市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "tieguanyin", "name": "铁门关市", "group": "nanjiang", "level": "自治区直辖县级市" },
+    { "code": "alarmur", "name": "阿拉尔市", "group": "nanjiang", "level": "自治区直辖县级市" },
+    { "code": "tumuxuke", "name": "图木舒克市", "group": "nanjiang", "level": "自治区直辖县级市" },
+    { "code": "wujiaqu", "name": "五家渠市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "beizhen", "name": "北屯市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "ketede", "name": "可克达拉市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "kunyu", "name": "昆玉市", "group": "nanjiang", "level": "自治区直辖县级市" },
+    { "code": "huyanghe", "name": "胡杨河市", "group": "beijiang", "level": "自治区直辖县级市" },
+    { "code": "xinxing", "name": "新星市", "group": "beijiang", "level": "自治区直辖县级市" }
+  ]
+}

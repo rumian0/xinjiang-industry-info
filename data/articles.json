@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-11-02T16:03:59.853017+08:00",
+  "count": 7,
+  "articles": [
+    {
+      "id": "6d67b463cf886e8d10bf37259ab50738",
+      "title": "自治区领导包联重点项目和重点服务业企业调度会议强调破解堵点卡点问题 推动经济高质量发展",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/xjyw/202610/712c90b3be2a4e2b85b463d6f6c4aa7f.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.822297+08:00",
+      "region_group": "pending",
+      "region": null,
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "6b7417d6cbe921780930c869d3d19f62",
+      "title": "前三季度新疆外贸进出口总值超4300亿元 稳中有进质效提升",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/bmdt/202610/6608bb1d3fe947ee891068449e3e29ba.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.824297+08:00",
+      "region_group": "pending",
+      "region": null,
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "0619468b930c51031a1fa3a15e8f00d9",
+      "title": "畅通西向通道 赋能外贸提质——乌鲁木齐海关相关负责人就新疆外贸稳规模优结构答记者问",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/bmdt/202610/119656e375a64ba5a538e47997a44e89.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.826515+08:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "09c39cad4e06d4f372c87723c7f57787",
+      "title": "我区已有27个中药材种植基地通过GAP延伸检查",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/bmdt/202610/8079af83f6414570a7b2702ed2454db6.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.829282+08:00",
+      "region_group": "pending",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "2cd1e89b0e8120e740f8d8a9c4430bc3",
+      "title": "全区农业生产稳中向好",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/dzdt/202610/d30ce03649594e2c88249bfe28f5cd48.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.830857+08:00",
+      "region_group": "pending",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f1c19801637f4232421dd1746222652e",
+      "title": "今年新疆铁路双口岸通行中欧（中亚）班列超1.5万列l",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/dzdt/202610/c70dd5fd4164431096c0c8b1372b9a45.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.831812+08:00",
+      "region_group": "pending",
+      "region": null,
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9c29bb060477b04726e58139c7d6aead",
+      "title": "2026新疆自贸试验区喀什片区产业园区招商推介会举行",
+      "summary": "",
+      "summary_source": null,
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区人民政府",
+      "source_url": "https://www.xinjiang.gov.cn/xinjiang/dzdt/202610/010c05d9b6a54210a2d1ee7f5b934b08.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-02T16:03:59.832681+08:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    }
+  ]
+}

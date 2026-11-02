@@ -1,0 +1,56 @@
+{
+  "_comment": "测试数据文件。此文件中所有条目 is_test 均为 true，仅用于本地开发和展示样式验证，严禁混入 data/articles.json 正式数据。",
+  "articles": [
+    {
+      "id": "test-001",
+      "title": "【测试数据】乌鲁木齐市某新能源产业项目签约",
+      "summary": "这是一条用于验证网站展示样式的测试数据，内容为虚构，仅用于开发阶段样式调试，不代表任何真实产业信息。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "测试来源-政府",
+      "source_url": "https://example.com/test-001",
+      "published_at": "2026-11-01T10:00:00+08:00",
+      "collected_at": "2026-11-02T15:50:00+08:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": ["energy"],
+      "content_type": "project",
+      "status": "published",
+      "is_test": true
+    },
+    {
+      "id": "test-002",
+      "title": "【测试数据】喀什地区某矿产项目开工",
+      "summary": "虚构测试数据，用于验证南疆页面的地区筛选与产业主题筛选功能。",
+      "summary_source": "truncated",
+      "source_type": "enterprise",
+      "source_name": "测试来源-企业",
+      "source_url": "https://example.com/test-002",
+      "published_at": null,
+      "collected_at": "2026-11-02T15:50:00+08:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": ["mineral", "development_zone"],
+      "content_type": "news",
+      "status": "published",
+      "is_test": true
+    },
+    {
+      "id": "test-003",
+      "title": "【测试数据】某地农业产业政策公告（地区待确认）",
+      "summary": "虚构测试数据，用于验证地区待确认标记与多产业主题标签展示。",
+      "summary_source": "truncated",
+      "source_type": "media",
+      "source_name": "测试来源-媒体",
+      "source_url": "https://example.com/test-003",
+      "published_at": "2026-11-02T09:00:00+08:00",
+      "collected_at": "2026-11-02T15:50:00+08:00",
+      "region_group": "pending",
+      "region": null,
+      "industry_tags": ["agriculture", "transport_logistics"],
+      "content_type": "policy",
+      "status": "published",
+      "is_test": true
+    }
+  ]
+}
