@@ -212,6 +212,9 @@ def _needs_summary(art: dict) -> bool:
     # 早期解析器会把元信息当摘要
     if any(k in head for k in ("浏览次数", "浏览量", "【字体", "大 中 小", "文章来源", "打印本文")):
         return True
+    # 尾部残留功能按钮/相关阅读
+    if any(k in s for k in ("【打印本页】", "【关闭】", "扫一扫", "相关稿件：", "责任编辑：")):
+        return True
     # 摘要开头重复标题
     title = (art.get("title") or "").strip()
     if title and s[:25] == title[:25]:

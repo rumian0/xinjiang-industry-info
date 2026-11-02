@@ -238,8 +238,16 @@ def _clean_title(raw: str) -> str:
         # 仅当首段足够长、且后续段像栏目/站点名时才截断
         if len(head) >= 8:
             t = head
-    # 形如「标题 - 新疆维吾尔自治区人民政府」
-    m = re.match(r"^(.{10,}?)\s*[-–—]\s*(新疆|自治区|乌鲁木齐|伊犁|喀什|巴音郭楞|吐鲁番).{0,30}$", t)
+    # 形如「标题 · 县市信息」「标题 - 政务动态」这类栏目后缀
+    m2 = re.match(r"^(.{4,}?)\s*[·•\-–—]\s*(.{2,10})$", t)
+    if m2 and re.search(r"(信息|动态|要闻|公告|新闻|专题|栏目|发布|通知|频道)$", m2.group(2)):
+        t = m2.group(1).strip()
+
+    # 形如「标题 - 新疆维吾尔自治区人民政府」（必须空格包围，避免误伤
+    # 「标题——自治区某某单位…」这类用破折号连接正文的标题）
+    m = re.match(
+        r"^(.{10,}?)\s+[-–—]\s+(新疆|自治区|乌鲁木齐|伊犁|喀什|巴音郭楞|吐鲁番).{0,30}$", t
+    )
     if m:
         t = m.group(1).strip()
     return t
@@ -265,11 +273,24 @@ def _extract_title(soup: BeautifulSoup) -> Optional[str]:
     return None
 
 
+# 正文尾部常见噪声标记（打印/关闭/分享/相关稿件等）
+TAIL_MARKERS = re.compile(
+    r"(?:【\s*打\s*印\s*本\s*页\s*】|【\s*打\s*印\s*本\s*文\s*】|【\s*关\s*闭\s*】|"
+    r"【\s*打\s*印\s*】|扫一扫在手机打开|扫一扫|相关稿件\s*[:：]|相关阅读\s*[:：]|"
+    r"责任编辑\s*[:：]|分享到\s*[:：]|【\s*字\s*体[^】]*】)"
+)
+
+
 def _finalize_summary(text: str, title: str = "") -> Optional[str]:
     """摘要最终清洗与校验：要么得到干净正文，要么返回 None。"""
     s = _strip_meta_prefix(text, title).strip()
     if not s:
         return None
+
+    # 截掉尾部噪声标记之后的内容
+    m = TAIL_MARKERS.search(s)
+    if m and m.start() >= 30:
+        s = s[: m.start()].strip()
 
     # 仍残留元信息标记时，从最后一个标记之后重新取正文
     leftovers = ("浏览次数", "浏览量", "文章来源", "字体：", "字体:", "【")
