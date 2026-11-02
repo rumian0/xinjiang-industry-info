@@ -1,6 +1,6 @@
 {
   "_comment": "信息来源配置。",
-  "_note": "method 取值：rss(标准RSS源) / list(政务CMS栏目列表页) / homepage(首页兜底)。article_pattern 为文章详情链接的正则匹配（可选，用于过滤列表页噪音）。type 对应 source_types.json 的 code。",
+  "_note": "method 取值：rss(标准RSS源) / list(政务CMS栏目列表页) / generic(通用列表页，企业官网等) / homepage(首页兜底)。article_pattern 为文章详情链接的正则匹配（可选）。type 对应 source_types.json 的 code。fetch_detail=true 时抓详情页补全标题/摘要。force_keep_industry=true 时产业专题栏目跳过关键词过滤。",
   "sources": [
     {
       "name": "新疆维吾尔自治区发展和改革委员会",
@@ -81,6 +81,63 @@
       "region": "quanjang",
       "enabled": true,
       "note": "农业农村动态栏目"
+    },
+    {
+      "name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "url": "http://www.uetd.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "http://www.uetd.gov.cn/jjjskfq/c119840/yw.shtml",
+      "article_pattern": "/jjjskfq/c\\d+/\\d+/[a-f0-9]+\\.shtml",
+      "region": "wulumuqi",
+      "enabled": true,
+      "note": "要闻栏目（国家级经开区，产业园区/厂房/招商）"
+    },
+    {
+      "name": "乌鲁木齐高新技术产业开发区（新市区）",
+      "url": "http://www.uhdz.gov.cn/",
+      "type": "government",
+      "method": "generic",
+      "list_url": "http://www.uhdz.gov.cn/xwzx/gxyw/",
+      "article_pattern": "/content_\\d+",
+      "region": "wulumuqi",
+      "enabled": true,
+      "note": "高新要闻栏目（国家级高新区，产业园区/招商/项目，含时政需过滤）"
+    },
+    {
+      "name": "特变电工股份有限公司",
+      "url": "http://www.tbea.com/",
+      "type": "enterprise",
+      "method": "generic",
+      "list_url": "http://www.tbea.com/",
+      "article_pattern": "/enterprise_detail/\\d+\\.html",
+      "region": "changji",
+      "enabled": true,
+      "force_keep_industry": true,
+      "note": "企业动态（输变电/新能源/新材料龙头，新疆本土最大制造企业）"
+    },
+    {
+      "name": "新疆有色金属工业（集团）有限责任公司",
+      "url": "https://www.xjysjs.com/",
+      "type": "enterprise",
+      "method": "generic",
+      "list_url": "https://www.xjysjs.com/",
+      "article_pattern": "/dynamic/announcement-",
+      "region": "wulumuqi",
+      "enabled": true,
+      "force_keep_industry": true,
+      "note": "公示公告（招投标/成交/询比采购/澄清，矿业领域）"
+    },
+    {
+      "name": "广汇能源股份有限公司",
+      "url": "http://www.xjguanghui.com/",
+      "type": "enterprise",
+      "method": "generic",
+      "list_url": "http://www.xjguanghui.com/",
+      "article_pattern": "Typ\\.aspx.*nid=",
+      "region": "wulumuqi",
+      "enabled": true,
+      "note": "公司要闻（煤炭/煤化工/LNG/能源物流，首页聚合最新要闻，标题列表页有截断）"
     },
     {
       "name": "新疆维吾尔自治区科学技术厅",

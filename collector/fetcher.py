@@ -164,6 +164,80 @@ def _is_article_link(href: str, pattern: str | None) -> bool:
     return True
 
 
+def fetch_generic_list(
+    list_url: str,
+    link_pattern: str | None = None,
+    max_items: int = 30,
+) -> list[dict[str, Any]]:
+    """通用列表页解析：提取标题、链接、日期。
+
+    适用于企业官网（aspx/静态页）等非政务 CMS 的列表结构，比 fetch_list_page
+    更宽松——不强制 .shtml 结尾，通过 link_pattern 正则或启发式规则识别文章链接。
+
+    标题提取优先级：<a> 文本 > title 属性；若文本为截断片段（含"…"或"..."），
+    仍保留，由上层决定是否抓详情页补全。
+    """
+    html = fetch_url(list_url)
+    if not html:
+        return []
+
+    soup = BeautifulSoup(html, "lxml")
+    entries = []
+    seen_links = set()
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        if not href or href.startswith(("javascript:", "#", "mailto:", "tel:")):
+            continue
+
+        # 标题：文本优先，其次 title 属性
+        title = a.get_text(" ", strip=True)
+        if (not title or len(title) < 4) and a.get("title"):
+            title = a["title"].strip()
+
+        if not title or len(title) < 4:
+            continue
+
+        # 判断是否为文章详情链接
+        if not _is_generic_article_link(href, link_pattern):
+            continue
+
+        full_link = urljoin(list_url, href)
+        if full_link in seen_links:
+            continue
+        seen_links.add(full_link)
+
+        published = _extract_date_from_node(a)
+        entries.append(
+            {
+                "title": title,
+                "link": full_link,
+                "summary": "",
+                "published_at": published,
+            }
+        )
+        if len(entries) >= max_items:
+            break
+
+    return entries
+
+
+def _is_generic_article_link(href: str, pattern: str | None) -> bool:
+    """判断链接是否为文章详情链接（通用启发式）。"""
+    if pattern:
+        return bool(re.search(pattern, href))
+    # 启发式：排除明显的导航/功能链接
+    low = href.lower()
+    if any(k in low for k in ("list", "index", "rss", "search", "login", "register", "map", "sitemap")):
+        return False
+    # 含数字 id 或 .shtml/.html/.aspx 且带 nid/id 参数的，视为文章
+    if re.search(r"(nid=|id=|/content_|/announcement-|_detail|detail/|/\d{4}[-/]\d{1,2}[-/]\d{1,2})", low):
+        return True
+    if low.endswith((".shtml", ".html", ".htm", ".aspx")) and "?" in href:
+        return True
+    return False
+
+
 def _extract_date_from_node(a_tag) -> Optional[str]:
     """从链接节点及其相邻节点提取日期字符串。"""
     # 1. 链接自身的 title 属性

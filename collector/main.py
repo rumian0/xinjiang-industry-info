@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 # 确保可独立运行（相对导入）
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from fetcher import fetch_rss, fetch_url, fetch_list_page  # noqa: E402
+from fetcher import fetch_rss, fetch_url, fetch_list_page, fetch_generic_list  # noqa: E402
 from parser import parse_html, resolve_url  # noqa: E402
 from normalize import normalize_article  # noqa: E402
 from classifier import (  # noqa: E402
@@ -59,6 +59,26 @@ def save_articles(articles: list[dict]) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def _fetch_detail(url: str) -> dict | None:
+    """抓取文章详情页，提取标题、摘要、发布时间。
+
+    返回 dict（title/summary/published_at），失败返回 None。
+    仅用于列表页标题被截断、需要补全的情况。
+    """
+    try:
+        html = fetch_url(url)
+        if not html:
+            return None
+        parsed = parse_html(html, url, url)
+        return {
+            "title": parsed.get("title"),
+            "summary": parsed.get("summary"),
+            "published_at": parsed.get("published_at"),
+        }
+    except Exception:
+        return None
+
+
 def collect_from_source(source: dict) -> list[dict]:
     """从单个信息源采集，返回标准化后的文章列表。
 
@@ -95,6 +115,13 @@ def collect_from_source(source: dict) -> list[dict]:
         list_url = source.get("list_url") or base_url
         raw_items = fetch_list_page(list_url, source.get("article_pattern"))
 
+    elif method == "generic":
+        # 通用列表页（企业官网等非政务 CMS 结构）
+        list_url = source.get("list_url") or base_url
+        raw_items = fetch_generic_list(
+            list_url, source.get("article_pattern"), source.get("max_items", 30)
+        )
+
     else:  # homepage 兜底
         html = fetch_url(base_url)
         if html:
@@ -118,7 +145,20 @@ def collect_from_source(source: dict) -> list[dict]:
     articles = []
     # 若信息源本身是产业专题栏目，则不过滤（force_keep_industry）
     force_keep = source.get("force_keep_industry", False)
+    # 是否抓取详情页补全标题和摘要（列表页标题可能被截断）
+    fetch_detail = source.get("fetch_detail", False)
     for item in raw_items:
+        # 可选：抓详情页补全标题/摘要/时间
+        if fetch_detail and item.get("link"):
+            detail = _fetch_detail(item["link"])
+            if detail:
+                if detail.get("title"):
+                    item["title"] = detail["title"]
+                if detail.get("summary"):
+                    item["summary"] = detail["summary"]
+                if detail.get("published_at"):
+                    item["published_at"] = detail["published_at"]
+
         art = normalize_article(item, name, source_type)
         # 分类
         full_text = f"{art['title']} {art['summary']}"
@@ -128,8 +168,15 @@ def collect_from_source(source: dict) -> list[dict]:
             continue
         art["industry_tags"] = classify_industry(full_text)
         region_code = guess_region_from_text(full_text)
+        # 文本未匹配到地区时，回退到信息源配置的默认地区
+        if not region_code:
+            region_code = source.get("region")
         art["region"] = classify_region(region_code)
-        art["region_group"] = resolve_region_group(art["region"])
+        # 若来源为"全疆"（自治区级机构，无具体地区），直接标记为全疆
+        if region_code == "quanjang":
+            art["region_group"] = "quanjang"
+        else:
+            art["region_group"] = resolve_region_group(art["region"])
         articles.append(art)
 
     return articles
