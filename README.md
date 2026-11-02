@@ -7,16 +7,15 @@
 - **网站**：Astro + TypeScript + CSS
 - **采集**：Python（requests + BeautifulSoup + lxml + feedparser）
 - **数据存储**：JSON 文件（`data/articles.json`）
-- **自动采集**：GitHub Actions
-- **部署**：GitHub Pages
+- **自动采集**：GitHub Actions（仅负责采集与数据更新）
+- **部署**：EdgeOne Pages（读取仓库数据构建并部署网站）
 
 ## 目录结构
 
 ```
 xinjiang-industry-info/
 ├── .github/workflows/
-│   ├── collect.yml      # 自动采集工作流
-│   └── deploy.yml       # 网站部署工作流
+│   └── collect.yml      # 自动采集工作流（GitHub 只做采集与数据更新）
 ├── collector/           # Python 采集程序
 │   ├── main.py          # 采集入口
 │   ├── fetcher.py       # 网页与 RSS 获取
@@ -140,6 +139,32 @@ npm run build    # 构建
 - 采集失败时保留已有数据，不因单个网站失败导致数据丢失。
 
 > **注意**：GitHub Actions 定时任务存在延迟，不能保证每次都在指定分钟准时运行。这是 GitHub 平台的固有行为。
+
+## 部署（EdgeOne Pages）
+
+网站部署在 **EdgeOne Pages**，GitHub 仓库只负责「采集 + 数据更新」，不再使用 GitHub Pages。
+
+数据流转：
+
+```
+GitHub Actions（定时采集）
+        ↓ 提交 data/articles.json
+GitHub 仓库 main 分支
+        ↓ EdgeOne Pages 监听仓库更新，触发构建
+EdgeOne Pages（构建 Astro → 部署到根路径 /）
+```
+
+EdgeOne Pages 接入步骤：
+
+1. 在 EdgeOne Pages 控制台新建项目，关联本 GitHub 仓库（`rumian0/xinjiang-industry-info`）。
+2. 构建配置：
+   - **构建命令**：`cd website && npm install && npm run build`
+   - **输出目录**：`website/dist`
+   - **根目录**：项目根（默认）
+3. 部署后，站点位于根路径 `/`，无需 `base` 子路径。
+4. 每次 GitHub Actions 采集提交数据后，EdgeOne 自动重新构建并发布最新内容。
+
+> `website/astro.config.mjs` 中 `site` 为占位值，接入自定义域名后请替换为实际地址（用于 sitemap / canonical）。
 
 ## 数据真实性原则
 

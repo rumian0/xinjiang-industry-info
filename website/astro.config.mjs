@@ -2,9 +2,9 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // GitHub Pages 部署时通常使用仓库名作为 base，
-  // 如需自定义域名或 user 站点，可在此调整。
-  site: 'https://example.github.io',
-  base: '/xinjiang-industry-info/',
+  // EdgeOne Pages 部署在根路径，base 设为 '/'。
+  // site 用于生成 sitemap、canonical 等绝对地址，部署后请替换为实际域名。
+  site: 'https://xinjiang-industry-info.example.com',
+  base: '/',
   output: 'static',
 });
