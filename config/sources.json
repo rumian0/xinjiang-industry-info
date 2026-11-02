@@ -106,6 +106,17 @@
       "note": "重大项目建设栏目（纯产业专题：工业项目/产业链对接/开复工）"
     },
     {
+      "name": "奎屯-独山子经济技术开发区",
+      "url": "http://kdjkq.xinjiang.gov.cn/",
+      "type": "government",
+      "method": "list",
+      "list_url": "http://kdjkq.xinjiang.gov.cn/ktdsz/kfq/list_tj.shtml",
+      "article_pattern": "/ktdsz/kfq/\\d+/[a-f0-9]+\\.shtml",
+      "region": "yili",
+      "enabled": true,
+      "note": "园区要闻栏目（国家级经开区，石化/棉花/招商）"
+    },
+    {
       "name": "伊犁哈萨克自治州-政务动态",
       "url": "https://www.xjyl.gov.cn/",
       "type": "government",
