@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T04:29:02.270823+00:00",
-  "count": 177,
+  "generated_at": "2026-11-03T15:58:17.453164+00:00",
+  "count": 182,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3255,6 +3255,101 @@
         "development_zone",
         "enterprise",
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "adb75a8766b7988d452f427ea90694bf",
+      "title": "羽球飞扬 经开区首届中小学生羽毛球比赛火热开赛",
+      "summary": "经开区网讯（ 文 图 /郭昌 龙 ） “好球！”“加油！”此起彼伏的喝彩声响彻赛场，清脆的羽毛球击球声接连不断。 11 月 1 日，乌鲁木齐经济技术开发区（头屯河区）首届中小学生羽毛球比赛在杨军羽毛球俱乐部翎速馆挥拍开赛。来自全区 16 所学校的 28 支代表队、 300 余名 6 至 14 岁青少年选手同台竞技、以球会友，在方寸球场之上挥洒汗水，上演一场活力满满的青春羽毛球盛宴。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/c2615a1f66714836a18d24327e0cd3d5.shtml",
+      "published_at": "2026-11-03",
+      "collected_at": "2026-11-03T15:49:10.061389+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "766029c86ed43fb0fc2ed3be49b7e511",
+      "title": "一扇单元门的暖心之变——祥云社区接诉即办解民忧",
+      "summary": "经开区网讯（ 文 图 /陈 龙 ） 入冬以来，乌鲁木齐经济技术开发区（头屯河区）白鸟湖街道祥云社区聚焦居民反映的单元门把手老化、楼道漏风等问题，通过 “接诉即办 + 未诉先办”机制， 3 天内完成新疆日报社小区 19 个单元门把手更换，并统一加装保暖门帘，把居民的“烦心事”办成了“暖心事”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/a0dc57fe16f147ac9a9ac389c98181eb.shtml",
+      "published_at": "2026-11-03",
+      "collected_at": "2026-11-03T15:49:12.277295+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "5772c3ea23dc57f1011688d7456a27d2",
+      "title": "绿城·云萃小区项目建设提速 预计2027年7月底竣工验收",
+      "summary": "经开区网讯（ 文 / 李丽图 / 郭昌龙 ） 近日，记者走进乌鲁木齐经济技术开发区（头屯河区）高铁北片区绿城 ·云萃小区项目施工现场看到，项目所有楼栋主体结构已全部封顶。当前，施工人员正有序推进合院区域楼栋外墙保温、外立面装饰及室内地暖铺设作业，多层住宅门窗安装工作同步加紧施工，项目整体建设稳步推进，预计 2027 年 7 月底竣工验收。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/7c5a5b4caa194055b3830f9b075d8d33.shtml",
+      "published_at": "2026-11-03",
+      "collected_at": "2026-11-03T15:49:14.935888+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "8fa8a65696421291d4e41be741158fb6",
+      "title": "丁薛祥将出席第九届进博会开幕式及相关活动 - 中央要闻",
+      "summary": "新华社北京 11月3日电 商务部新闻发言人何亚东宣布：第九届中国国际进口博览会将于2026年11月5日至10日在上海举办。中共中央政治局常委、国务院副总理丁薛祥将出席开幕式及相关活动并作主旨讲话。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/966efe41877747c280f08e1d037de91b.shtml",
+      "published_at": "2026-11-03T00:00:00+08:00",
+      "collected_at": "2026-11-03T15:51:20.314517+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "32192e823887427be01928d17bba4f63",
+      "title": "城市老旧区域更新 须有力度有温度 - 政务动态",
+      "summary": "城市的温度，藏在老旧街巷的烟火里，留在老旧厂区的记忆中。近日，住房城乡建设部、工业和信息化部等六部门联合印发《关于推进老旧街区厂区改造提升的指导意见》（以下简称《指导意见》），强调坚持不搞大拆大建，推动老旧厂区功能转换、老旧商业街区业态升级、老旧生活街区品质提升、老旧交通枢纽及周边街区融合发展、历史文化街区镇区保护利用。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/01aee2afe2464c30ac0dfc1c2cf0b1e5.shtml",
+      "published_at": "2026-11-03T00:00:00+08:00",
+      "collected_at": "2026-11-03T15:51:48.967305+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
       ],
       "content_type": "news",
       "status": "pending",
