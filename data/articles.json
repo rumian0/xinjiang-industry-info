@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T03:47:09.422029+00:00",
-  "count": 182,
+  "generated_at": "2026-11-04T16:08:54.194233+00:00",
+  "count": 189,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3350,6 +3350,140 @@
       "region": "kashen",
       "industry_tags": [
         "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "7156b2f21dd063ab9f9da68b3aea304f",
+      "title": "新疆农特产品IP化带旺文旅新消费 - 农业农村动态",
+      "summary": "秋日阳光下，尉犁县罗布人村寨景区阿不旦广场的烟火市集里人来人往，数十个摊位前聚集着许多游客。罗布烤鱼、烤全羊、库麦其香气扑鼻，罗布麻茶等农产品摆满货架，胡杨木雕、帕拉孜手作、烽燧文创、罗布羊玩偶等商品琳琅满目。游客一边欣赏大漠胡杨、塔里木河风光，体验民俗，一边品尝美食、选购农特产品，把新疆风物 “打包带走”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/25790235afb64e2ca38d6cc02f9608cd.shtml",
+      "published_at": "2026-11-04T00:00:00+08:00",
+      "collected_at": "2026-11-04T15:58:06.121592+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9d9c718176c48b4723032ed071fcfb2d",
+      "title": "经开区举办2026年度少先队辅导员专业技能大赛",
+      "summary": "经开区网讯（文图/蔡嘉敏）22名少先队辅导员同台竞技，亮出育人真功夫。近日，乌鲁木齐经济技术开发区（头屯河区）2026年度少先队辅导员专业技能大赛在乌鲁木齐市第五十七中学开赛。大赛由共青团乌鲁木齐经济技术开发区（头屯河区）委员会、经开区（头区）教育局主办，赛事设置理论测试、主题宣讲、队课设计、情景问答四大环节，全方位检验辅导员思政引领与综合育人能力。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/70ef20b9419b4cdaa96b31ab4ff9ffda.shtml",
+      "published_at": "2026-11-04",
+      "collected_at": "2026-11-04T15:58:10.244793+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d86f06f974bc9b9a288299876b362aae",
+      "title": "“维泰之声”走进乡村：板凳会上唠家常 身边故事润心田",
+      "summary": "经开区网讯（文图/郭昌龙）10月30日，乌鲁木齐经济技术开发区（头屯河区）北站西路街道河南庄村，“维泰之声”巡回宣讲走进乡村。宣讲员不拘形式，面对面宣讲。用乡土话语讲述身边故事，以快板说唱传递心声；台下村民凝神聆听，现场掌声阵阵、笑声不断。一场接地气的院落微宣讲，把党的创新理论、惠民好声音送到各族群众家门口、心坎上。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/4f147a1c1e714caf8e07e292940ff613.shtml",
+      "published_at": "2026-11-04",
+      "collected_at": "2026-11-04T15:58:13.255837+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "4b3a5e6a5c1b94295062a40c7cf29df8",
+      "title": "经开区（头区）委常委会召开扩大会议",
+      "summary": "经开区网讯（文/区委办）11月2日下午，乌鲁木齐经济技术开发区（头屯河区）委常委会召开扩大会议。市委常委、区委书记周晨主持会议。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/337be3a5cb714a169325a974b01a253b.shtml",
+      "published_at": "2026-11-04",
+      "collected_at": "2026-11-04T15:58:15.070003+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "eda889f926359f1e2c427cc1e796ee47",
+      "title": "亚太经合组织召开第37届外交和贸易双部长会议 - 中央要闻",
+      "summary": "新华社北京 11月3日电（记者 邵艺博）亚太经合组织（APEC）第37届外交和贸易双部长会议3日以视频方式在京举行。会议联合主席中共中央政治局委员、外交部部长王毅和商务部部长王文涛共同主持。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/dc336a6ea60444b7a34b221d4743c670.shtml",
+      "published_at": "2026-11-04T00:00:00+08:00",
+      "collected_at": "2026-11-04T16:00:32.658623+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e3c3a7bd1abaeb86f7a43cf4b2e49691",
+      "title": "潮涌天山逐浪高——中国（新疆）自由贸易试验区揭牌启动三周年观察 - 政务动态",
+      "summary": "11月2日，工作人员在霍尔果斯铁路口岸换装场作业区进行吊装作业。今年1—9月，霍尔果斯铁路口岸通行中欧（亚）班列突破7000列，口岸过货量超1200万吨。□石榴云/新疆日报记者 邹懿摄",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/3cd2c215bd9248c7a7f0a098bf6097aa.shtml",
+      "published_at": "2026-11-04T00:00:00+08:00",
+      "collected_at": "2026-11-04T16:00:59.349367+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "6f9a6d30cc3e94c28ce5d49b97eff1fe",
+      "title": "2026年“全国龙头企业进新疆·巴州行”对接活动将于11月5日至6日举行",
+      "summary": "3日，记者从巴州农业农村局获悉，2026年“全国龙头企业进新疆·巴州行”对接活动将于11月5日至6日在库尔勒举行。 本次活动由自治区农业农村厅会同巴州人民政府举办，农业农村部、各省（区、市）及自治区各地（州、市）有关负责同志，农业龙头企业代表，大型农产品采购商，媒体记者等将参会。 本次活动以“精准对接提升援疆质效、加工赋能乡村产业振兴”为主题，涵盖展区巡展、启动仪式、系列专场对接活动、特色产业考察…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/db887218aab940d08e32352d89e41048.shtml",
+      "published_at": "2026-11-04T00:00:00+08:00",
+      "collected_at": "2026-11-04T16:01:46.879511+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
