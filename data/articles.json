@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T04:08:08.859351+00:00",
-  "count": 189,
+  "generated_at": "2026-11-05T16:12:53.363160+00:00",
+  "count": 191,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3483,6 +3483,44 @@
       "region": "bayin",
       "industry_tags": [
         "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e9d34058ac38a97e31cf8f94f1653b92",
+      "title": "坚定信心 凝聚力量 再建新功 - 农业农村动态",
+      "summary": "党的二十届五中全会审议通过了《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，对持之以恒推进全面从严治党作出系统部署，对进一步开创新时代管党治党、兴党强党新局面有着重大现实意义和长远指导意义。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/8d9497f3614b45acb0bb48c810a540e3.shtml",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-05T16:06:57.885109+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "865008e361fdeee30970a5636b4c8ff8",
+      "title": "擦亮新疆果品“金字招牌” - 政务动态",
+      "summary": "近日，第十一届中国果业品牌大会发布《 2026年果品品牌价值评估报告》。库尔勒香梨、若羌红枣、伽师新梅、伽师瓜4个新疆果品品牌登上2026年中国果品区域公用品牌价值榜，分列第2、第18、第32、第35位，品牌总价值达288.59亿元。四张“金字招牌”集体亮相全国榜单，是市场对新疆林果品质与品牌建设成效的充分认可。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/61f4d4fd7f42452ea1ff5274f11894c8.shtml",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-05T16:09:16.935515+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
         "agriculture"
       ],
       "content_type": "news",
