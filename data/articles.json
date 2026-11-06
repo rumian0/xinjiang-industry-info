@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T04:02:07.473752+00:00",
-  "count": 191,
+  "generated_at": "2026-11-06T15:46:24.583009+00:00",
+  "count": 197,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3522,6 +3522,121 @@
       "region": "kashen",
       "industry_tags": [
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "3a9bbc9389ab0985ef9195c7081667ca",
+      "title": "2026年度拟享受增值税加计抵减先进制造业企业名单（第一批）公示",
+      "summary": "根据《财政部 税务总局关于先进制造业企业增值税加计抵减政策的公告》（财政部 税务总局公告2023年第43号）和《工业和信息化部办公厅 财政部办公厅 国家税务总局办公厅关于2026年度享受增值税加计抵减政策的先进制造业企业名单制定工作有关事项的通知》（工信厅联财函〔2025〕418号）要求，自治区工业和信息化厅会同自治区科技厅、财政厅、税务局，兵团工信局确定了2026年度自治区制造业产品销售额占全部…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区工业和信息化厅-通知公告",
+      "source_url": "https://gxt.xinjiang.gov.cn/gxt/tzgg/202611/a8b4767d091a4312ba6f1bd2aee57483.shtml",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:38:55.677938+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "07ef39146de817186214f046571b01da",
+      "title": "“全国龙头企业进新疆·巴州行”对接活动在库尔勒市成功举办 - 农业农村动态",
+      "summary": "农业农村部门相关负责人， 200 余家疆内外农业产业化龙头企业、大型农产品采购商和平台渠道企业代表齐聚梨城参加对接活动",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/2a0d42de300f4c3599a45ef19a582089.shtml",
+      "published_at": "2026-11-06T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:39:56.022229+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "0021700aca75f37b1d2ac3891279cbc4",
+      "title": "农业农村部召开第二轮土地承包到期后再延长30年试点工作视频推进会强调 准确领会把握中央政策要求 积极稳妥做好延包试点工作 - 农业农村动态",
+      "summary": "11月5日，农业农村部召开第二轮土地承包到期后再延长30年试点工作视频推进会。会议强调，要深入学习贯彻习近平总书记重要指示精神，认真落实党中央、国务院决策部署，准确领会把握中央政策要求，积极稳妥做好第二轮土地承包到期后再延长30年试点工作，为农业农村高质量发展和经济社会大局稳定提供基础支撑。农业农村部党组书记、部长张柱出席会议并讲话，中央财办副主任、中央农办副主任祝卫东出席。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/4ab8a6a13cfa49569e24cfc7ef2192f9.shtml",
+      "published_at": "2026-11-06T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:39:57.822138+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f04845f036d24205cc07844e6a5b622e",
+      "title": "2026年前三季度农业农村经济运行总体平稳、基础持续夯实 - 农业农村动态",
+      "summary": "前三季度，各级农业农村部门深入学习贯彻习近平总书记关于 “三农”工作的重要论述和重要指示精神，认真落实党中央、国务院各项决策部署，锚定农业农村现代化，学习运用“千万工程”经验，统筹推进乡村全面振兴各项重点工作，农业农村发展保持良好势头，为国民经济延续总体平稳、向新向优态势提供有力支撑。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/22c8f826840346ad9ab33598cc3c780d.shtml",
+      "published_at": "2026-11-06T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:39:59.849396+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "464e0a08eada462ff26dae0ef57c9734",
+      "title": "第七届全国农业行业职业技能大赛决赛在重庆举办 - 农业农村动态",
+      "summary": "11月5日，由农业农村部、人力资源社会保障部、中华全国总工会联合举办的第七届全国农业行业职业技能大赛决赛在重庆市永川区启动。中国农业科学院党组书记杨振海出席大赛决赛开幕式并讲话，人力资源社会保障部、中华全国总工会相关单位负责人出席。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/613f534e880342a68fd2ef58549c5e16.shtml",
+      "published_at": "2026-11-06T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:40:02.923192+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d140df9e705c29667cd45b28c053e77f",
+      "title": "前三季度 绿电绿证交易规模大幅增长 - 政务动态",
+      "summary": "本报乌鲁木齐 11月5日讯 石榴云/新疆日报记者 康颢严 从新疆电力交易中心有限公司获悉：今年前三季度，新疆绿电交易电量达253亿千瓦时，同比增长241%；绿证交易2167.5万张，同比增长30.2%。绿电绿证交易规模实现大幅增长，绿色电力环境价值持续释放，为新疆推进“双碳”目标提供了市场支撑。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/cf3cb739ddf14ea39a99fbb2791be0d8.shtml",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:42:35.038712+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
       ],
       "content_type": "news",
       "status": "pending",
