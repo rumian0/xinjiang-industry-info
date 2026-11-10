@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T05:05:17.446242+00:00",
-  "count": 205,
+  "generated_at": "2026-11-10T16:11:27.583333+00:00",
+  "count": 207,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3794,6 +3794,44 @@
       "region": "tulufan",
       "industry_tags": [
         "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "efe822f438b2ab948630e657d6927924",
+      "title": "新疆塔城地区：守好优棉质量关 - 农业农村动态",
+      "summary": "日前，新疆棉花采收接近尾声，棉花公证检验进入年度高峰期。在塔城地区纤维检验所暨中国棉花公证检验乌苏实验室里，一辆辆满载棉样筐的运输车往来穿梭，一排排国际先进大容量快速棉花测试仪（HVI）高速运转。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/d2a8e48dd33a4138b64134bc92f4ef6a.shtml",
+      "published_at": "2026-11-10T00:00:00+08:00",
+      "collected_at": "2026-11-10T16:05:23.905708+00:00",
+      "region_group": "beijiang",
+      "region": "tacheng",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "6fac2663b2b6be3305c6526b05ee4775",
+      "title": "何立峰与加拿大财政部长商鹏飞、国际贸易部长西杜共同主持第二次中加经济财金战略对话 - 中央要闻",
+      "summary": "新华社温哥华 11月9日电 中共中央政治局委员、国务院副总理、中加经济财金战略对话中方牵头人何立峰，与对话加方牵头人、加财政部长商鹏飞、国际贸易部长西杜9日在加拿大温哥华共同主持第二次中加经济财金战略对话。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/0b3d5804cd6045faa0d127f59162df1d.shtml",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-10T16:07:32.287719+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
       ],
       "content_type": "news",
       "status": "pending",
