@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T03:27:59.712113+00:00",
-  "count": 197,
+  "generated_at": "2026-11-10T05:05:17.446242+00:00",
+  "count": 205,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3635,6 +3635,163 @@
       "collected_at": "2026-11-06T15:42:35.038712+00:00",
       "region_group": "beijiang",
       "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "09a186465d9cdca0beedb02f40f17d30",
+      "title": "“全国龙头企业进新疆·巴州行”对接活动举行签约额达34亿元 - 农业农村动态",
+      "summary": "11月6日，“全国龙头企业进新疆·巴州行”对接活动在库尔勒市启幕。活动由农业农村部乡村产业发展司、自治区农业农村厅联合主办，来自全国18个省（区、市）及兵地的200余家农业龙头企业、采购商、电商平台代表相聚梨城，共谋新疆农业产业发展大计。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/77137468a2bb4025a3ab1289f659a0c4.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T04:59:07.987260+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9f44c001db939eb2a801e2a753c88635",
+      "title": "千年土陶“活”起来 新疆乡村“火”起来 - 农业农村动态",
+      "summary": "11月6日，2026年大地流彩・全国乡村文化艺术展演季“文艺赋美乡村”第一批典型案例展示交流活动在北京举办。活动由农业农村部农村社会事业促进司主办、中国农业电影电视中心承办。新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿克陶县巴仁乡萨依巴格村《守土陶文脉绘振兴画卷》案例入选《第一批文艺赋美乡村典型案例》，代表新疆登上全国展示交流的舞台。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/2dcdb253f3ac4276852768f78a1d6239.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T04:59:09.994903+00:00",
+      "region_group": "nanjiang",
+      "region": "kezhou",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "b7cb07a48d613ab9342f300fa4af0268",
+      "title": "第二十届新疆冬博会巴州展馆圈粉无数",
+      "summary": "游客在巴州展馆品尝库尔勒香梨和且末红枣。（特派记者 陈飞 摄） 6日，第二十届新疆冬季旅游产业交易博览会（以下简称冬博会）在新疆国际会展中心启幕。巴州以“丝路山水·壮美巴州——冬韵巴州”为主题参展，配合现场快闪活动，展馆前人头攒动，不少客商与游客在此驻足、拍照打卡。 本届冬博会展览面积1.8万平方米，吸引国内外670余家冰雪装备、文旅及户外运动企业参展，同步举办文旅专业高校毕业生专场招聘、产业对接…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/4db4fb1e041246df9324c7b5fb148c4c.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T05:01:44.813235+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "4ce749912208be7fcf1195f8463f1cc4",
+      "title": "2026年“全国龙头企业进新疆·巴州行”对接活动启动",
+      "summary": "新疆是个好地方，品味新疆好产品。11月6日，2026年“全国龙头企业进新疆·巴州行”对接活动启动仪式在库尔勒举行。活动促成46个投资合作项目现场签约，签约金额34亿元，其中南疆签约项目35个、金额19亿元。 农业农村部乡村产业发展司副司长邵建成，自治区人民政府副秘书长姚星，自治区党委农办主任、自治区农业农村厅党组书记谢映周，州党委副书记张鑫出席活动。 此次活动由农业农村部乡村产业发展司、自治区农业…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/b397c09a9ffd49b6bd2302926947b835.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T05:02:05.739047+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a07f7181c15d1d3de936daf59a7702f5",
+      "title": "巴州召开党建引领“一起益企”接诉即办服务工作推进会",
+      "summary": "6日，巴州党建引领“一起益企”接诉即办服务工作推进会在若羌县召开。 会前，与会人员先后前往若羌县政务服务中心、若羌工业园区党群服务中心、新疆西海新能源新材料有限公司、巴音郭楞职业技术学院若羌产业学院实地观摩。会上，州党委网信办、若羌县、库尔勒上库高新技术产业开发区、尉犁县委社会工作部作交流发言。 会议指出，开展党建引领“一起益企”接诉即办工作，是打通服务经营主体“最后一公里”的重要举措。全州现有大…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/4b9fb5bdf9e74d558b171df236fa3b56.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T05:02:08.164548+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "358bdf3f9c57e65108d9bf9ae527e22b",
+      "title": "吐鲁番黑羊香飘星城 千串烤肉一日售罄",
+      "summary": "吐鲁番市融媒体中心讯（记者 加帕尔 余宗璞） 11月7日，第二十七届中国中部（湖南）农业博览会进入第二天。在新疆·吐鲁番馆烤肉美食品鉴区，吐鲁番市盛世火州农牧有限公司带来的吐鲁番黑羊肉烤肉人气爆棚，观展群众驻足排队品鉴，1000串烤肉全部售罄。 吐鲁番黑羊肉烤肉吸引众多市民驻足品尝。 吐鲁番市融媒体中心记者加帕尔摄 “吐鲁番的烤肉很嫩，吃起来特别香，刚尝了两串还想吃，结果已经卖完了。”长沙市民张晓…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106219/202611/b4ef81413d464dd885d023944195b2af.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T05:02:28.683180+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "68f107389a9474064812c1ccd4f01528",
+      "title": "非遗沙疗亮相中部农博会受青睐",
+      "summary": "吐鲁番市融媒体中心讯（记者 加帕尔 余宗璞） 11月6日，第二十七届中国中部（湖南）农业博览会开展。吐鲁番市维吾尔医医院携6种特色沙子标本，以及院内制剂、药茶、一人一方制剂等4大类53种维吾尔医药产品亮相新疆·吐鲁番馆沙疗康养展区，把国家级非物质文化遗产代表性项目维吾尔医药（沙疗）和特色维吾尔医药服务带到长沙。 吐鲁番市维吾尔医医院医生为观展市民提供健康咨询服务。吐鲁番市融媒体中心记者 加帕尔摄…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106219/202611/30b7ecf8722f47279ab2c949b7ec10f3.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T05:02:30.922166+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "84260b735d4cc99f0e6390f194f3e88d",
+      "title": "托克逊县人民法院公开审理非法占用农用地案 60余人旁听“生态法治课”",
+      "summary": "11月2日，托克逊县人民法院依法公开开庭审理被告单位托克逊县某建材有限责任公司、被告人刘某非法占用农用地刑事附带民事公益诉讼一案，并同步开展生态环境警示教育观摩活动。县人大代表、政协委员以及行政机关、企业代表共60余人到场旁听。 庭审现场。 经审理查明， 2024年5月至7月，该建材公司在未办理草原占用许可，也未向林草主管部门报备审批手续的情况下，由被告人刘某组织实施，在托克逊县黑山草原区域采土、…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106222/202611/c1422ac0ae6a4291945e71bdcee6f639.shtml",
+      "published_at": "2026-11-09T00:00:00+08:00",
+      "collected_at": "2026-11-10T05:02:47.591066+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
       "industry_tags": [
         "enterprise"
       ],
