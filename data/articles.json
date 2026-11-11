@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T16:11:27.583333+00:00",
-  "count": 207,
+  "generated_at": "2026-11-11T03:35:47.242107+00:00",
+  "count": 212,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3832,6 +3832,105 @@
       "region": "kashen",
       "industry_tags": [
         "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a3692350fa73e42dc24cbfc086429c21",
+      "title": "自治区召开氢能综合应用城市群工作推进会",
+      "summary": "为扎实推进自治区氢能综合应用试点工作， 11 月 10 日，自治区党委常委、自治区副主席玉苏甫江 · 麦麦提主持召开氢能综合应用城市群工作推进会。会议听取试点工作推进落实情况，梳理总结阶段性成效，协调解决推进中的困难问题，安排部署下 一 步重点任务 。 会议强调，自治区相关部门和相关地（州、市）要深刻把握氢能产业在服务国家能源安全、支撑 “ 双碳 ” 目标、建设国家能源资源战略保障基地中的重要作用…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区工业和信息化厅",
+      "source_url": "https://gxt.xinjiang.gov.cn/gxt/gxdt/202611/5a95f1b253ea47a99293e24137ad52ac.shtml",
+      "published_at": "2026-11-10T00:00:00+08:00",
+      "collected_at": "2026-11-11T03:29:08.328012+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f383a67af08a23ffc4fcc5d2f811b401",
+      "title": "第九届进博会闭幕新疆交易团收获满满 - 商务动态",
+      "summary": "天山网 - 新疆日报讯（记者谢慧变报道） 11 月 10 日，第九届中国国际进口博览会在上海闭幕，新疆交易团收获满满。初步统计，新疆采购商企业与参展商企业成交意向金额超 7534 万美元，较上届增长 11.3% ；人文交流展台（新疆）现场展销营业额 113.5 万余元，达成意向客户 96 名、意向订单金额 1447 万元。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区商务厅",
+      "source_url": "https://swt.xinjiang.gov.cn/xjswt/c114329/202611/dc1dfab2c03f4c23b44ac44be384b518.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T03:29:43.896209+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "5b435f6aa0d16c9443ab491e953ca33b",
+      "title": "全疆最大蓝莓种植基地鲜果上市 - 农业农村动态",
+      "summary": "本报墨玉 11月10日讯石榴云/新疆日报记者石鑫报道：近日，新疆规模最大的蓝莓种植基地迎来首个采收季，墨玉县现代农业产业园万亩戈壁（沙漠）现代设施农业及配套项目的首批高品质蓝莓抢鲜上市，采收期将持续至次年4月中旬。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/efa5acfd9ec5466fafc13b8c4cf22e8e.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T03:30:20.202297+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "dd3a6c6ffd6f71df9e080ee4ab617446",
+      "title": "新疆建成1273万亩国家级绿色食品原料供应地 - 农业农村动态",
+      "summary": "本报乌鲁木齐 11月10日讯石榴云/新疆日报记者赵悦报道：“我们的原料都是从绿色基地采购，生产的天山牌绿色食品面粉麦香浓郁、筋道爽滑，在展会上很受欢迎。多家商超、电商平台、餐饮渠道采购商主动与我们洽谈进京销售、渠道合作等事宜。”参加完在北京举办的第二十四届中国绿色食品博览会，新疆天山面粉（集团）北站有限责任公司销售部经理高杰收获很大。本届博览会上，新疆36家绿色食品和有机农产品企业的近200个特色…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/ad39dfc0f637409083bcfde02bb29e2c.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T03:30:22.206899+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "b9bdbd2fc04d0f8a04ff6906de3b495b",
+      "title": "张柱会见佛得角农业、农村发展和渔业部部长拉莫斯 - 农业农村动态",
+      "summary": "本网讯 11月9日下午，农业农村部部长张柱在京会见佛得角农业、农村发展和渔业部部长拉莫斯，双方就加强中佛农业合作深入交换意见。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/13fd01bb439443baaefbd9ce6509570e.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T03:30:25.144617+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
