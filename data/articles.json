@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T03:35:47.242107+00:00",
-  "count": 212,
+  "generated_at": "2026-11-11T15:57:30.495872+00:00",
+  "count": 223,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -3930,6 +3930,224 @@
       "region_group": "quanjang",
       "region": null,
       "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "504dd089dd59bcbfc12f2d91adeb9af7",
+      "title": "菊香满医养 童心暖夕阳——一场“一老一小”的暖心慰问",
+      "summary": "经开区网讯（文图/郭昌龙） 近日，在西安交通大学第二附属医院新疆医院（自治区人民医院白鸟湖医院）活动室里，京剧唱腔与童声合唱交替响起，掌声、欢笑声此起彼伏。一场 “菊香满医养童心暖夕阳”慰问在此温情上演。本次活动由乌鲁木齐经济技术开发区（头屯河区）民政局、自治区人民医院白鸟湖医院等单位联合举办。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/484f57699b8646f6933474b32b016758.shtml",
+      "published_at": "2026-11-11",
+      "collected_at": "2026-11-11T15:51:10.473410+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f5f887dcd70964bf08937f751dff0ec1",
+      "title": "机器狗起舞探新知 经开区“灯塔计划”研学活动解锁AI科技奥秘",
+      "summary": "经开区网讯（文图/郭昌龙） 为丰富青少年课外实践载体，普及人工智能科学知识，激发青少年科创探索热情， 11月7日，由乌鲁木齐市巴中商会发起，嘉宥米信息科技承办的“灯塔计划”第二期青少年公益研学活动，在乌鲁木齐经济技术开发区（头屯河区）乌鲁木齐天耀伟业信息技术服务有限公司（以下简称：“天耀伟业”）举行。辖区青少年走进本土专精特新企业，近距离与智能机器狗互动、体验VR黑科技、观摩数字产业成果，沉浸式感…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/528b688a61534369b1305cd110f5a1d0.shtml",
+      "published_at": "2026-11-11",
+      "collected_at": "2026-11-11T15:51:18.359090+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "ce2a80bc096ea3599f80270772ff1c64",
+      "title": "以课铸魂启新程 经开区开展中小学大思政课建设成果展示交流活动",
+      "summary": "经开区网讯（文图/蔡嘉敏） 为深入落实立德树人根本任务，集中展示区域大思政课建设实践成效，搭建跨区域思政教育交流互鉴平台， 11月3日，乌鲁木齐经济技术开发区（头屯河区）教育局在乌鲁木齐市第一中学教育集团望谷校区组织开展中小学大思政课建设成果展示交流活动。自治区、市教育部门相关领导、思政教育领域专家、各区县教育工作者及辖区学校教师代表参加活动。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/fa59ef36d9dc467eb3347355a01673cd.shtml",
+      "published_at": "2026-11-11",
+      "collected_at": "2026-11-11T15:51:19.019576+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a20c436de99f48f9e4d46ca93f121c3a",
+      "title": "诗礼润心育桃李 文化浸润助成长！“诗礼中国·新疆行”走进经开区校园",
+      "summary": "经开区网讯（文图/郭昌龙） 为深入推进文化润疆，传承弘扬中华优秀传统文化，铸牢中华民族共同体意识， 11 月 5 日至 6 日，“诗礼中国·新疆行——小一姐姐中华优秀传统文化推广”活动（乌鲁木齐站）落地乌鲁木齐经济技术开发区（头屯河区）。宣讲团队先后走进市第 57 中学、第 136 中学等 3 所校园，用生动鲜活的形式传播传统礼乐文化，以诗润心、以礼育人，让经典文化滋养青少年成长。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/dcfaeb3f5f634a03a8b9f19a07cb06a0.shtml",
+      "published_at": "2026-11-11",
+      "collected_at": "2026-11-11T15:51:21.507675+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "68d51168f518f2e3676212cef0819d7e",
+      "title": "全民消防筑防线 生命至上护安宁——经开区（头区）2026年消防宣传月启动",
+      "summary": "经开区网讯（文图/牛岚） 11月8日，乌鲁木齐经济技术开发区（头屯河区）2026年消防宣传月启动仪式在 砂之船（乌鲁木齐）奥莱举行。乌鲁木齐市消防救援支队支队长李文胜，经开区（头区）委副书记、管委会副主任（常务副区长）胡泽江出席活动。区安消减委相关成员单位、驻区企业代表、辖区居民共 500余人到场参与。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/2bef2a1ebc244aadb53d4e2d7137557f.shtml",
+      "published_at": "2026-11-11",
+      "collected_at": "2026-11-11T15:51:23.008923+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "6de5c0cb9bd5b8bc2beab276c3138fa6",
+      "title": "感受AI科技魅力 赋能企业创新发展——经开区街道联合开展人工智能科技观摩活动",
+      "summary": "经开区网讯（文图/蔡嘉敏） 近日，乌鲁木齐经济技术开发区（头屯河区）中亚南路街道联合高铁街道组织辖区企业代表、社区工作人员走进高铁片区天山云计算产业基地，开展 “感受AI科技魅力，赋能企业创新发展”人工智能科技观摩交流活动。活动旨在打通辖区企业与数字产业资源的对接通道，拓宽市场主体数字化转型思路。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/f44824d3a06444c68c700e5fea096d4a.shtml",
+      "published_at": "2026-11-11",
+      "collected_at": "2026-11-11T15:51:25.205002+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "69b2a9221f152976b1950f181e9a0eb5",
+      "title": "“果然泽普”亮相沪新两地 - 县市信息",
+      "summary": "10月30日，泽普县区域公用品牌“果然泽普”亮相泽普第十七届金湖杨旅游文化季与2026沪疆文化交流周（上海站）两个活动现场。品牌依托沪新协作产销通道，推动林果产业提质升级，带动当地果农稳定增收。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106692/202611/4bbfa7b70026490da417357fcd1ae0f1.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T15:53:32.804226+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "7b4fa214134e5443a63ee093ea006c9b",
+      "title": "第九届进博会按年计意向成交额创新高 - 政务动态",
+      "summary": "新华社上海 11月10日电（记者 周蕊、谢希瑶）第九届中国国际进口博览会10日闭幕。在当天举行的闭幕新闻通气会上，中国国际进口博览局党委副书记肖露说，第九届进博会按一年计意向成交金额达854.5亿美元，比上届增长2.3%，创历史新高。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/9bd63de12df345f0a45702e8a0899b37.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T15:53:44.305920+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "be35f2f155ebd63769ea6fd2c983a0c2",
+      "title": "库尔勒香梨香飘全国",
+      "summary": "11月5日，在新疆巴州沙依东香梨产业发展有限公司香梨分拣车间，工人们正在有序分拣香梨。 据悉，该公司以种植经营新疆名优特产——库尔勒香梨享誉四海，现为自治区农业产业化重点龙头企业、自治区级农业产业化联合体、国家确定的第一批优质农产品生产出口基地。目前，该公司已建成7000吨标准化恒温恒湿保鲜冷库，冷链仓储库容近80万吨，建成日处理60吨国产化智能分选生产线，实现外观瑕疵、单果重量、内部糖度全自动无…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/8038aec4e2fd46eeb6eff457bfc03f4e.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T15:54:00.654527+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise",
+        "transport_logistics",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "cbb6d569eab83fd7753b65864ae536f8",
+      "title": "尉犁百里胡杨廊道新路建成通车",
+      "summary": "尉犁百里胡杨廊道。（通讯员 艾尼帕木·司马义 摄） 8日，尉犁县塔里木乡岔口至喀尔曲尕乡农村改扩建公路全线通车。这条穿行于尉犁百里胡杨核心区的通道，以崭新面貌迎接八方游客赴胡杨之约，也打通了沿线农产品外销通道，让大漠胡杨美景转化为群众看得见、摸得着的增收实效。 该公路全长55.7公里，是前往喀尔曲尕乡观赏胡杨的必经之路。项目今年9月开工，总投资5500余万元，按三、四级公路标准实施改造，路基宽8.…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/4728cf2588e04bb098711d32e4400fee.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T15:54:03.066371+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "transport_logistics",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "0adaea1bc72a5f64c69b4d3578e25396",
+      "title": "巴州特色林果产品广州专场推介会周六举办",
+      "summary": "第六届中国新疆特色林果产品博览会巴州特色林果产品广州专场推介会，将于11月14日在广州中国进出口商品交易会展馆举办。本次活动以“丝路传果香·盛会启新航”为主题，借助博览会“美丽新疆林果飘香”展会平台，集中展示巴州林果产业发展成果，搭建粤疆两地产销对接、经贸合作桥梁，让巴州优质林果香飘粤港澳大湾区。 第六届中国新疆特色林果产品博览会由新疆维吾尔自治区人民政府、广东省人民政府联合主办，将于11月13日…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/c08ef951935a4c94a71fd428eaa247f9.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-11T15:54:14.403576+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "transport_logistics",
         "agriculture"
       ],
       "content_type": "news",
