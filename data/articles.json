@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T04:46:05.736765+00:00",
-  "count": 223,
+  "generated_at": "2026-11-12T16:40:25.224611+00:00",
+  "count": 233,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4149,6 +4149,198 @@
       "industry_tags": [
         "transport_logistics",
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a0425d274aef85ba5806834ace90f532",
+      "title": "新疆农村供水保障能力持续提升 - 农业农村动态",
+      "summary": "天山网 -新疆日报讯（记者康颢严报道）近日，在中国水利水电科学研究院组织召开的全国农村供水水质提升技术交流会上，自治区水利厅全面展示新疆在供水工程建设、水质净化消毒、运维管护等方面的典型经验。截至目前，新疆规模化供水工程覆盖农村人口比例提高到89%，县域统管比例达到80%以上，供水水质持续提升，农村群众从“有水喝”稳步迈向“喝好水”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/d9f6a15e0f9048aa98e9dc43ada6db2c.shtml",
+      "published_at": "2026-11-12T00:00:00+08:00",
+      "collected_at": "2026-11-12T16:34:35.121098+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d0407bcf0184cf35cbaa5fd1747934d0",
+      "title": "把歇脚处安在居民家门口！高铁街道新增145把便民座椅",
+      "summary": "经开区网讯（文图/郭昌龙）“遛弯走累了，就近就能坐下歇歇，很方便！”德泽园小区居民冯作军坐在崭新的便民座椅上，惬意地和邻里闲谈。近日，乌鲁木齐经济技术开发区（头屯河区）高铁街道聚焦居民日常休憩刚需，在小区步道、楼栋出入口、休闲广场等区域因地制宜增设便民座椅。目前，辖区26个小区已完成145把便民座椅安装落地，实实在在解决居民散步歇脚难题，让大家下楼有处坐、闲谈有去处。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/bf2a8e865b874bda871b84e02b81f41e.shtml",
+      "published_at": "2026-11-12",
+      "collected_at": "2026-11-12T16:34:37.900414+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "1f63e12d30dc8c590c759caf3adedd25",
+      "title": "护航秋收！田间物料档案背后，看新研牧神智造力量",
+      "summary": "经开区网讯（文图/郭昌龙）2000多台新生产机型收获机械投入田间作业，33个服务站点覆盖全国主产区。秋收时节，乌鲁木齐经济技术开发区（头屯河区）驻区企业新疆新研牧神科技有限公司把秋收服务做到了机手身边。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/69c7cc7943d14505955338a4bf5f63c3.shtml",
+      "published_at": "2026-11-12",
+      "collected_at": "2026-11-12T16:34:39.708208+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "8bf766df6047b341b9f07869933c394b",
+      "title": "高铁南北片区连起来了，经开区衡山路联通工程正式通车",
+      "summary": "经开区网讯（文/李丽图/郭昌龙）11月11日早上8点，衡山路联通工程正式通车。一条全长876米的道路，以双向四车道的跨线桥跨越苏州路、景园路，把衡山路与高铁北五路连成一线，前往乌鲁木齐站20分钟的绕行，就此缩短成5分钟。此前一天，乌鲁木齐经济技术开发区（头屯河区）举行衡山路联通工程通车仪式。区委常委、管委会副主任（副区长）卿育才出席通车仪式。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/041450deb1f74814960c70e25431cd40.shtml",
+      "published_at": "2026-11-12",
+      "collected_at": "2026-11-12T16:34:41.707814+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "24a75306f65759f44b07d7ef293299c5",
+      "title": "从天山到皖江，这场文旅“双向奔赴”! 乌鲁木齐经开区赴皖考察结硕果",
+      "summary": "近日，由乌鲁木齐经济技术开发区（头屯河区）委常委、宣传部部长王新伟带队，经开区（头区）文旅招商小分队赴安徽合肥、六安开展对标考察和产业对接，学习当地文旅运营先进经验，洽谈跨区域协作、达成合作意向，推动搭建皖疆文旅常态化协作平台，实现“学习取经、资源对接、意向签约”多方共赢。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119845/202611/ee6f8809dca447c196e67e32b5f0fe9c.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-12T16:34:45.773182+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "b036d7439aec4a7c24468f252be21853",
+      "title": "南疆园区提质增效“三重奏” - 县市信息",
+      "summary": "作为新疆 “棋眼”，“十四五”时期，南疆四地州地区生产总值年均增长6.2%，高于全疆平均水平，这离不开园区经济的有力支撑。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106692/202611/1ba13332522044c09461cf596acbbaca.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-12T16:36:43.348358+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "7aeae8a3f8ae86db1bd9073ffb642bad",
+      "title": "艾尔肯·吐尼亚孜与部分中央企业负责人在京举行工作座谈 加大合作力度 促进互利共赢 - 政务动态",
+      "summary": "本报乌鲁木齐 11月11日讯 石榴云/新疆日报记者李杨报道：10日至11日，自治区党委副书记、自治区主席艾尔肯·吐尼亚孜在北京与中国华电集团有限公司、中国电信集团有限公司、中国黄金集团有限公司等中央企业负责人举行工作座谈，并签署战略合作协议，深入贯彻落实党的二十届五中全会精神，贯彻落实自治区第十一次党代会精神，紧扣自治区“十五五”发展总体规划与重点产业布局，进一步拓展央地合作领域，加大合作力度，推…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/51b219211f364071883b1149924dead9.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-12T16:36:55.171919+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "82c5ceab2a43b9696bd95cbd9f0acca7",
+      "title": "2026年“纾困解难 服务助力中小企业高质量发展巴州行”活动启动",
+      "summary": "11月10日，2026年“纾困解难 服务助力中小企业高质量发展巴州行”活动在库尔勒启动。本次活动由自治区中小企业发展促进中心、巴州工业和信息化局联合主办，是国家、自治区“一起益企”中小企业服务行动下沉基层的重要举措。活动聚焦中小企业培育、融资贴息、数字化转型等内容，采用“集中宣讲+园区走访+面对面问诊”服务模式，切实帮助中小微企业纾困解难、提质发展。 “大企业是骨架，中小企业是血脉；骨架撑起高度，…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/1fe7aacc849049819710423e783880c3.shtml",
+      "published_at": "2026-11-12T00:00:00+08:00",
+      "collected_at": "2026-11-12T16:37:15.938409+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9faa99df7d01d629088e4c397f365b3f",
+      "title": "“中国工人大思政课·新疆篇”宣讲活动走进巴州",
+      "summary": "石榴云/新疆日报11月11日讯（石榴云/新疆日报记者 秦梅花） 11月10日，2026年“中国工人大思政课·新疆篇”宣讲活动走进巴音郭楞职业技术学院，开启巴州专场思政宣讲。 此次活动由自治区总工会、新疆日报社（集团）联合主办，邀请三位优秀宣讲嘉宾，从不同领域、不同视角讲述奋斗故事、传递实干力量。全国劳动模范、全国脱贫攻坚奋进奖获得者邓迎香，讲述扎根基层攻坚克难、带领群众增收致富的奋斗历程；大国工匠…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/b60cb95a8e884cc28dc0ecd6d2f42387.shtml",
+      "published_at": "2026-11-12T00:00:00+08:00",
+      "collected_at": "2026-11-12T16:37:18.254796+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d37f7f5eb1f5b1eec4f79932d6b4813d",
+      "title": "自治区党委常委会召开会议",
+      "summary": "学习贯彻习近平总书记重要指示精神 研究落实党中央关于党的二十一大代表选举工作部署要求 研究推动提升新疆战略性矿产资源安全保障能力 陈小江主持会议 石榴云 /新疆日报讯（记者王兴瑞报道）自治区党委常委会11月12日召开会议，自治区党委书记陈小江主持会议。 会议认真学习贯彻习近平总书记重要指示精神和《中共中央关于党的二十一大代表选举工作的通知》要求，强调要深入学习贯彻习近平党建思想，贯彻落实党的二十届…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106217/202611/dd746279c7874a84b7a3808e55d9a159.shtml",
+      "published_at": "2026-11-12T00:00:00+08:00",
+      "collected_at": "2026-11-12T16:37:24.644305+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "mineral"
       ],
       "content_type": "news",
       "status": "pending",
