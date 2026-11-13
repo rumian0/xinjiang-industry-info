@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T16:40:25.224611+00:00",
-  "count": 233,
+  "generated_at": "2026-11-13T03:58:20.482249+00:00",
+  "count": 236,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4341,6 +4341,64 @@
       "region": "tulufan",
       "industry_tags": [
         "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d40f2b6361886cba8be9f86b27c40c8d",
+      "title": "以标准引领养殖业转型升级——农业农村部发布智慧牧场、智慧渔场机械化建设指南系列标准 - 农业农村动态",
+      "summary": "近日，农业农村部相继发布一批智慧牧场、智慧渔场机械化建设指南系列农业行业标准，标志着我国智慧养殖领域迈入规范化、标准化发展的新阶段。该系列标准由农业农村部农业机械化总站牵头，联合全国畜牧总站、全国水产技术推广总站以及高等院校、科研院所、装备生产制造头部企业和农机鉴定推广机构等多方力量，聚焦养殖产业高质量发展需要，推进牧机牧艺、渔机渔艺、机械化与信息化深度融合，旨在为现代养殖设施装备的智能化升级提供…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/b4cd1a9ab78a42e8854d6346325946cd.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T03:53:00.318717+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "588a4675b82ab150ef357e45d37bb044",
+      "title": "张柱会见墨西哥农业和农村发展部部长洛佩斯 - 农业农村动态",
+      "summary": "11月12日上午，农业农村部部长张柱在京会见来华参加第二十三届中国国际农产品交易会的墨西哥农业和农村发展部部长科伦巴·洛佩斯，就加强双边农业合作深入交换意见。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/a3f4c8be5113418ebbff070348542e6c.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T03:53:03.352105+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "1cddd9dfd71dacae824c52340dda6b30",
+      "title": "燕赵书香润梨城 千里传情育新苗",
+      "summary": "12日，“燕赵书香赴疆来”暨“千万里找寻着你——点亮阅读微心愿”图书捐赠仪式在库尔勒市第二十三中学举办。州党委常委、宣传部部长阿依先木·吉力力出席活动并致辞。 活动现场，河北出版传媒集团向巴州无偿捐赠文学、科普、少儿类优质图书4000余册，总价值近20万元，以优质阅读资源助力书香校园建设，深化冀疆两地文化协作与教育交融。 河北出版传媒集团党委委员、纪委书记宋炳旺表示，本次千里赠书承载着燕赵大地对边…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/7ff36da2dcf941a298cb03fb31e50fcc.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T03:55:21.791316+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise"
       ],
       "content_type": "news",
       "status": "pending",
