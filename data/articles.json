@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T03:58:20.482249+00:00",
-  "count": 236,
+  "generated_at": "2026-11-13T16:03:17.156210+00:00",
+  "count": 249,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4397,6 +4397,261 @@
       "collected_at": "2026-11-13T03:55:21.791316+00:00",
       "region_group": "nanjiang",
       "region": "bayin",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "49eb9d545ca6f80112c88c73a0802dab",
+      "title": "“奋进‘十五五’·能源强国看新疆”系列报道之“青年干部篇”",
+      "summary": "“ 十五五 ” 开局之年，能源强国建设迈入新阶段。作为全国能源资源 的 战略保障基地，新疆 “ 山山有资源、盆盆有油煤、处处有 ' 风光 '” ： 2025 年原煤产量 5.53 亿吨、 “ 疆煤外运 ” 超 1.4 亿吨，油气生产当量连续 5 年居全国首位，新能源装机占比超六成， “ 疆电外送 ” 覆盖 22 个省区市 —— 丰厚的能源 “ 家底 ” ，正 在 转化为保障国家能源安全、推动 经济…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/aba21e83795c4eb1ac4f121408cbee25.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:53:53.938498+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "mineral",
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "77f06f87f02866b66ee301c7dd8d767c",
+      "title": "数智赋能棉纺产业！全疆首个纺纱“灯塔工厂”在经开区试生产",
+      "summary": "经开区网讯（ 文 / 李丽图 / 郭昌龙 ） 11 月 10 日，乌鲁木齐经济技术开发区（头屯河区）上海数智世界工业科技集团有限公司（下称数智世界集团）新疆睿航纺织生产车间内，首台抓棉机开机运转，标志着该项目正式进入试生产阶段。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/29d3840619274fa5ab48e9a12dddb8f0.shtml",
+      "published_at": "2026-11-13",
+      "collected_at": "2026-11-13T15:55:38.223755+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "3c3d2000501b6b791a1aeb949e0412ad",
+      "title": "扭蛋解锁法律题 经开区“小哥急诊室”创意普法直播开讲",
+      "summary": "经开区网讯（文图/陈龙） “快来扭一下！看看今天解锁哪个跑单法律难题！”随着一名骑手拧开一颗趣味扭蛋，乌鲁木齐经济技术开发区（头屯河区）创意普法直播“小哥急诊室”骑手专场正式开播。活动采用线上线下联动的模式，以轻松鲜活、沉浸式的普法形式，为穿梭街巷、奔波在路上的配送骑手送上定制化法治护航。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/0f591b4f1b74428fa71a190c4fa6d2bc.shtml",
+      "published_at": "2026-11-13",
+      "collected_at": "2026-11-13T15:55:40.208037+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e418444f1ae03d29e5191ad0799a499d",
+      "title": "“保税 + TIR” 赋能 “新疆造” 飞机防冰液出海",
+      "summary": "经开区网讯（文图/蔡嘉敏） 近日，乌鲁木齐综合保税区本土企业首批约 40 吨飞机除冰防冰液顺利完成出口申报，依托“保税 +TIR ”跨境运输模式整装启运，直达哈萨克斯坦。此次出口实现乌鲁木齐综保区航空高端化学品出口“零的突破”，标志着新疆自主研发生产的航空新材料成功进军中亚市场。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/2dbf158cf9ac405194746d37e56725e8.shtml",
+      "published_at": "2026-11-13",
+      "collected_at": "2026-11-13T15:55:42.404380+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "4c9b3c336f25d09cbad49abfc74d60d6",
+      "title": "“新疆造”飞机除冰防冰液启运中亚 乌鲁木齐综保区航空高端化学品出口实现零的突破",
+      "summary": "新疆网讯（记者唐红梅 通讯员魏敏）近日，在乌鲁木齐综合保税区，园区企业的首批 40 吨左右飞机除冰防冰液完成出口申报，整装启运。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119845/202611/9b1fe3a370cd424389fad77afd77837f.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-13T15:55:46.416846+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "83b5f6611a32de05c329bc556a392eb9",
+      "title": "习近平对国有企业党的建设工作作出重要指示强调",
+      "summary": "新华社北京 11月13日电 中共中央总书记、国家主席、中央军委主席习近平近日对国有企业党的建设工作作出重要指示指出，党的十八大以来，国有企业认真落实党中央决策部署，党的建设得到加强，各项工作取得新成效。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/fa35f00a4d1045c58c1b84ce8093d239.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:57:57.267623+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9be1afa9faa5f5783e263dd8f73a02c7",
+      "title": "自治区党委常委会召开会议 学习贯彻习近平总书记重要指示精神 研究落实党中央关于党的二十一大代表选举工作部署要求 研究推动提升新疆战略性矿产资源安全保障能力 陈小江主持会议 - 政务动态",
+      "summary": "本报乌鲁木齐 11月12日讯 石榴云/新疆日报记者王兴瑞报道：自治区党委常委会11月12日召开会议，自治区党委书记陈小江主持会议。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/8d51bf1d0460409d83122bfa66571a2e.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:58:57.234448+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "121cf95cae6f243f1413be99816dba64",
+      "title": "罗新国：以镜头为笔记录“疆品入湘”",
+      "summary": "吐鲁番市融媒体中心讯（记者 加帕尔） 11月8日，湖南日报新媒体中心和时政频道原视觉总监、高级记者罗新国走进第二十七届中国中部（湖南）农业博览会新疆·吐鲁番馆，以镜头为笔，捕捉市民品鉴选购、客商洽谈交流的鲜活瞬间，定格湘吐同心、好物共融的动人画面。 罗新国（右一）在新疆 ·吐鲁番馆了解吐鲁番黑羊系列产品。吐鲁番市融媒体中心记者加帕尔摄 中部农博会新疆 ·吐鲁番馆前人气高涨。 中部农博会新疆 ·吐鲁…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106219/202611/c47b11bceaaf4dfbb2b4f923852bd7c8.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:59:38.474407+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e835489c7977d845d232000b9237ab45",
+      "title": "烟火升腾，甜香落进湘江市场——第二十七届中部农博会新疆·吐鲁番馆火热出圈（下）",
+      "summary": "吐鲁番市融媒体中心记者 加帕尔 余宗璞 11月7日上午，第二十七届中国中部（湖南）农业博览会新疆·吐鲁番馆烤肉摊前，队伍拐了一道弯。师傅一手翻串、一手撒料，白烟裹着肉香飘出很远；前排市民踮脚张望，后排市民举起手机拍视频，有人边排队边说：“就冲这个味儿，再等十分钟也值。” 本届中部农博会上，新疆 ·吐鲁番馆以黑羊烤肉、下午茶、特色沙子等元素，把吐鲁番的烟火气带到湘江边。4天展期，约4.5万人次进馆参…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106219/202611/815dc3f89e6244d583fdec30a89a528e.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:59:41.984020+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "c7e5558e27a91d613a36a2714b7ecad5",
+      "title": "“番”越山海 一馆装下新疆丰物——第二十七届中部农博会新疆·吐鲁番馆火热出圈（上）",
+      "summary": "吐鲁番市融媒体中心记者 加帕尔 余宗璞 11月6日至9日，第二十七届中国中部（湖南）农业博览会（简称中部农博会）在长沙举行。以“人生须尽欢极致吐鲁番”为主题的新疆·吐鲁番馆累计接待观众约4.5万人，销售额超过300万元。 一座远在火焰山下的城市，为何能在中国中部规模最大的农业盛会上如此 “圈粉”？答案藏在500平方米的主题馆里，也藏在葡萄藤下、检测室里和近三十年的接力奔赴中。 中部农博会现场，观众…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106219/202611/1efc19eae98847f3a8b7942e6a4865fc.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:59:44.334726+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "24defc12ea222203199cbeb829770aa6",
+      "title": "安全生产进行时 | 自治区油气管道保护应急演练在鄯善举行",
+      "summary": "11月10日，自治区2026年油气管道保护专项实战应急演练在鄯善县举行。自治区公安厅、应急管理厅、自然资源厅、地震局、气象局及兵团发展改革委，乌鲁木齐市、昌吉州、哈密市发展改革委，吐鲁番市、鄯善县安委会相关成员单位及企业代表130余人到场观摩。 演练现场。 此次演练模拟鄯善县火车站镇发生地震，诱发道路塌陷、山体滑坡，造成电力、通信中断，输气管道撕裂泄漏、原油干线管体及焊缝破损泄漏、站场设施受损等险…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106219/202611/c69712d0d23f48de807eb4541c70a7dd.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:59:45.875086+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "be7071fe126a3abe82db100b7a5a898c",
+      "title": "吐鲁番市消防救援局开展综合实战演练",
+      "summary": "吐鲁番市融媒体中心讯（文 /图张明先）11月11日，吐鲁番市消防救援局灭火救援综合实战演练在市消防训练基地举行，多支消防救援力量联合参演，演练时长约90分钟。副市长姚垚到场观摩。 参演人员开展地震废墟救援演练。 本次演练紧贴辖区灾害事故特点，设置地震废墟救援、绳索高空救援、高层火灾扑救、真烟真火体验等实战科目。参演力量涵盖国家综合性消防救援队伍、企业专职消防队、机场消防、乡镇消防队等，投入消防车辆…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106221/202611/cdf4dc5b0ba24d8abd549c17fa23b9e7.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T15:59:55.590903+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9adc155ef76c3a12c0824ae25e3a86c0",
+      "title": "鄯善县举办高校毕业生暨退役军人及军属专场招聘会",
+      "summary": "11月10日，鄯善县公共就业服务中心举办2026年全国城市联合招聘高校毕业生（秋季）专场暨退役军人及军属专场招聘会，面向高校毕业生、退役军人及军属等重点群体精准做好就业服务，拓宽求职就业渠道。 本次招聘会聚焦重点求职群体，精准对接企业用工需求，邀请 8家企业参会，提供叉车司机、焊工、餐饮主管、维修工等200余个就业岗位，覆盖生产制造、通信服务、文旅餐饮等多个领域，满足不同技能层次求职者需求。 招聘…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106222/202611/327cbe3d325f430089739f92946d2117.shtml",
+      "published_at": "2026-11-13T00:00:00+08:00",
+      "collected_at": "2026-11-13T16:00:05.596211+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
       "industry_tags": [
         "enterprise"
       ],
