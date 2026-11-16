@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T03:36:16.394361+00:00",
-  "count": 251,
+  "generated_at": "2026-11-16T17:59:28.510985+00:00",
+  "count": 261,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4691,6 +4691,201 @@
       "collected_at": "2026-11-16T03:32:26.572916+00:00",
       "region_group": "nanjiang",
       "region": "kashen",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "728a1125d16ebce6e43032a2411918d3",
+      "title": "“品味新疆”好产品品牌目录扩容入选产品达1277个 - 农业农村动态",
+      "summary": "本报乌鲁木齐 11月15日讯石榴云/新疆日报记者赵悦从自治区农业农村厅获悉：11月9日，“品味新疆”好产品品牌目录2026年第三批拟纳入名单及退出名单公示完成，全区67家生产经营主体、218个产品拟纳入2026年第三批“品味新疆”好产品品牌目录，同时2家公司的7个产品退出目录。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/b2dfc7dc36044156877aed316edcb8ef.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:54:35.737169+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d7c301bb8065550e66382b4988687dbe",
+      "title": "低空“一张网”飞出新生态 丝路互连石城签约共筑低空产业新生态",
+      "summary": "经开区网讯（文图/郭昌龙）近日，以“融汇低空新场景共筑产业新生态”为主题的第三届低空产业创新发展大会在新疆石河子会展中心开幕。乌鲁木齐经济技术开发区（头屯河区）区属国有企业新疆丝路互联数字产业发展有限公司（以下简称：“丝路互联”）受邀参会。会上，丝路互联与中国铁塔股份有限公司乌鲁木齐市分公司、中科智航（新疆）科技有限公司签署《乌鲁木齐经开区一网统飞合作协议》，并围绕“低空启航数智赋能”作主题交流，…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/48b0e85fa71341d39dbde934a1cfe196.shtml",
+      "published_at": "2026-11-16",
+      "collected_at": "2026-11-16T17:54:38.648793+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "acfcb86d367b510121652015be39b0ec",
+      "title": "地铁飞驰入经开，轨道织就新图景",
+      "summary": "经开区网讯（文/杜元元图/蔡嘉敏）2026年11月15日，乌鲁木齐轨道交通2号线一期北段正式开通运营。记者获悉，线路南起南门站、北至华山街站，全长13.94公里，设10座车站。随着2号线一期北段开通，乌鲁木齐进入地铁双线运营阶段。其中，乌鲁木齐经济技术开发区（头屯河区）范围内的乌鲁木齐站、华山街站同步投用，分别衔接乌鲁木齐高铁枢纽和高铁北片区居民生活圈，实现高铁与城市轨道换乘衔接，地面路网同步织密…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/954db38a2cfc432a945c73b6e29b6b7d.shtml",
+      "published_at": "2026-11-15T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:54:41.327370+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "c4466e9c78ea05c785d395c3b428acd1",
+      "title": "王也：“银辉共治”唤醒老旧铁路大院的“第二春”",
+      "summary": "经开区网讯（文图/杜元元）初冬的乌鲁木齐，风已经带着凛冽的气息。乌鲁木齐经济技术开发区（头屯河区）火车西站街道东林街社区六街小区里，85岁的老党员郭进山戴着红色的安全帽，正蹲在楼前仔细查验刚刚铺好的防滑地砖。这位有着51年党龄的老铁路人，如今是社区改造工地上雷打不动的“义务监工”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/1057c391d0dc4bc6a7259790c2985060.shtml",
+      "published_at": "2026-11-16",
+      "collected_at": "2026-11-16T17:54:42.779518+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "1c78bbb6eb918bbaf4fc92441a0c1600",
+      "title": "杨秀理贾林·努尔哈米提在霍尔果斯市、都拉塔口岸调研",
+      "summary": "11月15日，州党委书记杨秀理，州党委副书记、州长候选人贾林·努尔哈米提在霍尔果斯市、都拉塔口岸调研。杨秀理强调，要把学习宣传贯彻党的二十届五中全会精神作为当前和今后一个时期的重大政治任务，按照党中央决策部署和自治区党委工作要求，迅速在全州上下掀起学习宣传贯彻热潮，以更高标准、更实举措持之以恒推进全面从严治党，以管党治党新成效更好引领保障伊犁高水平安全和高质量发展。 11月15日，州党委书记杨秀理…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "伊犁哈萨克自治州-政务动态",
+      "source_url": "https://www.xjyl.gov.cn/xjylz/c112425/202611/bcd285b72b7d4e21a6d0908b44863d90.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:55:14.817129+00:00",
+      "region_group": "beijiang",
+      "region": "yili",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a81d2f160fdf32608335f7f2f2461687",
+      "title": "国家统计局：10月份国民经济运行总体平稳、向新向优 - 中央要闻",
+      "summary": "10月份，在以习近平同志为核心的党中央坚强领导下，各地区各部门认真贯彻落实党中央和国务院决策部署，坚持稳中求进工作总基调，强化存量政策和增量政策协同，扎实推进高质量发展，生产供给平稳增长，市场销售规模扩大，对外贸易快速增长，就业物价总体稳定，新质生产力茁壮成长，国民经济运行延续总体平稳、向新向优发展态势。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/517b6456a68043c7a310adf02509d602.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:56:12.360355+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "fafa2ad20ec483e426293cdc409159f4",
+      "title": "“品味新疆”好产品品牌目录扩容入选产品达1277个 - 政务动态",
+      "summary": "本报乌鲁木齐 11月15日讯 石榴云/新疆日报记者赵悦从自治区农业农村厅获悉：11月9日，“品味新疆”好产品品牌目录2026年第三批拟纳入名单及退出名单公示完成，全区67家生产经营主体、218个产品拟纳入2026年第三批“品味新疆”好产品品牌目录，同时2家公司的7个产品退出目录。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/19eca7773ef349609fe99c7adffa73fb.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:56:26.495223+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a2cbf332fd1115463f9a34a837bfb344",
+      "title": "前10月红其拉甫口岸出入境人数、车辆双创新高 - 政务动态",
+      "summary": "本报乌鲁木齐 11月14日讯 石榴云/新疆日报记者王娜从新疆出入境边防检查总站红其拉甫出入境边防检查站获悉：今年前10月，红其拉甫口岸累计验放出入境人员6.6万人次、交通运输工具1.3万辆次，同比分别增长120%和160%，双双创下历史新高。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/77f1dbd2419a4640b61b8ff79081fd60.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:56:32.323315+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "39d921363e0aa629467d0d62c4b902d1",
+      "title": "吐鲁番市市场监管局打出组合拳为经营主体减负赋能",
+      "summary": "吐鲁番市融媒体中心讯（通讯员 许海飞）今年以来，吐鲁番市市场监管局整合计量、标准、检验检测、知识产权等资源，打出 “计量+质量+融资”服务组合拳，切实为经营主体减负赋能、破解发展难题。 计量惠企降成本。该局持续开展 “计量服务中小企业行”活动，完成计量器具检校检测13937台件，累计减免费用242.3万元。创新推出“手机变砝码”便民服务，发放手机砝码标贴500余张，为流动摊贩电子计价秤提供免费检定…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106221/202611/535f8a024486427480bb5798827062fa.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:57:15.161972+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "419f6a18b4ff2845942016d2e98b931d",
+      "title": "“暖购鄯善·冬惠乡集”走进鲁克沁镇",
+      "summary": "吐鲁番市融媒体中心讯 11月14日，吐鲁番市商务局联合鄯善县人民政府在鲁克沁镇火星大巴扎举办“暖购鄯善·冬惠乡集”线下促消费活动，将品牌商品展销、惠民补贴服务直接延伸至乡镇消费场景，推动消费品以旧换新政策下沉农村市场。 活动组织 7家商户企业参展，涵盖汽车销售、家电销售、3C数码品牌商、生活超市等经营主体。现场设综合消费展销区和以旧换新政策服务专区。综合消费展销区聚焦农村家庭耐用消费品升级需求，集…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106222/202611/eeab6d8e13b648db809770324fddec69.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-16T17:57:22.938683+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
       "industry_tags": [
         "enterprise"
       ],
