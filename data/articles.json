@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T15:24:49.354700+00:00",
-  "count": 249,
+  "generated_at": "2026-11-16T03:36:16.394361+00:00",
+  "count": 251,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4652,6 +4652,45 @@
       "collected_at": "2026-11-13T16:00:05.596211+00:00",
       "region_group": "beijiang",
       "region": "tulufan",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "bfc9c31d883e72a7040ed7ca38adf835",
+      "title": "关于新疆锦程建设工程有限公司新疆泽普县奎依巴格镇4号建筑用砂矿矿区生态修复方案审查结果的公示 - 通知公告",
+      "summary": "根据《关于进一步推进和完善矿产资源管理有关工作的通知》（新自然资规〔 2021 〕 3 号）等有关规定，《 新疆锦程建设工程有限公司新疆泽普县奎依巴格镇 4 号建筑用砂矿矿区生态修复方案 》通过 专家 审查，现将有关情况进行公示，公示期为自发布之日起 7 个工作日。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106694/202611/27dbeb990f364ac89c5b6d62361fbf86.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-16T03:32:25.092350+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "89d3fba6215eacbe02739c44fd402879",
+      "title": "关于拟发放喀什地区本级一次性扩岗补助资金的公示 - 通知公告",
+      "summary": "根据人力资源社会保障部办公厅财政部办公厅国家税务总局办公厅《关于加强失业保险有关工作的通知》（人社厅发〔2026〕30号）、自治区人力资源和社会保障厅教育厅财政厅税务局《关于做好失业保险支持企业稳岗扩岗工作的通知》（新人社发〔2026〕13号）精神，拟对喀什地区本级符合政策的企业予以返还一次性扩岗补助。现对已确认的15家企业名单予以公示，公示期自2026年11月16日起至11月20日（5个工作日）…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106694/202611/3a7fbf0b88c44ad684b11db9f1cb1f31.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-16T03:32:26.572916+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
       "industry_tags": [
         "enterprise"
       ],
