@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T05:35:30.425898+00:00",
-  "count": 264,
+  "generated_at": "2026-11-17T17:28:09.197601+00:00",
+  "count": 270,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4946,6 +4946,122 @@
       "industry_tags": [
         "enterprise",
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "75e0ff4ce4a9d9bf91d008ef26693178",
+      "title": "精准服务赋能企业发展 凝聚合力推进项目建设——自治区发展改革委、自治区能源局组织召开“一企一专班”联络服务座谈会",
+      "summary": "为全面贯彻中央经济工作会议决策部署，深入落实自治区党委经济工作会议、全国发展和改革工作会议、全国能源工作会议精神，助力 “ 十五五 ” 开局之年能源行业高质量发展， 1 月 15 日，自治区发展改革委、自治区能源局组织召开 “ 一企一专班 ” 联络服务座谈会。会议以政策宣贯答疑为重点、精准服务为抓手，破解项目推进堵点难点，为全年能源行业稳步发展筑牢根基。 会上，各企业围绕项目推进中的困难诉求进行汇…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/84717da472f34cdf877e009f8542cd7a.shtml",
+      "published_at": "2026-11-17T00:00:00+08:00",
+      "collected_at": "2026-11-17T17:21:21.506449+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "1e50c1253a0f34bd3d97d63442507ed9",
+      "title": "这场“擂台大比武”，亮出基层治理“真功夫”",
+      "summary": "经开区网讯（文图/通讯员马晶晶） 11 月 13 日，乌鲁木齐经济技术开发区（头屯河区）中亚南路街道举办 2026 年“幸福经开共同缔造”基层治理能力大比武活动，以同台竞技、以赛促学、以比促干，全面淬炼基层治理队伍实战能力。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/be9399cc4ed84270b00338e009bbffeb.shtml",
+      "published_at": "2026-11-17",
+      "collected_at": "2026-11-17T17:22:34.558195+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "bdd2552c680984be8c5873abe9d1fc5e",
+      "title": "沃土育新机，两河新兴产业园引企筑链共赴发展新赛道",
+      "summary": "经开区网讯（文图/郭昌龙） 近日，记者走进乌鲁木齐经济技术开发区（头屯河区）建投两河新兴产业园内，看到标准化厂房鳞次栉比，生产车间机器轰鸣，各条生产线开足马力、全速运转，处处涌动着产销两旺、提质增效的蓬勃活力。作为两河片区先进制造业核心承载平台，园区自 2024 年 7 月正式投用以来，紧扣经开区（头区）“ 3+2 ”现代化产业体系建设方向，精准招引食品加工、大健康、轻工制造、新材料等优质企业落地…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/54277c74bab54153b9e03ec020a8250e.shtml",
+      "published_at": "2026-11-17",
+      "collected_at": "2026-11-17T17:22:36.420091+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "2dfcfd2a02fa08d9fa7e5ef94fbb67bf",
+      "title": "颂时代新声！经开区“听·岁月的歌”合唱音乐会温情上演",
+      "summary": "经开区网讯（文图/陈龙） 11 月 15 日，乌鲁木齐经济技术开发区（头屯河区）“听·岁月的歌”合唱音乐会在北新大厦多功能厅温情启幕。活动由区文化体育和旅游局主办，以老中青三代同台合唱的展演形式。用一曲曲跨越年代的经典旋律串联时代记忆、见证城市变迁，生动呈现经开区经济社会蓬勃发展、群众安居乐业的幸福图景。经开区（头区）委常委、宣传部部长王新伟出席活动。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/d5b9d5aae5244661bba33554035373ca.shtml",
+      "published_at": "2026-11-17",
+      "collected_at": "2026-11-17T17:22:38.604936+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "ba607ed038c7205a3dcc0a26ebe0826d",
+      "title": "爱心护航助成长，经开区举办2026年“武警春蕾奖学金”发放仪式",
+      "summary": "经开区网讯（文图/蔡嘉敏） 为扎实开展感恩励志教育、爱国主义教育和民族团结教育，用心用情助力困境女童逐梦求学，近日，由乌鲁木齐市妇联主办、乌鲁木齐经济技术开发区（头屯河区）妇联协办的 2026 年“武警春蕾奖学金”发放仪式在乌鲁木齐市第九十七中学学术厅举行。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/c864906aa46d401997ce795126a0b3e1.shtml",
+      "published_at": "2026-11-17",
+      "collected_at": "2026-11-17T17:22:40.622351+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "d0ae6d3a93c95b2404f611ad8394e432",
+      "title": "新疆率先实现非车险“见费出单”银保互联 - 政务动态",
+      "summary": "本报乌鲁木齐 11月16日讯 石榴云/新疆日报记者冉虎报道：日前，在国家金融监督管理总局新疆监管局指导下，新疆保险行业协会联合中国银行保险信息技术管理有限公司（以下简称“中国银保信”），将银行端正式纳入新疆非车险保险业务平台“见费出单”业务流程，新疆由此成为全国首个实现非车险“见费出单”银保互联地区。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/f76c6d8bdadf480eac3d33c313e8379a.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-17T17:24:42.610086+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
       ],
       "content_type": "news",
       "status": "pending",
