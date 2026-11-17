@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T17:59:28.510985+00:00",
-  "count": 261,
+  "generated_at": "2026-11-17T05:35:30.425898+00:00",
+  "count": 264,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -4888,6 +4888,64 @@
       "region": "tulufan",
       "industry_tags": [
         "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "da52c9999555c6614d35e03b58af2a5c",
+      "title": "第二十三届中国国际农产品交易会闭幕 - 农业农村动态",
+      "summary": "本网讯 11月16日，由农业农村部主办的第二十三届中国国际农产品交易会在浙江杭州国际博览中心圆满落下帷幕。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/698872f050074d6b8742471b509a81da.shtml",
+      "published_at": "2026-11-17T00:00:00+08:00",
+      "collected_at": "2026-11-17T05:30:00.272738+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "3edf127140883e380494990363f448f9",
+      "title": "第二十三届中国国际农产品交易会“强农论坛”在浙江杭州举办 - 农业农村动态",
+      "summary": "11月13日，第二十三届中国国际农产品交易会“强农论坛”在浙江杭州举办，农业农村部党组成员、副部长潘文博出席并作主旨讲话，浙江省人民政府党组成员、副省长王钊致辞，本届农交会主宾国墨西哥农业和农村发展部部长科伦巴·洛佩斯作主旨演讲。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/349bde52a00f49dcbf211210e56122ca.shtml",
+      "published_at": "2026-11-17T00:00:00+08:00",
+      "collected_at": "2026-11-17T05:30:01.266427+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "dea659c967bbbdd4ca1ea58de33ddf49",
+      "title": "李强对推进农田水利和高标准农田建设作出重要批示强调 充分发挥高标准农田综合效益 为守牢粮食安全底线建设农业强国提供坚实支撑 - 农业农村动态",
+      "summary": "新华社北京 11月13日电 11月13日，国务院召开全国冬春农田水利暨高标准农田建设视频会议。中共中央政治局常委、国务院总理李强日前对推进农田水利和高标准农田建设作出重要批示。批示指出：农田水利和高标准农田建设是夯实国家粮食安全根基的重要抓手。近年来，各地区各有关部门持续加强农田建设，为巩固提升粮食综合生产能力、增强农业防灾减灾能力发挥了关键作用。要坚持以习近平新时代中国特色社会主义思想为指导，深…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/96dd9e7c730b41f6ab01e731017963f8.shtml",
+      "published_at": "2026-11-17T00:00:00+08:00",
+      "collected_at": "2026-11-17T05:30:03.265120+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
