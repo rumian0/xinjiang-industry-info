@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T05:02:05.893547+00:00",
-  "count": 274,
+  "generated_at": "2026-11-18T17:02:06.412578+00:00",
+  "count": 275,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5142,6 +5142,26 @@
       "industry_tags": [
         "enterprise",
         "transport_logistics",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "bd3ebdfd8cfdede0d0ba30381ec506ea",
+      "title": "我区4项农技成果入选“一带一路”科技减贫先进适用技术成果汇编 - 政务动态",
+      "summary": "本报乌鲁木齐 11月17日讯 石榴云/新疆日报记者刘毅从自治区农业科学院获悉：近日，2026中非创新合作与发展论坛在武汉举办。论坛发布了一批务实成果，其中《“一带一路”科技减贫先进适用技术成果汇编（非洲篇）》立足农业现实需求，以科学技术赋能非洲农业生产能力提升。由新疆维吾尔自治区农业科学院申报的4项农业技术成果成功入选技术成果汇编。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/8226b7c0cf5349d08b622359bc677c47.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-18T16:58:43.001979+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
         "agriculture"
       ],
       "content_type": "news",
