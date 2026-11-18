@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T17:28:09.197601+00:00",
-  "count": 270,
+  "generated_at": "2026-11-18T05:02:05.893547+00:00",
+  "count": 274,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5062,6 +5062,87 @@
       "region": "wulumuqi",
       "industry_tags": [
         "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "85493ba29af68bd632b3ce161eed2eb4",
+      "title": "新疆四项农业技术成果入选“一带一路”科技减贫先进适用技术成果 - 农业农村动态",
+      "summary": "天山网 -新疆日报讯（记者刘毅报道）记者从自治区农业科学院获悉：日前，2026中非创新合作与发展论坛在武汉成功举办。论坛发布了一批务实成果，其中《“一带一路”科技减贫先进适用技术成果汇编（非洲篇）》立足农业现实需求，以科学技术赋能非洲农业生产能力提升。由新疆维吾尔自治区农业科学院申报的四项农业技术成果成功入选该汇编。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/e9f09c5f16bd40dd8793d929f60aae7e.shtml",
+      "published_at": "2026-11-18T00:00:00+08:00",
+      "collected_at": "2026-11-18T04:56:21.132727+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "af57499e5a091490d9ce49f083053f62",
+      "title": "征程万里风正劲 重任千钧再出发——巴州国资国企以学促干推动党的二十届五中全会精神落地生根",
+      "summary": "党的二十届五中全会闭幕后，巴州国资系统迅速掀起学习贯彻全会精神热潮。巴州建设工程（集团）有限责任公司、巴州粮油集团有限公司、新疆巴音国有资产经营有限公司、新疆天苗农业集团有限公司等州属国企坚持原原本本学、对标对表学、扎根一线干，让理论学习有温度、从严治企有力度、服务地方发展有厚度。 各企业党委把学习贯彻全会精神作为重大政治任务，分层部署、同步推进，通过“三会一课”、主题党日活动等形式深学细研，切实…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/0d17a5d29f1e4c088060f2ce4b24c4a8.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-18T04:58:54.794478+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f014de2d19de42507d8799909875ff83",
+      "title": "第二十三届中国国际农产品交易会开幕  库尔勒香梨及系列衍生产品亮相帮扶产业精品展",
+      "summary": "13日，第二十三届中国国际农产品交易会在杭州国际博览中心开幕。新疆库尔勒香梨产业发展有限公司携库尔勒香梨及系列衍生产品亮相帮扶产业精品展。该公司借助国家级展会平台，展示库尔勒香梨产业发展成果，积极开展产销对接，并联动多名网红直播带货。 库尔勒香梨是巴州特色地理标志产品，被誉为巴州独有的“果中王子”，以皮薄肉细、酥脆汁多闻名海内外，在2025年中国果品品牌价值榜位列第二、梨类第一。本次参展，该公司带…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/e6a0554f5f6b46a0821bac2b74264420.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-18T04:58:57.587455+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "99368e12ae80db0b7f180f3815523b9c",
+      "title": "第六届中国新疆特色林果产品博览会在广州启幕  巴州签订6000万元库尔勒香梨产销意向协议",
+      "summary": "13日，第六届中国新疆特色林果产品博览会在广州市中国进出口商品交易会展馆启幕。本届博览会以“美丽新疆，林果飘香”为主题，汇聚全疆各地特色林果企业，面向粤港澳大湾区开展产品展示、品牌推介与产销对接活动。当天，巴州库尔勒香梨协会与广州江南果菜批发市场经营管理有限公司完成电子意向签约，达成6000万元库尔勒香梨收购意向，为巴州特色果品深耕华南市场按下“快进键”。 签约仪式上，巴州库尔勒香梨协会代表巴州本…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/60c5e423faae42b89f045c407b216802.shtml",
+      "published_at": "2026-11-16T00:00:00+08:00",
+      "collected_at": "2026-11-18T04:58:59.295926+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise",
+        "transport_logistics",
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
