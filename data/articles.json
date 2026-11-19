@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T04:55:49.096530+00:00",
-  "count": 276,
+  "generated_at": "2026-11-19T17:09:06.595430+00:00",
+  "count": 287,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5184,6 +5184,224 @@
         "enterprise",
         "transport_logistics",
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "21359eff5ef69dd63ba37a9331c86d04",
+      "title": "准东煤制天然气管道支线工程建设取得阶段性重要进展",
+      "summary": "准东煤制天然气管道作为 全国最大 煤制天然气外输 管道 ， 包含 1 条干线和 2 条支线， 其 2 条支线总长 114 公里 。 近日， 该项目支线 工程通过交接验收，由施工建设阶段转入联动调试阶段。 工程投产后，将打通煤制天然气外输 “ 最后一公里 ” ， 通过西气东输 管道系统 汇入 “ 全国一张网 ” ， 对推进煤炭清洁高效转化利用、完善区域天然气供应体系、服务全国能源安全具有重要作用。…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/94fd41cd3d614e9dbdf18709b68dc54d.shtml",
+      "published_at": "2026-11-19T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:01:53.394949+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "63ece17c3bc6bfb96e913a77616c595b",
+      "title": "地铁口停车“无缝换乘” 经开区6处停车场月底投用",
+      "summary": "经开区网讯（文图/郭昌龙） 11月15日，乌鲁木齐地铁2号线华山街站正式开通运营。同步投建的华山街地铁口停车场由乌鲁木齐经济技术开发区新兴产业投资促进有限公司（简称“新产投公司”）负责建设，目前项目已整体完工，预计本月底投入使用。停车场紧邻车站出口，市民停车后步行片刻即可进站，“自驾+地铁”换乘接驳将更加便捷，打通通勤“最后一公里”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/b96e726d688f4506860e2b162b056147.shtml",
+      "published_at": "2026-11-19",
+      "collected_at": "2026-11-19T17:03:25.962864+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "3f338967d1240f9e9032992a142c14a0",
+      "title": "从“看机器人”到“用机器人” 经开区机器人9S中心加速推动具身智能从展台走向产线",
+      "summary": "经开区网讯（文图/郭昌龙） 近日，乌鲁木齐经济技术开发区（头屯河区）机器人 9S中心内，两名机器人“乐手”一个拨弦、一个击鼓，一旁的人形机器人跟随节拍起舞；另一侧，机器狗灵活穿越模拟野外障碍，围观的中小学生不时发出惊呼。开业仅一个多月，这里已成为辖区研学、参访的热门点位。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/38f3daff44e24929b7380da89d26784a.shtml",
+      "published_at": "2026-11-19",
+      "collected_at": "2026-11-19T17:03:28.011586+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "966eef6e55be24ea6c35242e7b62625b",
+      "title": "初冬送关怀！经开区政企联动慰问一线劳动者",
+      "summary": "经开区网讯（文图/蔡嘉敏） 近日，共青团乌鲁木齐经济技术开发区（头屯河区）委员会联合中粮可口可乐饮料（新疆）有限公司，在乌鲁木齐站广场综合服务中心石榴红志愿服务站开展暖心慰问活动，为环卫工人、站点志愿者、外卖骑手等一线户外劳动者送去暖心物资与冬日关怀。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/159bf8fd29374712987f8b9a4af7ab9d.shtml",
+      "published_at": "2026-11-19",
+      "collected_at": "2026-11-19T17:03:30.332416+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f962f21ad0bdf2abcf8d77f6378b04f8",
+      "title": "榜样故事浸润童心！“德耀经开 榜样伴成长”主题宣讲走进市第123小学",
+      "summary": "经开区网讯（文图/马晨曦） 近日，由乌鲁木齐经济技术开发区（头屯河区）委宣传部、区教育局主办的 “德耀经开榜样伴成长”主题宣讲进校园活动，在乌鲁木齐市第123小学举办。活动以文艺展演、榜样宣讲、趣味互动等形式，邀请道德模范与新时代好少年走进校园，用真实动人的事迹浸润童心、引领少年成长。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/841075c94f234e7a9cfc7399c740ada2.shtml",
+      "published_at": "2026-11-19",
+      "collected_at": "2026-11-19T17:03:31.890083+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "9c6b7fdb3b8dd976de4a06ee6ba5e519",
+      "title": "关于2026年度喀什地区认定、监测合格农业产业化地区级龙头企业名单的公示 - 通知公告",
+      "summary": "2026年上海市面向喀什籍未就业少数民族高校毕业生公开招聘事业单位工作人员体检、考察结果及拟聘人员报到的公告 [2026-11-11] 高薪揽才·筑梦喀什|喀什地区直属国有企业面向全国公开招聘高级经营管理人员公告 [2026-11-03] 关于2026年度喀什地区认定、监测合格农业产业化地区级龙头企业名单的公示 [2026-11-19] 关于对喀什地区11家测绘单位申请乙级测绘资质延续的公示 [2…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106694/202611/83730d5ee2e04755a52216593e587dfe.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:04:58.060879+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "6f0b1fb4d820d76a3b1ec6dd34e73aa5",
+      "title": "习近平主持中俄美元首会晤 - 中央要闻",
+      "summary": "2026年上海市面向喀什籍未就业少数民族高校毕业生公开招聘事业单位工作人员体检、考察结果及拟聘人员报到的公告 [2026-11-11] 高薪揽才·筑梦喀什|喀什地区直属国有企业面向全国公开招聘高级经营管理人员公告 [2026-11-03] 关于2026年度喀什地区认定、监测合格农业产业化地区级龙头企业名单的公示 [2026-11-19] 关于对喀什地区11家测绘单位申请乙级测绘资质延续的公示 [2…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/aed6d7c2108a46f2a941afea70bbe735.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:05:04.082198+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "79d27fd513f594c68f645538ebad098a",
+      "title": "出行收藏：喀什徕宁国际机场国际航线+航班时间全整理 - 部门动态",
+      "summary": "2026年上海市面向喀什籍未就业少数民族高校毕业生公开招聘事业单位工作人员体检、考察结果及拟聘人员报到的公告 [2026-11-11] 高薪揽才·筑梦喀什|喀什地区直属国有企业面向全国公开招聘高级经营管理人员公告 [2026-11-03] 关于2026年度喀什地区认定、监测合格农业产业化地区级龙头企业名单的公示 [2026-11-19] 关于对喀什地区11家测绘单位申请乙级测绘资质延续的公示 [2…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106693/202608/94fe3a377a614f8da55679f55cf5861a.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:05:30.749137+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "0afffac6c7d2b6ce07a9e734b8a68ed5",
+      "title": "从喀什飞向全国！徕宁国际机场国内航线通达一览表请收好 - 部门动态",
+      "summary": "2026年上海市面向喀什籍未就业少数民族高校毕业生公开招聘事业单位工作人员体检、考察结果及拟聘人员报到的公告 [2026-11-11] 高薪揽才·筑梦喀什|喀什地区直属国有企业面向全国公开招聘高级经营管理人员公告 [2026-11-03] 关于2026年度喀什地区认定、监测合格农业产业化地区级龙头企业名单的公示 [2026-11-19] 关于对喀什地区11家测绘单位申请乙级测绘资质延续的公示 [2…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106693/202608/2b9246daa1154337bc270bc62650baac.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:05:32.994904+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a555018f91b79343593eeb94824fc546",
+      "title": "喀什地区文化广播电视和旅游局关于拟认定12家单位为第六批地区级非物质文化遗产代表性项目保护单位的公示 - 部门动态",
+      "summary": "2026年上海市面向喀什籍未就业少数民族高校毕业生公开招聘事业单位工作人员体检、考察结果及拟聘人员报到的公告 [2026-11-11] 高薪揽才·筑梦喀什|喀什地区直属国有企业面向全国公开招聘高级经营管理人员公告 [2026-11-03] 关于2026年度喀什地区认定、监测合格农业产业化地区级龙头企业名单的公示 [2026-11-19] 关于对喀什地区11家测绘单位申请乙级测绘资质延续的公示 [2…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106693/202610/3a0b8ccf274848af8473e53ca36d7de6.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:05:36.760794+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e8f0b99905c6cd5da6611e3aa7813463",
+      "title": "绿色税制引路 新疆矿山企业转型有“数”更有“底” - 政务动态",
+      "summary": "绿色发展是高质量发展的底色。 “十五五”规划纲要对绿色税收作出部署，“优化绿色税收制度，开展挥发性有机物环境保护税征收试点，落实支持资源节约和绿色产品使用的税收优惠。”",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/46009407ab79447b99c20ed889f201d4.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-19T17:05:38.999171+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "enterprise",
+        "mineral"
       ],
       "content_type": "news",
       "status": "pending",
