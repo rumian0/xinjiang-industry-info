@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T17:09:06.595430+00:00",
-  "count": 287,
+  "generated_at": "2026-11-20T04:47:49.407731+00:00",
+  "count": 288,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5402,6 +5402,26 @@
       "industry_tags": [
         "enterprise",
         "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a4b68243de949354260d6db811d0c1da",
+      "title": "巴州召开今冬明春种子管理与执法工作推进会",
+      "summary": "近日，巴州农业农村局召开今冬明春种子管理与执法工作推进会，安排部署种子管理、检疫监管和执法重点工作。 巴州作为国家级区域性棉花良种繁育基地和全疆重要棉种出口基地，现有18家种业取得进出口生产经营许可证，2022年至今累计向中亚国家出口棉种2.7万吨。 会上，巴州种子管理站相关负责同志围绕扫码入企、种子代加工及安全生产作专题讲解，明确今冬明春将联合县（市）重点检查生产经营资质、备案、档案及样品保存等…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/34015e6501c840adacb4b1cc74a030dd.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T04:44:21.937862+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "transport_logistics",
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
