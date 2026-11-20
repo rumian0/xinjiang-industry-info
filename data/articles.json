@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T04:47:49.407731+00:00",
-  "count": 288,
+  "generated_at": "2026-11-20T16:48:30.998201+00:00",
+  "count": 300,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5420,6 +5420,241 @@
       "region_group": "nanjiang",
       "region": "bayin",
       "industry_tags": [
+        "transport_logistics",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "63568d94dd05776bb8e82f2307c6ec0c",
+      "title": "自治区商务厅开展全区贸易政策合规专题培训 - 商务动态",
+      "summary": "11 月 20 日，自治区商务厅举办全区贸易政策合规专题培训，邀请商务部世贸司相关专家授课。各地州市政府（行署）及其商务主管部门、自治区有关单位、自治区商务厅相关业务处室等 70 余人参加培训。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区商务厅",
+      "source_url": "https://swt.xinjiang.gov.cn/xjswt/c114329/202611/5fc8933e566a4028afb94c18ba4e1a39.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:40:53.468819+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "36896ee2067ee05c50676af96f1085f3",
+      "title": "2026年全国食品安全宣传周农业农村部主题日活动在福州举办 - 农业农村动态",
+      "summary": "本网讯 11月17日，2026年全国食品安全宣传周农业农村部主题日活动在福建福州举办。活动以“守护舌尖安全共创品质生活”为主题，通过舞台展演、成果展示、科普互动、产品展销等多元形式，面向社会公众宣传展示农产品质量安全监管工作成效，普及农产品质量安全法律常识和科学知识。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/ac8e987a1c5641d08ee2dad4642413fc.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:41:46.067773+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "cc705bb5bd9e74bb25be4574d346bf1a",
+      "title": "“外国使节看渔业”活动在浙江省舟山市举办 - 农业农村动态",
+      "summary": "本网讯 11月17日至19日，“外国使节看渔业”活动在浙江省舟山市举办。来自南太、拉美的8个国家11名驻华使节和专家学者到舟山实地考察中国渔业发展情况。农业农村部副部长张治礼出席活动并致辞。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/24646239892a4182818977f1ce6a5d6c.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:41:48.471590+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "863b645e59640355069f46f9b6ecbe4a",
+      "title": "边境地区乡村发展工作座谈会在广西崇左召开 - 农业农村动态",
+      "summary": "本网讯 11月17日至18日，边境地区乡村发展工作座谈会在广西壮族自治区崇左市召开。会议深入学习贯彻习近平总书记重要指示精神，交流推进边境地区乡村发展经验做法，研究部署重点工作。农业农村部党组成员黄艳出席会议并讲话。广西壮族自治区人民政府副主席黄汝生同志介绍情况。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/cd4fb1edbd70474aa727d7c92f04cef3.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:41:50.800313+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "b7fa37f491bf56de0765dbc0d7d11eeb",
+      "title": "新疆首批高血压患者接受交感神经节阻滞微创治疗",
+      "summary": "经开区网讯（文图/郭昌龙） 11 月 17 日，乌鲁木齐经济技术开发区（头屯河区）第一人民医院传来喜讯：在暨南大学附属广州红十字会医院心血管中心李丽教授团队的指导下，医院成功完成首批 CT 引导下臭氧介导的腰 / 肾交感神经阻滞（ L-SDN ）微创手术，为难治性高血压患者开辟了全新的治疗路径。这也是乌鲁木齐市“红山英才”引进计划医疗卫生小组，组团援乌项目落地见效的重要体现。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/4973a2da1419464c9717312af97f60b9.shtml",
+      "published_at": "2026-11-20",
+      "collected_at": "2026-11-20T16:41:53.708148+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "92288dfeff091800374fff9bf0ec8393",
+      "title": "从孵化项目到长效服务 战略合作打通企业全生命周期“断点”",
+      "summary": "经开区网讯（文图/郭昌龙） 近日，以 “算启万象·智创百业”为主题的绿谷科技创新平台“ AI+ 科技”项目路演融资对接会在乌鲁木齐经济技术开发区（头屯河区）白鸟湖新景中心火热开场。活动由绿谷科技创新平台与经开区（头区）企业全生命周期公共服务平台（高铁服务站）共同承办，来自全国的 12 个“ AI+ 科技” OPC 项目轮番登台，行业专家、投资机构代表以五维评审机制现场“问诊开方”， 20 名创业导…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/7f6e30964fe1451a91bb38a5801d676e.shtml",
+      "published_at": "2026-11-20",
+      "collected_at": "2026-11-20T16:41:56.654721+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "c3998b0367a0295040c1d81cc4827e5e",
+      "title": "80米人行道打通！居民告别人车混行“贴边路”",
+      "summary": "经开区网讯（文图/郭昌龙） 11 月 16 日，乌鲁木齐经济技术开发区（头屯河区）喀什西路与乌昌辅道交叉口新建人行道正式投入使用。这条全长 80 米的人行道焕然一新，平整的大理石路面、整齐的阻车石、牢固的安全护栏，让一处困扰周边居民多年的“隐患路段”彻底蜕变，群众出行告别人车混行，通行更加安全顺畅。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/1194ed90bc014acbaf8aebf2f16d968b.shtml",
+      "published_at": "2026-11-20",
+      "collected_at": "2026-11-20T16:41:57.605405+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "fdebbec03b23729ad2905194013c2c2b",
+      "title": "五中全会精神在基层丨东林街社区的共治实验",
+      "summary": "石榴云 / 新疆日报讯（记者郭宏磊） 11 月的乌鲁木齐，寒意渐浓。这段时间，在乌鲁木齐经济技术开发区（头屯河区）火车西站街道东林街社区的六街小区， 85 岁的郭进山总会戴着安全帽，蹲在楼前仔细查验刚铺好的防滑地砖。这位有着 51 年党龄的老铁路人，如今是社区改造工地上的“义务监理”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119845/202611/f9bee035ff814b9eba00e439edfe77f7.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-20T16:42:03.761489+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a0e68aabd2a5276e1f865e79dff0ec79",
+      "title": "管线总长39公里！中油管业DN300双密封高压玻璃钢管交付塔里木油田",
+      "summary": "石榴云 / 新疆日报讯（记者郭宏磊报道） 11 月 17 日，新疆中石油管业工程有限公司（简称“中油管业”）首批 DN300 双密封高压玻璃钢管正式发运，管线总长度 39 公里，产品启运塔里木油田，用于东轮线调水复线建设工程。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119845/202611/c58c4ccd156b41c189f857a464d5c5ac.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-20T16:42:05.593110+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
+        "mineral",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "8a7dc91e2855bcfc23d5ff51455b2950",
+      "title": "关于西北油田沙雅县等6个县市塔里木乡等9个乡镇原油78万吨/年、天然气4亿立方米/年石油滚动开发项目土地复垦方案报告书等2个报告书审查结果的公示 - 通知公告",
+      "summary": "根据《土地复垦条例》《土地复垦条例实施办法》《土地复垦方案编制规程》《新疆维吾尔自治区生产建设项目土地复垦方案审查暂行办法》等有关规定，《西北油田沙雅县等6个县市塔里木乡等9个乡镇原油78万吨/年、天然气4亿立方米/年石油滚动开发项目土地复垦方案报告书》《G217线莎车至塔什库尔干县公路建设项目施工第ST－3标段项目桥梁隧道及施工道路临时用地土地复垦方案报告书》通过专家审查，现将有关情况进行公示，…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106694/202611/5b53feca806742df8e7cd31ed7dcfdfb.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:43:43.622467+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "mineral",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "5e207fbc6d39efa686ee3383a5782cf7",
+      "title": "吐鲁番市市场监管局：靠前服务精准帮扶 护航能源生产安全",
+      "summary": "吐鲁番市融媒体中心讯（通讯员 许海飞）今年以来，吐鲁番市市场监管局落实自治区市场监管局 “知企情、纾企困、助企强”活动部署，针对本地能源企业集中、特种设备量大面广的特点，联合技术专家上门开展精准帮扶，推动监管模式从“事后处置”向“靠前服务”转变，同步守牢安全底线、减轻企业经营负担。 专家上门 “把脉问诊”。该局邀请湖南省特检院9名技术专家赴吐开展专项帮扶，深入各能源企业厂区，对锅炉、压力管道、压力…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106221/202611/0df75daa18214a7db01bdff4f1dd055b.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:45:35.169618+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "50adff375d4412ac8a1b6abdc46ea4b1",
+      "title": "五中全会精神在基层",
+      "summary": "近日，托克逊县 X080线亮化民生工程首批路段太阳能路灯正式点亮，一盏盏路灯照亮乡村出行路，把便民暖心实事办到群众心坎上。 X080线是连接托克逊县城、伊拉湖镇、博斯坦镇的重要通道，沿线村庄密集，既是村民出行往来的主要道路，也是农产品外运、农资运输的重要干线。此前路段缺少夜间照明，夜间光线不足，人车混行，存在较大交通安全隐患，安装路灯一直是沿线群众的热切期盼。 夜幕降临， X080线伊拉湖镇立交桥…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106222/202611/b1145c1ae58846c388f7239dc7fc8d60.shtml",
+      "published_at": "2026-11-20T00:00:00+08:00",
+      "collected_at": "2026-11-20T16:45:41.451509+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "energy",
         "transport_logistics",
         "agriculture"
       ],
