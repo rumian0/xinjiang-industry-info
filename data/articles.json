@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T16:01:10.360919+00:00",
-  "count": 300,
+  "generated_at": "2026-11-23T04:32:49.562126+00:00",
+  "count": 301,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5656,6 +5656,25 @@
       "industry_tags": [
         "energy",
         "transport_logistics",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "8b0c96cc929536692e78a14af3e86ad0",
+      "title": "2026年全国农业综合行政执法技能竞赛总决赛在山西举办 - 农业农村动态",
+      "summary": "本网讯近日，农业农村部联合司法部、全国总工会、共青团中央、全国妇联在山西省运城市举办 2026年全国农业综合行政执法技能竞赛总决赛。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/36830babece74de286aa4487d6f47b59.shtml",
+      "published_at": "2026-11-23T00:00:00+08:00",
+      "collected_at": "2026-11-23T04:26:08.493621+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
         "agriculture"
       ],
       "content_type": "news",
