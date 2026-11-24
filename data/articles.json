@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T19:53:58.684457+00:00",
-  "count": 309,
+  "generated_at": "2026-11-24T07:29:05.150040+00:00",
+  "count": 315,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5833,6 +5833,119 @@
       "region": "bayin",
       "industry_tags": [
         "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "c9de9c05458613a0390f0bfc00f1027b",
+      "title": "加强项目谋划指导推动全区能源领域项目建设提质增效",
+      "summary": "近 期 ， 自治区能源局结合能源项目发展实际及相关产业政策 ， 制定印发了 《自治区能源领域项目谋划工作指引》 （以下简称《指引》）， 指导 各地 进一步加强能源领域项目谋划和前期工作，准确把握国家政策导向、投资方向和支持重点，切实提高项目谋划的精准性、前期工作的规范性和项目实施的可行性 。 《 指引 》 立足自治区能源 领域 发展实际， 系统梳理了 电力、新能源、煤炭化工、石油天然气等重点领域项…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/9a2a83e626d4435698cfac7de257c26b.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T07:20:46.471811+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "mineral",
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "3d5f84891a9fc1b78c5fc8f2b8ba79e1",
+      "title": "内蒙古自治区能源局来疆调研 深化能源领域交流学习",
+      "summary": "近期，内蒙古自治区能源局来疆开展能源产业高质量发展专题调研，通过座谈交流和实地观摩的方式，深化两地能源领域学习交流。 座谈会上，两地围绕新型能源体系建设、大型综合能源基地开发、煤电一体化发展、煤炭绿色开采、特高压外送通道规划建设等重点领域深入探讨，详细介绍各自能源产业发展优势、创新举措和工作成效。新疆重点围绕大型能源基地集约化开发、风光火多能互补、油气产业发展、电力外送保供等方面，分享 工作成效与…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/f8d85e0c0fa04b44a5f7d47072ba9b62.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T07:20:48.230435+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "0507fcefef99978169a668e35667283a",
+      "title": "自治区能源局党组开展“赓续血脉缅怀英烈”清明节主题党日活动",
+      "summary": "春和景明，清明将至。为深切缅怀革命先烈，传承红色基因、赓续红色血脉，进一步筑牢党员干部理想信念之基、锤炼绝对忠诚政治品格， 4月1日， 自治区能源局组织全体党员干部， 赴乌鲁木齐市中国工农红军西路军总支队纪念馆开展 “赓续血脉缅怀英烈”主题党日活动。 在庄严肃穆的革命烈士纪念馆前，自治区 发展改革委 党组成员，能源局党组书记、局长杨旸率领全体党员干部整齐列队，向为民族独立和人民解放事业英勇献身的革…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/e1cca230000e4f4396299ac1a927e09b.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T07:20:50.247576+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e16ecfdd464830619813f2a2ea0478d6",
+      "title": "那巴公路将于明年通车",
+      "summary": "石榴云/新疆日报11月23日讯（石榴云/新疆日报记者 逯风暴） 国道218线那拉提至巴仑台公路（简称“那巴公路”）控制性工程——艾肯隧道施工已完成近九成，预计2027年年中贯通，项目全线计划2027年底建成通车。 11月22日，艾肯隧道左洞内，物料车、运渣车等施工车辆进进出出，最前端的工作面处，施工人员操作湿式混凝土喷射机朝着刚刚挖开的山体喷射混凝土。 “山体主要是黑色板岩，呈片状分布，易破碎掉落…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/5c1cd13c702c4ab19fe3c30c23fc4a0b.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T07:25:09.693892+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "a38fc2c02693e4b86ce30b7c54682918",
+      "title": "巴州“万企兴万村”行动现场推进会召开",
+      "summary": "20日，巴州“万企兴万村”行动现场推进会召开。会议采取“现场观摩+集中开会”的形式，实地看项目、现场学经验、开会谋部署，进一步凝聚民营企业、商协会、职能部门合力，推动全州“万企兴万村”行动提质增效，以民营经济力量助力乡村全面振兴。 州党委统战部、州“万企兴万村”行动领导小组成员单位、各县市工商联、州直属商协会相关负责人参加推进会。 当天上午，参会人员先后前往和静县瑞源智慧牧场、和硕县塔哈其镇查干…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/7b04d1ba79a149e1ab43914a8d032668.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T07:25:14.822865+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "58429edd2d249f7c97ad22c9a8bb1df1",
+      "title": "25场，28万元！库尔勒市党政办公大楼“变身”助农集市",
+      "summary": "近日，库尔勒市党政办公大楼二楼的“梨城机关·先锋驿站”人头攒动，“党建搭桥连产销机关助农惠民生”助农集市如期开市。库尔勒市恰尔巴格乡上阔什巴格村村民阿不拉·艾木都的石榴摊位前吸引众多干部职工驻足选购。 今年，阿不拉·艾木都家两亩多石榴迎来丰收。但散户沿街摆摊客源有限，村干部临时直播带货也只能带动一部分果品销售，尚未形成稳定长效的销售渠道，这也是当地众多种植户普遍面临的难题。与此同时，机关干部职工平…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/ee0de2bd9921489e8552c126b982f7f5.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T07:25:16.402263+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
