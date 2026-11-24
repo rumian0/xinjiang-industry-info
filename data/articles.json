@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T07:29:05.150040+00:00",
-  "count": 315,
+  "generated_at": "2026-11-24T19:24:49.845107+00:00",
+  "count": 321,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -5946,6 +5946,120 @@
       "region": "bayin",
       "industry_tags": [
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "846d9a8ca90d949f1c34453e5a9d7e59",
+      "title": "关于自治区工业固体废物资源综合利用评价情况的公示",
+      "summary": "按照《新疆维吾尔自治区工业固体废物资源综合利用评价管理实施细则》（新工信节能〔2025〕12号）《关于开展新疆维吾尔自治区工业固体废物资源综合利用评价工作的通知》（新工信节能〔2025〕13号）相关要求，经企业自愿申报、地州市初审、专家评审、现场抽查，并经自治区发展改革委、生态环境厅等7个厅局联合审议等相关程序，现将15家企业的工业固体废物资源综合利用评价情况予以公示，具体内容详见附件。 自公示之…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区工业和信息化厅-通知公告",
+      "source_url": "https://gxt.xinjiang.gov.cn/gxt/tzgg/202611/f2e15443229f4570bbccadb9bc8c7eef.shtml",
+      "published_at": "2026-11-24T00:00:00+08:00",
+      "collected_at": "2026-11-24T19:18:49.707277+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "dd0154d3b95498fe95eb08a321617a22",
+      "title": "细微之处显温情 幸福经开有温度",
+      "summary": "经开区网讯（文图/牛岚） 民生无小事，枝叶总关情。今年以来，乌鲁木齐经济技术开发区（头屯河区）各社区聚焦群众急难愁盼，紧盯道路安全、环境整治、设施修缮等民生细节，精准对接居民诉求，用心用情办好惠民实事，把群众的一件件民生期盼转化为看得见、摸得着的幸福变化。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/c2327690f3e74773857d20eed4faa3f5.shtml",
+      "published_at": "2026-11-24",
+      "collected_at": "2026-11-24T19:19:49.001833+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "0500719b6dc6462eff0163448b57bd80",
+      "title": "百日攻坚破局：180天见证项目落地到投产",
+      "summary": "经开区网讯（文图/杨紫月） “长期做医疗器械，我习惯了独自扛下所有难题。”昆仑健源（新疆）生物科技有限责任公司杨晓东谈起这 180 天时感慨，“但在这里，环评有人提前规划最优路径，燃气造价有人帮忙压减，技术流失风险也有人提前设防。一开始觉得服务管得太细，后来才明白，这份细致，源自专业。”",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/2512098a7f8740c0a5be7b2e6fd118a2.shtml",
+      "published_at": "2026-11-24",
+      "collected_at": "2026-11-24T19:19:51.329987+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "7a1da287d1ec308dd5b061197c24d2d0",
+      "title": "家校社同频牵手 教联体共育花开——自治区家校社协同育人“教联体”观摩活动走进经开区（头屯河区）",
+      "summary": "经开区网讯（文图/郭昌龙） 为深入贯彻落实全国、自治区教育大会精神，扎实推进家校社协同育人 “教联体”建设，充分发挥全国家校社协同育人实验区示范引领作用， 11 月 20 日，自治区家校社协同育人“教联体”观摩学习活动在乌鲁木齐经济技术开发区（头屯河区）举办。经开区（头区）委常委、宣传部部长王新伟参加活动。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/0486e24774da46e3904a346db40f18f5.shtml",
+      "published_at": "2026-11-24",
+      "collected_at": "2026-11-24T19:19:53.016958+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "43bad50afa0c24f32005726c9262af3d",
+      "title": "乌鲁木齐经开区（头屯河区）2026年招商签约已超221亿元 项目落地转化率超60%",
+      "summary": "石榴云 / 新疆日报讯（记者郭宏磊报道） 11 月 18 日，记者从乌鲁木齐经济技术开发区（头屯河区）获悉，截至目前，经开区（头屯河区） 2026 年招商签约额 221.82 亿元，其中工业项目投资 142.22 亿元、占比 64.1% ；亿元以上签约项目 29 个；总体项目落地转化率 62% ，同比提高 15% 。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119845/202611/a4ab0881977b4240b52be6d44c848265.shtml",
+      "published_at": null,
+      "collected_at": "2026-11-24T19:19:57.001502+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "1483c6ebd6eb802a81b491efe083610c",
+      "title": "丁薛祥访问新加坡并主持中新双边合作机制会议 - 中央要闻",
+      "summary": "11月22日至23日，中共中央政治局常委、国务院副总理丁薛祥应邀访问新加坡，分别会见新加坡总理黄循财、国务资政李显龙、副总理颜金勇，并同颜金勇共同主持中新双边合作联委会第二十二次会议、中新苏州工业园区联合协调理事会第二十七次会议、中新天津生态城联合协调理事会第十八次会议和中新（重庆）战略性互联互通示范项目联合协调理事会第十次会议。这是11月22日，丁薛祥会见新加坡总理黄循财。新华社记者 刘卫兵摄",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/07a61c3bf01a428a975140cfec9c8cf0.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-24T19:21:21.329560+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "development_zone"
       ],
       "content_type": "news",
       "status": "pending",
