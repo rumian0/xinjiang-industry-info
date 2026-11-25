@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T06:01:08.089431+00:00",
-  "count": 328,
+  "generated_at": "2026-11-25T18:30:29.175832+00:00",
+  "count": 334,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -6195,6 +6195,122 @@
       "region": "tulufan",
       "industry_tags": [
         "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "2816dd24e48318f83fa169c99201c6fb",
+      "title": "总长39公里！中油管业首批DN300双密封高压玻璃钢管交付",
+      "summary": "经开区网讯（文/李丽 图/陈龙） 近日，新疆中石油管业工程有限公司（简称 “中油管业”）首批DN300双密封高压玻璃钢管顺利启运。这批管线总长39公里，将投用于塔里木油田东轮线调水复线建设工程，此次发运，标志着中油管业在非金属管材领域的研发制造能力取得新突破。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/11b997da93ae4b4b8e13398d0d3fc2d9.shtml",
+      "published_at": "2026-11-25",
+      "collected_at": "2026-11-25T18:25:30.499891+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise",
+        "mineral",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "daf79dd438f8305c9a7d6d30831e5827",
+      "title": "小事暖民心 维权有温度——经开区（头区）用心交出消费维权民生答卷",
+      "summary": "经开区网讯（文图/郭昌龙） 乌鲁木齐经济技术开发区（头屯河区）市场监督管理局消费维权服务中心自运行以来，始终把为民解忧放在首位，扎根一线处置投诉、耐心化解矛盾、大胆探索新机制，力争做到件件有回音、事事有着落，用实实在在的行动擦亮放心消费底色。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/83f62e9f4a9643bca5d80c0f89fa50c2.shtml",
+      "published_at": "2026-11-25",
+      "collected_at": "2026-11-25T18:25:32.681701+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "f4b56575307bd04a9bfa4bd2de789274",
+      "title": "伊犁州风电项目建设“提速增效” 绿色动能加速崛起",
+      "summary": "御风蓄力，向绿而行。风能作为清洁低碳的可再生能源，是助推伊犁州绿色转型、实现高质量发展的重要支撑。今年以来，伊犁州紧扣 “十五五”能源发展目标，以风电为代表的新能源项目建设跑出“加速度”。 近日，记者在国能尼勒克县 4.69万千瓦风电项目现场看到，施工班组抢抓有利天气，紧锣密鼓开展风机吊装、设备组装等作业，项目建设稳步提速。项目基建管理专责陈邦璇介绍，“目前项目已顺利完成两台风机安装任务。项目预计…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "伊犁哈萨克自治州-政务动态",
+      "source_url": "https://www.xjyl.gov.cn/xjylz/c112425/202611/96046053dcca4bdf80f5c472c47a1b4e.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T18:26:05.440554+00:00",
+      "region_group": "beijiang",
+      "region": "yili",
+      "industry_tags": [
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "43544fd1f0745d982ca3b02b9d3fef9b",
+      "title": "新疆巴楚县麻扎塔格1号石灰岩矿普查等3个探矿权挂牌出让公告（喀矿探告字〔2026〕3号） - 通知公告",
+      "summary": "依据《中华人民共和国矿产资源法》《矿业权出让交易规则》（自然资规〔2023〕1号）、《新疆维吾尔自治区矿产资源管理若干事项暂行办法》（新自然资规〔2021〕1号）等有关法律法规和政策规定，喀什地区公共资源交易中心受喀什地区自然资源局委托对下列探矿权以挂牌方式公开出让，现将有关事宜公告如下：",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106694/202611/5f42800a09c84d98840b8830fe6a9af3.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-25T18:26:46.943007+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "625fa9a47818355dd7706e909b155662",
+      "title": "新疆伽师县卧里托格拉克镇陶瓷土矿采矿权挂牌出让公告（喀矿采告字〔2026〕4号） - 通知公告",
+      "summary": "依据《中华人民共和国矿产资源法》《矿业权出让交易规则》（自然资规〔2023〕1号）、《新疆维吾尔自治区矿产资源管理若干事项暂行办法》（新自然资规〔2021〕1号）等有关法律法规和政策规定，经喀什地区行署批准，喀什地区公共资源交易中心受喀什地区自然资源局委托对下列采矿权以挂牌方式公开出让，现将有关事宜公告如下：",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106694/202611/6c87189500674ef18fcb4aca761d3156.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-25T18:26:48.826214+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "mineral"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "00c22f4b463da9b0a34f02e8343d8309",
+      "title": "我区数字化改革助企减负提速 - 政务动态",
+      "summary": "本报乌鲁木齐11月24日讯 石榴云/新疆日报记者索蓉芝 从自治区市场监督管理局获悉：截至目前，新疆已归集市场监管数据8.8亿条、建成21个业务主题库，企业登记压缩至1个工作日。依托“1+1+N”AI智慧赋能体系，市场监管数字化改革推动助企服务从“数据归集”迈向“闭环落地”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/755718d79c1f4593bcf1faec2f79cef2.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-25T18:27:19.120506+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
       ],
       "content_type": "news",
       "status": "pending",
