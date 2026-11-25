@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T19:24:49.845107+00:00",
-  "count": 321,
+  "generated_at": "2026-11-25T06:01:08.089431+00:00",
+  "count": 328,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -6060,6 +6060,141 @@
       "region": "kashen",
       "industry_tags": [
         "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "5d6ed6836111e538127afb3ef0415fad",
+      "title": "2026年休闲农业品牌培育活动在广东珠海举办 - 农业农村动态",
+      "summary": "本网讯 11月24日，由农业农村部乡村产业发展司、广东省农业农村厅主办，中国农村杂志社、珠海市人民政府承办的2026年休闲农业品牌培育活动在广东省珠海市举办。活动上推介了广东“乡约岭南”、江苏“苏韵乡情”等14个省级休闲农业品牌，发布了天津宁河区“潮玩趣野打卡拾光”、安徽宣城“茶山研学花谷观光”等153条精品线路。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/78ce9df4827a4b73a3b9401bf23ed27d.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T05:54:39.213358+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "94adb7892296d84c0a6b5b794556b1ac",
+      "title": "一堂智慧农业课改变2000亩棉田种法 - 农业农村动态",
+      "summary": "前不久，若羌县种植户罗炯从 2026年自治区高素质农民培育智慧农业培训班结业后，跳出传统耕作思维，实现从“凭经验种地”向“靠数据务农”的转变。他专程给承办方石河子大学农学院送去锦旗。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/4d436d8d8a40419fb3e03c009692ccac.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T05:54:42.460419+00:00",
+      "region_group": "beijiang",
+      "region": "shihezi",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "06e0a6b923a6091f1eaf3e636e64585a",
+      "title": "新疆秋粮收购平稳有序已收购秋粮682.2万吨，玉米质量优于上年 - 农业农村动态",
+      "summary": "本报乌鲁木齐 11月24日讯石榴云/新疆日报记者刘毅从自治区粮食和物资储备局获悉：今年全区秋粮收购工作启动以来，各地收购进展顺利，市场平稳有序。截至目前，全区已完成秋粮收购682.2万吨。其中，玉米667.7万吨、粳稻13.9万吨、大豆0.6万吨。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/cffd9c55e106459e8f5efbdbb094f5e4.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T05:54:47.061901+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "06eaac08db8ef60a671b61bc1557b1c3",
+      "title": "以融合促升级 以链条带增收 新疆农业产业化高质量发展路径 - 农业农村动态",
+      "summary": "近年来，新疆立足资源禀赋和产业基础，以优势特色产业集群和农业产业强镇为抓手，推动农牧民嵌入链条，增值收益。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/a6453c4c0d1e430a9c7ef5ac2d92e6f2.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T05:54:48.881371+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "dabeb1b1f6904a65d7fb6999939b1aaa",
+      "title": "“中大医心，健康同行” 中山大学医科办学160周年健康行动（乌鲁木齐站）近视防控义诊活动圆满举办",
+      "summary": "经开区网讯（文图/马晨曦） 近日，作为 “中大医心，健康同行”中山大学医科办学 160 周年健康行动（乌鲁木齐站）系列活动之一，由自治区人民医院主办的近视防控主题活动正式启动。护眼科普专场走进市第一中学（望谷校区），健康义诊在西安交通大学第二附属医院新疆医院（自治区人民医院白鸟湖医院）同步开展。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/961c51061113495ca42a8c7c30bbba80.shtml",
+      "published_at": "2026-11-25",
+      "collected_at": "2026-11-25T05:54:52.056626+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "2f1d58afe316c7b59e625f59740c72a9",
+      "title": "吐鲁番市税务局：靠前服务 护航冬季供暖保障",
+      "summary": "吐鲁番市融媒体中心讯（通讯员 杨涵 孙克疆）入冬以来，吐鲁番市税务部门聚焦民生供暖保障，以合规辅导为切入点，主动对接辖区供热和新能源企业，送政策、理账目、排风险，在供暖季前全面理顺各类涉税事项。 针对供暖行业季节性强、筹备任务集中的特点，税务部门主动靠前走访，摸清企业煤炭储备、管网升级、运营筹备等实际情况，收集涉税办理堵点难点，现场演示 “征纳互动平台”操作，建立线上线下协同响应机制。走访中了解到…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106221/202611/1f4e2ba3ed2e47528f133d2e64bbfa22.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T05:58:14.241396+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "enterprise",
+        "mineral",
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "270ee9402c8af06081ece57cce9c6638",
+      "title": "鄯善县多部门协同救援被困货车顺利脱困",
+      "summary": "吐鲁番市融媒体中心讯（文 /图通讯员邓丽）11月16日，鄯善县交通运输局、消防救援局、连木沁镇派出所及汉都坎村警务室多方联动，成功救助一辆被困山区的大型货车，及时消除道路安全隐患，保障山区道路通行安全畅通。 救援现场。 连日来，受降雪降温天气影响，连木沁镇山区部分道路积雪结冰、路面湿滑，通行风险较高。当日，一辆大型货运车辆行驶至二塘沟彩虹坡 S弯路段时，因路面结冰打滑、动力不足被困山中，进退两难，…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "吐鲁番市人民政府",
+      "source_url": "https://www.tlf.gov.cn/tlfs/c106222/202611/f13bc8d018b740d595021083dd0b890f.shtml",
+      "published_at": "2026-11-25T00:00:00+08:00",
+      "collected_at": "2026-11-25T05:58:18.912477+00:00",
+      "region_group": "beijiang",
+      "region": "tulufan",
+      "industry_tags": [
+        "transport_logistics"
       ],
       "content_type": "news",
       "status": "pending",
