@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-25T18:30:29.175832+00:00",
-  "count": 334,
+  "generated_at": "2026-11-26T05:50:30.331361+00:00",
+  "count": 338,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -6311,6 +6311,84 @@
       "region": "wulumuqi",
       "industry_tags": [
         "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "61864fc3ee3b326edb902fda6e67e5e1",
+      "title": "以服务引项目！经开区营商环境收获客商点赞",
+      "summary": "经开区网讯（文/阙灵珊） 招商引资成效如何，企业最有发言权，企业的选择就是营商环境最好的答卷。近日，记者回访了乌鲁木齐经济技术开发区（头屯河区） 7 家处于不同发展阶段的企业，其中 4 家深耕本地多年、 2 家已落地投产、 1 家正在考察洽谈。 7 家企业， 7 段发展故事，虽视角各异、诉求不同，却共同印证着一个答案 —— 这里的营商环境持续向好，惠企政策落地见效。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/7537eac053474b43a7f643abb8841c32.shtml",
+      "published_at": "2026-11-26",
+      "collected_at": "2026-11-26T05:44:57.198728+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "e472eaedc77c460e378f8ddc91b5a2a8",
+      "title": "王楷文：“治理四诀”奏出小区“幸福歌”",
+      "summary": "经开区网讯（文图/杨紫月） 清晨，乌鲁木齐高铁站人流如织。出站口往南， 4 个居民小区、 22 栋商务楼宇、 538 家企事业单位错落分布，工地塔吊不停运转，写字楼电梯往来穿梭，这里就是乌鲁木齐经济技术开发区（头屯河区）高铁街道荣泰社区党总支书记王楷文的 “ 责任辖区 ” 。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/a73e3423c6f84fdeb9f3a40b1c976e9d.shtml",
+      "published_at": "2026-11-26",
+      "collected_at": "2026-11-26T05:44:59.334647+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "b0ec286bc94e6decc5bcaf1e52f8195c",
+      "title": "暖心港湾上线，经开区第二家共享职工之家揭牌启用",
+      "summary": "经开区网讯（文图/郭昌龙） 11 月 24 日，乌鲁木齐经济技术开发区（头屯河区）区属国有企业新疆软件园有限责任公司（以下简称“新疆软件园”）工会联合会共享职工之家正式揭牌，园区共享职工之家与乐享车友公司司机之家同步投入使用。这里既是园区职工午休阅读、健身休闲的好去处，也是奔波在路上的网约车司机喝水、热饭、歇脚的“暖心港湾”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/355ae6d727494283bc7f724fb550db72.shtml",
+      "published_at": "2026-11-26",
+      "collected_at": "2026-11-26T05:45:02.055062+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "835a975748ffd90646c3c6d96cbff101",
+      "title": "2026年新疆地膜科学使用与回收技术培训会在库尔勒举办",
+      "summary": "25日，2026年新疆地膜科学使用与回收技术培训会在库尔勒举办。培训会由中国农业科学院西部农业研究中心、巴州农业农村局、新疆农业绿色材料与土壤健康重点实验室主办，巴州农技推广中心、库尔勒市农业农村局协办，以“推广地膜科学使用与回收技术，提升农田生态保护水平，促进农业绿色可持续发展，助力美丽新疆建设”为主题，着力规范地膜科学使用，提升残膜回收利用水平，治理农田白色污染。 专题培训中，自治区农业生态与…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/60130ead75314d0c9914f8f4f4c0e8d0.shtml",
+      "published_at": "2026-11-26T00:00:00+08:00",
+      "collected_at": "2026-11-26T05:47:12.236723+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "agriculture"
       ],
       "content_type": "news",
       "status": "pending",
