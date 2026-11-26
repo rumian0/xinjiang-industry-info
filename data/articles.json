@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T05:50:30.331361+00:00",
-  "count": 338,
+  "generated_at": "2026-11-26T18:12:05.624475+00:00",
+  "count": 340,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -6388,6 +6388,46 @@
       "region_group": "nanjiang",
       "region": "bayin",
       "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "27e364274660a30563898266ce6aa768",
+      "title": "绿色疆味“链”全国——新疆1273万亩绿色食品原料供应地直通全国大市场 - 农业农村动态",
+      "summary": "“我们用天山脚下绿色基地生长出来的小麦，加工成天山牌面粉，制作出的食品麦香浓郁，在展会上格外抢手。”日前，刚参加完第二十四届中国绿色食品博览会的新疆天山面粉（集团）北站有限责任公司销售部经理高杰盘点展会收获，言语间满是欣喜。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/904df27443bf4a3b8391a76f1d221c7f.shtml",
+      "published_at": "2026-11-26T00:00:00+08:00",
+      "collected_at": "2026-11-26T18:07:11.731995+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "49ac4d952daf2aa9c179b855b19a8705",
+      "title": "贾林·努尔哈米提在特克斯县调研",
+      "summary": "11月23日至24日，伊犁州党委副书记、代理州长贾林·努尔哈米提在特克斯县实地调研绿色矿业、现代畜牧业等产业发展和项目建设情况。他强调，要深入学习贯彻党的二十届五中全会精神，落实自治区第十一次党代会部署，完整准确全面贯彻新时代党的治疆方略，锚定党中央赋予新疆的“五大战略定位”，按照自治区党委、政府和自治州党委的工作要求，高质量推进优势资源转换战略，聚焦特色优势产业延链、补链、强链，加快建设具有伊犁…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "伊犁哈萨克自治州-政务动态",
+      "source_url": "https://www.xjyl.gov.cn/xjylz/c112425/202611/8de7d841bc4f445f9cb56ffa7064b450.shtml",
+      "published_at": "2026-11-26T00:00:00+08:00",
+      "collected_at": "2026-11-26T18:07:46.478508+00:00",
+      "region_group": "beijiang",
+      "region": "yili",
+      "industry_tags": [
+        "mineral",
         "agriculture"
       ],
       "content_type": "news",
