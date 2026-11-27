@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T05:45:49.870234+00:00",
-  "count": 347,
+  "generated_at": "2026-11-27T17:55:30.820128+00:00",
+  "count": 352,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -6563,6 +6563,102 @@
       "region": "bayin",
       "industry_tags": [
         "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "63b06acb3167e1a6d9f32001749c87fb",
+      "title": "深化跨省协作—扎实推进电力援疆外送",
+      "summary": "为推动疆内新能源富余电力外送消纳，自治区发展改革委、能源局持续深化跨省能源协作，依托疆电外送通道，加强新能源供需匹配，提升绿电外送消纳水平。 2026年我区与13个援疆省（市）签署“电力援疆”政府间合作框架协议，截至10月底，各援疆省（市）间电力交易电量超百亿千瓦时，同比增长10%。 下一步，我区将持续加强与各援疆省市对接会商，提升受援地绿电消纳能力，促进绿色低碳发展。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/5bf75aee84be4983923e7e02162a03e5.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T17:48:54.995175+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "99a9de744b97c2b309ae25afd4ed68e1",
+      "title": "强化业务培训 提升工作质效 赋能能源转型发展",
+      "summary": "近日， 自治区发展改革委、能源局 组织 开展 新型电力系统业务培训会 ， 围绕 新能源 领域 投资、非化石能源 电力消费 核算等 内容开展政策解读和 专题授课，各地（州、市） 发展改革委 及相关电力企业 业务骨干参加培训 。 培训期间， 授课人员 重点 围绕《关于推动新疆新能源有效投资和提升新能源利用率的若干措施》 以及单用户、多用户绿电直连有关政策 进行专题辅导，细致解读 政策出台背景、适用 范…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区发展和改革委员会-能源信息",
+      "source_url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108386/202611/11ecb8b6eb96436c8843f431ab6d1f6a.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T17:48:57.441509+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "enterprise",
+        "energy"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "54dc17c89ea700c98478d0c5bd36cfea",
+      "title": "“十五五”服贸发展25项重点任务明确 - 中央要闻",
+      "summary": "服务贸易是外贸发展的重要引擎。日前，商务部等 8部门联合印发《服务贸易发展“十五五”规划》（以下简称《规划》），围绕加快培育服务贸易发展新动能、促进服务贸易数字化智能化绿色化发展、有序推进服务领域开放、提升要素跨境流动便利化水平、优化服务贸易促进体系、完善国内区域布局、拓展国际合作网络等7个方面部署了25项重点任务。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/0b5abde78ea54b4bb2e44541c63c6f18.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-27T17:51:42.299488+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "6457978022846c5e4ddf288edbd6f9c2",
+      "title": "李强将与全球主要国际经济组织负责人举行“1+10”对话会 - 中央要闻",
+      "summary": "新华社北京 11月27日电 外交部发言人27日宣布：国务院总理李强将于12月2日上午在福建省厦门市同新开发银行行长罗塞芙、世界银行行长彭安杰、国际货币基金组织总裁格奥尔基耶娃、世界贸易组织总干事伊维拉、联合国贸易和发展会议代理秘书长马雷诺、国际劳工组织助理总干事汤普森、经济合作与发展组织秘书长科尔曼、国际清算银行总经理德科斯、金融稳定理事会主席贝利和亚洲基础设施投资银行行长邹加怡等国际经济组织负责…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106690/202611/ad0c7c77daf04e528701df6519045a9d.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-27T17:51:44.704577+00:00",
+      "region_group": "nanjiang",
+      "region": "kashen",
+      "industry_tags": [
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "8afb539ec589b8148c393a8ec6ff5467",
+      "title": "前10月新疆进出口总值同比增长13.1% - 政务动态",
+      "summary": "本报乌鲁木齐 11月26日讯 石榴云/新疆日报记者黑宏伟报道：据乌鲁木齐海关统计，前10月，新疆进出口总值4737.1亿元人民币，同比增长13.1%。其中，出口值4141.9亿元，同比增长11.9%；进口值595.2亿元，同比增长21.9%。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "喀什地区行政公署",
+      "source_url": "https://www.kashi.gov.cn/ksdqxzgs/c106691/202611/53751c4b4c094dcb9cc8ecc64b969ab7.shtml",
+      "published_at": "2026-11-11T00:00:00+08:00",
+      "collected_at": "2026-11-27T17:52:06.592795+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "transport_logistics"
       ],
       "content_type": "news",
       "status": "pending",
