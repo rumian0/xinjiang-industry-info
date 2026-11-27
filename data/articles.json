@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T18:12:05.624475+00:00",
-  "count": 340,
+  "generated_at": "2026-11-27T05:45:49.870234+00:00",
+  "count": 347,
   "articles": [
     {
       "id": "939d5ea5c9ad118abdb2241444ad5738",
@@ -6429,6 +6429,140 @@
       "industry_tags": [
         "mineral",
         "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "62d17168fb4c49e4255ce5382c865af9",
+      "title": "自治区召开2026年外资企业圆桌会 - 商务动态",
+      "summary": "11 月 25 日， 2026 年自治区外资企业圆桌会在商务厅召开，商务厅党组书记李宏琪出席会议并讲话，商务厅党组成员、副厅长王亚主持会议。威立雅、星巴克、巴基斯坦哈比银行等 14 家自治区外资企业代表参会，自治区发展改革委、工业和信息化厅、市场监督管理局、地方金融监督管理局，人民银行新疆分行、国家税务总局新疆税务局及乌鲁木齐市等相关负责同志到会听取意见并现场回应。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区商务厅",
+      "source_url": "https://swt.xinjiang.gov.cn/xjswt/c114329/202611/48c0048f74054bea9d9a0a41003b14e4.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T05:39:05.355471+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "enterprise"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "46d0f5a539f0ff5e4639ae09615474bd",
+      "title": "新时代我们需要什么样的农业科学家③ 大国农业科技应向何处行？ - 农业农村动态",
+      "summary": "国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会在京召开。习近平总书记在列举我国科技事业取得的一系列新成就时，“农作物自主选育品种面积超过95%”位列其中。同在此列的，还有“‘嫦娥六号’实现人类首次月球背面采样返回”“创新药物实现从模仿、跟进开发到首创的跨越”。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/9676e8ccc50c4f0385d21d395bc72cea.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T05:39:42.657452+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "16686c743f07a759942c5b4b1bf49477",
+      "title": "2026年全国智慧农业现场推进会在河北雄安召开 - 农业农村动态",
+      "summary": "11月23—24日，农业农村部在河北雄安新区召开全国智慧农业现场推进会，研究部署“人工智能+”农业重点工作。农业农村部党组成员、副部长潘文博出席会议并讲话。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/0d9160452f744e368b7d4b30a3a9be93.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T05:39:44.975480+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "13e8ac8469a8ce03b1e44d6af0691054",
+      "title": "第三届国家农产品质量安全风险评估专家委员会换届大会在京召开 - 农业农村动态",
+      "summary": "本网讯 11月26日，第三届国家农产品质量安全风险评估专家委员会（以下简称“专家委员会”）换届大会在北京召开，认真总结第二届专家委员会的工作成效，分析风险评估工作面临的新形势新任务，对第三届专家委员会重点工作作出部署要求。农业农村部国家首席兽医师（官）陶怀颖，中国工程院院士、第三届专家委员会主任委员吴孔明出席会议。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "新疆维吾尔自治区农业农村厅",
+      "source_url": "https://nynct.xinjiang.gov.cn/xjnynct/c113576/202611/3353977dde7c449fafd1d188fcebdd8c.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T05:39:47.341574+00:00",
+      "region_group": "quanjang",
+      "region": null,
+      "industry_tags": [
+        "agriculture"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "10e8ee4f4e1f5b4503569a1beaa91f88",
+      "title": "寻味天山促产销 冷链护航新疆牛羊肉飘香全国",
+      "summary": "经开区网讯（文图 /郭昌龙 ） 11月24日，寻味天山·链通全国——新疆牛羊肉产销合作推介会在乌鲁木齐经济技术开发区（头屯河区）新疆软件园举办。推介会现场，京东物流正式发布2026年新疆牛羊肉物流专属保障方案，畅通新疆牛羊肉出疆销售渠道，让优质天山农牧产品走进全国百姓冬日餐桌。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/bdfe8a86a6114efcaa3cd83fda8a1f0e.shtml",
+      "published_at": "2026-11-27",
+      "collected_at": "2026-11-27T05:39:50.229938+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone",
+        "transport_logistics"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "813a1d2d732df5a5f6ff5b46414935ec",
+      "title": "范学东：“四暖治村法” 把难治理的村，建成暖心的家",
+      "summary": "经开区网讯（文/徐娜娜 图 /陈龙 ） “以前这里全是土坡石子路，大风一吹尘土飞扬，看完病连个歇脚的地方都没有。如今街角整洁美观、设施齐全，脏乱死角变成舒心小景，我们心里特别舒坦。” 11月15日午后，乌鲁木齐经济技术开发区（头屯河区）北站西路街道 河南庄村 居民刘仁联，坐在豫锦城卫生室门前崭新的休闲椅上，细数着家门口一点一滴的喜人变化。",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "乌鲁木齐经济技术开发区（头屯河区）",
+      "source_url": "http://www.uetd.gov.cn/jjjskfq/c119844/202611/b4e059de0d634f99b90549b4b7765f6c.shtml",
+      "published_at": "2026-11-27",
+      "collected_at": "2026-11-27T05:39:54.439091+00:00",
+      "region_group": "beijiang",
+      "region": "wulumuqi",
+      "industry_tags": [
+        "development_zone"
+      ],
+      "content_type": "news",
+      "status": "pending",
+      "is_test": false
+    },
+    {
+      "id": "983868d3e53be892e8b75960b04ee834",
+      "title": "新疆启动库尔勒香梨地理标志品牌保护专项行动",
+      "summary": "石榴云/新疆日报11月25日讯（石榴云/新疆日报记者 任春香）11月24日，记者从自治区市场监督管理局（知识产权局）获悉，今年11月至明年2月，我区开展库尔勒香梨地理标志品牌保护专项行动，聚焦采收上市季侵权高发环节，查处商标及地理标志侵权、虚假宣传、不正当竞争等违法活动，全链条守护“库尔勒香梨”金字招牌。 “库尔勒香梨”是国家地理标志保护产品、地理标志证明商标。2025年，库尔勒香梨国家地理标志保…",
+      "summary_source": "truncated",
+      "source_type": "government",
+      "source_name": "巴音郭楞蒙古自治州人民政府",
+      "source_url": "https://www.xjbz.gov.cn/xjbz/jrbz/202611/c6255ba012604427a04362f9a7fbe076.shtml",
+      "published_at": "2026-11-27T00:00:00+08:00",
+      "collected_at": "2026-11-27T05:42:35.334349+00:00",
+      "region_group": "nanjiang",
+      "region": "bayin",
+      "industry_tags": [
+        "enterprise"
       ],
       "content_type": "news",
       "status": "pending",
